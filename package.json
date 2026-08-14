@@ -9,7 +9,8 @@
   },
   "scripts": {
     "eval": "node src/eval-suite.js",
-    "equip": "node src/equip-export.js"
+    "equip": "node src/equip-export.js",
+    "test": "node --test src/equip.test.js"
   },
   "dsh": {
     "bundle": {
