@@ -171,7 +171,7 @@ function matchScore(p, task, plugins) {
     }
   }
   for (const tag of p.tags || []) if (t.includes(tag.toLowerCase())) hits += 0.3;
-  return Math.min(1, hits * 0.4 + (t.includes((p.name || '').toLowerCase()) ? 0.3 : 0));
+  return Math.min(1, hits * 0.4 + (p.name && t.includes(String(p.name).toLowerCase()) ? 0.3 : 0));
 }
 
 // —— 轻量 TF-IDF「embedding」预筛（本地，无外部模型） ——
@@ -518,5 +518,5 @@ function preselectKw(plugins, task, perSlot = 6) {
 module.exports = {
   equip, equipMix, loadPlugins, matchScore, comboScore, explain, detectTaskType,
   detectTaskTypes, preselect, preselectKw, blendSlotWeights, pluginIndex, stopCaps,
-  MAX_COST, SLOT_WEIGHTS, SLOTS, buildTfidf, cosineTask, installSpec,
+  MAX_COST, SLOT_WEIGHTS, SLOTS, buildTfidf, cosineTask, installSpec, topCandidates,
 };
