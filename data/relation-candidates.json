@@ -1,0 +1,1941 @@
+{
+  "generatedAt": "2026-08-14T18:23:32.575Z",
+  "threshold": 0.8,
+  "conflictCandidates": [
+    {
+      "a": "openma-ai/deepseek-harness-acp",
+      "b": "chushixixin/dsh-harness-mcp-server",
+      "slot": "decision",
+      "jaccard": 1,
+      "caps": [
+        "代理",
+        "服务器"
+      ],
+      "whitelist": false,
+      "avgCapFreq": 11.5,
+      "suffixSimilar": false
+    },
+    {
+      "a": "zibo2025/dsh-orchestrator",
+      "b": "ttxl314/dsh-skill-lord-serf",
+      "slot": "decision",
+      "jaccard": 1,
+      "caps": [
+        "编排",
+        "多智能体",
+        "任务分配"
+      ],
+      "whitelist": false,
+      "avgCapFreq": 5.3,
+      "suffixSimilar": false
+    },
+    {
+      "a": "vlln/dsh-navbar",
+      "b": "xiaoso456/dsh-turn-navigator",
+      "slot": "output",
+      "jaccard": 1,
+      "caps": [
+        "导航",
+        "跳转",
+        "对话"
+      ],
+      "whitelist": false,
+      "avgCapFreq": 15,
+      "suffixSimilar": false
+    },
+    {
+      "a": "dsh-market/dsh-market",
+      "b": "mishibeikejie/zat-dsh-engine",
+      "slot": "output",
+      "jaccard": 1,
+      "caps": [
+        "插件市场",
+        "浏览",
+        "安装"
+      ],
+      "whitelist": false,
+      "avgCapFreq": 20.7,
+      "suffixSimilar": false
+    },
+    {
+      "a": "dsh-market/dsh-market",
+      "b": "TheYoungChen/dsh-plugin-market",
+      "slot": "output",
+      "jaccard": 1,
+      "caps": [
+        "插件市场",
+        "浏览",
+        "安装"
+      ],
+      "whitelist": false,
+      "avgCapFreq": 20.7,
+      "suffixSimilar": false
+    },
+    {
+      "a": "mishibeikejie/zat-dsh-engine",
+      "b": "TheYoungChen/dsh-plugin-market",
+      "slot": "output",
+      "jaccard": 1,
+      "caps": [
+        "插件市场",
+        "浏览",
+        "安装"
+      ],
+      "whitelist": false,
+      "avgCapFreq": 20.7,
+      "suffixSimilar": false
+    },
+    {
+      "a": "cakeni/harness-pet",
+      "b": "minybear/DeepSeek-Harness-Pet",
+      "slot": "output",
+      "jaccard": 1,
+      "caps": [
+        "桌面宠物",
+        "娱乐"
+      ],
+      "whitelist": false,
+      "avgCapFreq": 13,
+      "suffixSimilar": false
+    },
+    {
+      "a": "Moeblack/dsh-skins",
+      "b": "springbrand-lab/dsh-skin-universe",
+      "slot": "output",
+      "jaccard": 1,
+      "caps": [
+        "皮肤",
+        "主题",
+        "外观"
+      ],
+      "whitelist": false,
+      "avgCapFreq": 19,
+      "suffixSimilar": false
+    },
+    {
+      "a": "Moeblack/dsh-skins",
+      "b": "wangxilhy23/dsh-wx-skin",
+      "slot": "output",
+      "jaccard": 1,
+      "caps": [
+        "皮肤",
+        "主题",
+        "外观"
+      ],
+      "whitelist": false,
+      "avgCapFreq": 19,
+      "suffixSimilar": false
+    },
+    {
+      "a": "Vulcan626/dsh-pet",
+      "b": "yuxino/dsh-blue-whale-maid",
+      "slot": "output",
+      "jaccard": 1,
+      "caps": [
+        "宠物",
+        "提醒"
+      ],
+      "whitelist": false,
+      "avgCapFreq": 17.5,
+      "suffixSimilar": false
+    },
+    {
+      "a": "Civitasv/dsh-plugin-colorscheme",
+      "b": "zhijun-dai/dsh-Solarized",
+      "slot": "output",
+      "jaccard": 1,
+      "caps": [
+        "配色",
+        "主题"
+      ],
+      "whitelist": false,
+      "avgCapFreq": 18,
+      "suffixSimilar": false
+    },
+    {
+      "a": "Er1c0v0/dsh-whale-pet",
+      "b": "omdsh-dev/dsh-ui-whale",
+      "slot": "output",
+      "jaccard": 1,
+      "caps": [
+        "宠物",
+        "动画"
+      ],
+      "whitelist": false,
+      "avgCapFreq": 16,
+      "suffixSimilar": false
+    },
+    {
+      "a": "springbrand-lab/dsh-skin-universe",
+      "b": "wangxilhy23/dsh-wx-skin",
+      "slot": "output",
+      "jaccard": 1,
+      "caps": [
+        "皮肤",
+        "主题",
+        "外观"
+      ],
+      "whitelist": false,
+      "avgCapFreq": 19,
+      "suffixSimilar": false
+    },
+    {
+      "a": "kuailexiaozixin/tkinter-desktop",
+      "b": "kuailexiaozixin/fasthtml-desktop",
+      "slot": "output",
+      "jaccard": 1,
+      "caps": [
+        "桌面",
+        "应用",
+        "开发"
+      ],
+      "whitelist": false,
+      "avgCapFreq": 13.7,
+      "suffixSimilar": false
+    },
+    {
+      "a": "shinelon/eyes-for-deepseek",
+      "b": "YYTbit/dsh-plugin-vision-toolkit",
+      "slot": "perception",
+      "jaccard": 1,
+      "caps": [
+        "感知",
+        "图像"
+      ],
+      "whitelist": false,
+      "avgCapFreq": 9.5,
+      "suffixSimilar": false
+    },
+    {
+      "a": "Xieweikang123/dsh-vision-bridge",
+      "b": "hawkongz/doubao-vision-dsh",
+      "slot": "perception",
+      "jaccard": 1,
+      "caps": [
+        "图像识别",
+        "桥接"
+      ],
+      "whitelist": false,
+      "avgCapFreq": 22.5,
+      "suffixSimilar": false
+    },
+    {
+      "a": "welsione/dsh-mmx-multimodal",
+      "b": "zhuiyueya/dsh-visionary",
+      "slot": "perception",
+      "jaccard": 1,
+      "caps": [
+        "图像理解",
+        "多模态"
+      ],
+      "whitelist": false,
+      "avgCapFreq": 14,
+      "suffixSimilar": false
+    }
+  ],
+  "complementCandidates": [
+    {
+      "a": "cendaifeng/dsh-learn-everything",
+      "b": "dsh-external/dsh-explain",
+      "slots": [
+        "decision",
+        "memory"
+      ],
+      "shared": [
+        "学习",
+        "解释"
+      ]
+    },
+    {
+      "a": "dsh-external/dsh-101",
+      "b": "bill9109/dsh-101",
+      "slots": [
+        "decision",
+        "output"
+      ],
+      "shared": [
+        "文档",
+        "阅读"
+      ]
+    },
+    {
+      "a": "dsh-external/zotero-harvest",
+      "b": "yuzh2001/dsh-zotero",
+      "slots": [
+        "memory",
+        "output"
+      ],
+      "shared": [
+        "Zotero",
+        "文献"
+      ]
+    },
+    {
+      "a": "dsh-external/dsh-prompt-studio",
+      "b": "dsh-external/dsh-openpencil",
+      "slots": [
+        "action",
+        "output"
+      ],
+      "shared": [
+        "编辑",
+        "预览"
+      ]
+    },
+    {
+      "a": "dsh-external/dsh-prompt-studio",
+      "b": "Moeblack/dsh-prompt-studio",
+      "slots": [
+        "action",
+        "output"
+      ],
+      "shared": [
+        "提示词",
+        "编辑"
+      ]
+    },
+    {
+      "a": "dsh-external/dsh-prompt-studio",
+      "b": "Xilin3/dsh-prompt-persona",
+      "slots": [
+        "action",
+        "output"
+      ],
+      "shared": [
+        "提示词",
+        "预览"
+      ]
+    },
+    {
+      "a": "dsh-external/dsh-prompt-studio",
+      "b": "linhx1999/dsh-writing-pad",
+      "slots": [
+        "action",
+        "output"
+      ],
+      "shared": [
+        "编辑",
+        "预览"
+      ]
+    },
+    {
+      "a": "dsh-external/dsh-suggested-replies",
+      "b": "shaoeric/dsh-suggest",
+      "slots": [
+        "action",
+        "decision"
+      ],
+      "shared": [
+        "建议",
+        "推荐"
+      ]
+    },
+    {
+      "a": "beancookie/dsh-plugin-anydoc",
+      "b": "Sqhao-O/dsh-docling",
+      "slots": [
+        "action",
+        "perception"
+      ],
+      "shared": [
+        "文档",
+        "解析"
+      ]
+    },
+    {
+      "a": "dsh-external/dsh-aigc-canvas",
+      "b": "HuanLinOTO/dsh-plugin-aigc-canvas",
+      "slots": [
+        "output",
+        "perception"
+      ],
+      "shared": [
+        "画布",
+        "AIGC"
+      ]
+    },
+    {
+      "a": "bpc-oss/dsh-web-billing",
+      "b": "golitter/dsh-deepseek-billing",
+      "slots": [
+        "output",
+        "action"
+      ],
+      "shared": [
+        "计费",
+        "账单"
+      ]
+    },
+    {
+      "a": "yweilai77-dev/dsh-plugin-cost",
+      "b": "TwotwoPiggy/dsh-balance",
+      "slots": [
+        "output",
+        "action"
+      ],
+      "shared": [
+        "估算",
+        "令牌"
+      ]
+    },
+    {
+      "a": "whyihaveyou/dsh-suite#packages/plugins/plugin-notify",
+      "b": "rizkirmdhnnn/dsh-tool-notify",
+      "slots": [
+        "output",
+        "action"
+      ],
+      "shared": [
+        "消息推送",
+        "提醒"
+      ]
+    },
+    {
+      "a": "dsh-external/dsh-stock-market",
+      "b": "dmsobtl/dsh-tool-market-data",
+      "slots": [
+        "output",
+        "action"
+      ],
+      "shared": [
+        "股票",
+        "行情"
+      ]
+    },
+    {
+      "a": "dsh-external/dsh-notebooks",
+      "b": "havingautism/dsh-notebooks",
+      "slots": [
+        "action",
+        "output"
+      ],
+      "shared": [
+        "笔记本",
+        "文档"
+      ]
+    },
+    {
+      "a": "dsh-external/dsh-super-injector",
+      "b": "yjh051108/dsh-super-injector",
+      "slots": [
+        "action",
+        "decision"
+      ],
+      "shared": [
+        "注入",
+        "增强"
+      ]
+    },
+    {
+      "a": "hyqhyq3/dsh-mcp-manager",
+      "b": "yoke233/dsh-openai-codex-auth",
+      "slots": [
+        "action",
+        "output"
+      ],
+      "shared": [
+        "OAuth",
+        "认证"
+      ]
+    },
+    {
+      "a": "whyihaveyou/dsh-suite#packages/plugins/plugin-manager",
+      "b": "loguhan/dsh-workshop",
+      "slots": [
+        "action",
+        "output"
+      ],
+      "shared": [
+        "插件商店",
+        "浏览"
+      ]
+    },
+    {
+      "a": "whyihaveyou/dsh-suite#packages/plugins/plugin-manager",
+      "b": "w769721503/dsh-plugin-store",
+      "slots": [
+        "action",
+        "output"
+      ],
+      "shared": [
+        "插件商店",
+        "浏览"
+      ]
+    },
+    {
+      "a": "whyihaveyou/dsh-suite#packages/plugins/plugin-manager",
+      "b": "yunhuantian/dsh-plugin-hub",
+      "slots": [
+        "action",
+        "output"
+      ],
+      "shared": [
+        "插件商店",
+        "浏览"
+      ]
+    },
+    {
+      "a": "zhaoolee/notes",
+      "b": "bwndlct/dsh-session-export",
+      "slots": [
+        "output",
+        "action"
+      ],
+      "shared": [
+        "导出",
+        "Markdown"
+      ]
+    },
+    {
+      "a": "zhaoolee/notes",
+      "b": "yangyongzhen/dsh-session-export",
+      "slots": [
+        "output",
+        "action"
+      ],
+      "shared": [
+        "导出",
+        "Markdown"
+      ]
+    },
+    {
+      "a": "flymysql/dsh-remote",
+      "b": "UynajGI/dsh-ssh",
+      "slots": [
+        "perception",
+        "action"
+      ],
+      "shared": [
+        "远程",
+        "SSH"
+      ]
+    },
+    {
+      "a": "Leon0555/dsh-lan-access",
+      "b": "moxisuki/dsh-lan",
+      "slots": [
+        "perception",
+        "action"
+      ],
+      "shared": [
+        "局域网",
+        "绑定"
+      ]
+    },
+    {
+      "a": "Leon0555/dsh-lan-access",
+      "b": "MrMu666/dsh-LAN",
+      "slots": [
+        "perception",
+        "action"
+      ],
+      "shared": [
+        "局域网",
+        "访问"
+      ]
+    },
+    {
+      "a": "dsh-external/dsh-vision",
+      "b": "oil-oil/dsh-vision",
+      "slots": [
+        "decision",
+        "perception"
+      ],
+      "shared": [
+        "图像",
+        "理解"
+      ]
+    },
+    {
+      "a": "lynx-gt/dsh-subagent-tools",
+      "b": "shaokeyibb/dsh-plugin-product-subagents",
+      "slots": [
+        "decision",
+        "action"
+      ],
+      "shared": [
+        "子代理",
+        "提供者",
+        "角色"
+      ]
+    },
+    {
+      "a": "lynx-gt/dsh-subagent-cwd",
+      "b": "shaokeyibb/dsh-plugin-product-subagents",
+      "slots": [
+        "decision",
+        "action"
+      ],
+      "shared": [
+        "子代理",
+        "提供者"
+      ]
+    },
+    {
+      "a": "Khellendros97/dsh-subscription-auth",
+      "b": "Yan-Zero/dsh-codex",
+      "slots": [
+        "decision",
+        "action"
+      ],
+      "shared": [
+        "订阅",
+        "登录"
+      ]
+    },
+    {
+      "a": "Khellendros97/dsh-subscription-auth",
+      "b": "Player-MINEPIG/dsh-llm-codex-oauth",
+      "slots": [
+        "decision",
+        "action"
+      ],
+      "shared": [
+        "订阅",
+        "登录",
+        "OAuth"
+      ]
+    },
+    {
+      "a": "Khellendros97/dsh-subscription-auth",
+      "b": "MirDie/dsh-xai",
+      "slots": [
+        "decision",
+        "action"
+      ],
+      "shared": [
+        "登录",
+        "OAuth"
+      ]
+    },
+    {
+      "a": "Khellendros97/dsh-subscription-auth",
+      "b": "yoke233/dsh-openai-codex-auth",
+      "slots": [
+        "decision",
+        "output"
+      ],
+      "shared": [
+        "登录",
+        "OAuth"
+      ]
+    },
+    {
+      "a": "Khellendros97/dsh-subscription-auth",
+      "b": "dyuan311/dsh-openai-codex-oauth",
+      "slots": [
+        "decision",
+        "action"
+      ],
+      "shared": [
+        "订阅",
+        "登录",
+        "OAuth"
+      ]
+    },
+    {
+      "a": "Khellendros97/dsh-subscription-auth",
+      "b": "WSL043/dsh-codex-subscription",
+      "slots": [
+        "decision",
+        "action"
+      ],
+      "shared": [
+        "订阅",
+        "OAuth"
+      ]
+    },
+    {
+      "a": "dsh-external/dsh-inspect",
+      "b": "jingzhao-l/iterate-plugin",
+      "slots": [
+        "action",
+        "decision"
+      ],
+      "shared": [
+        "修复",
+        "审查"
+      ]
+    },
+    {
+      "a": "PerryLink/dsh-doublecheck",
+      "b": "maskshell/solidforge-dsh",
+      "slots": [
+        "action",
+        "decision"
+      ],
+      "shared": [
+        "纪律",
+        "测试"
+      ]
+    },
+    {
+      "a": "whyihaveyou/dsh-suite#packages/plugins/plugin-session-export",
+      "b": "bwndlct/dsh-session-export",
+      "slots": [
+        "output",
+        "action"
+      ],
+      "shared": [
+        "导出",
+        "Markdown"
+      ]
+    },
+    {
+      "a": "whyihaveyou/dsh-suite#packages/plugins/plugin-session-export",
+      "b": "yangyongzhen/dsh-session-export",
+      "slots": [
+        "output",
+        "action"
+      ],
+      "shared": [
+        "导出",
+        "Markdown"
+      ]
+    },
+    {
+      "a": "whyihaveyou/dsh-suite#packages/plugins/plugin-session-export",
+      "b": "ChuanTianML/dsh-share",
+      "slots": [
+        "output",
+        "action"
+      ],
+      "shared": [
+        "Markdown",
+        "HTML"
+      ]
+    },
+    {
+      "a": "dsh-external/dsh-feishu-bot",
+      "b": "PlutoKeating/dsh-lark-bot",
+      "slots": [
+        "output",
+        "action"
+      ],
+      "shared": [
+        "飞书",
+        "机器人"
+      ]
+    },
+    {
+      "a": "dsh-external/dsh-feishu-bot",
+      "b": "xmanrui/dsh-feishu",
+      "slots": [
+        "output",
+        "action"
+      ],
+      "shared": [
+        "飞书",
+        "机器人"
+      ]
+    },
+    {
+      "a": "hi-wenw/dsh-telegram-channel",
+      "b": "congchuanling-dot/DSH-Telegram-Relay",
+      "slots": [
+        "output",
+        "action"
+      ],
+      "shared": [
+        "Telegram",
+        "远程"
+      ]
+    },
+    {
+      "a": "hi-wenw/dsh-telegram-channel",
+      "b": "yuko0331/DSH-telegram",
+      "slots": [
+        "output",
+        "action"
+      ],
+      "shared": [
+        "Telegram",
+        "远程"
+      ]
+    },
+    {
+      "a": "dsh-external/qqbot",
+      "b": "belowthetree/dsh-qqbot",
+      "slots": [
+        "output",
+        "action"
+      ],
+      "shared": [
+        "QQ",
+        "机器人"
+      ]
+    },
+    {
+      "a": "dsh-external/dsh-wecom-bot",
+      "b": "sliverp/DeepSeek-harness-wecom",
+      "slots": [
+        "output",
+        "action"
+      ],
+      "shared": [
+        "企业微信",
+        "机器人"
+      ]
+    },
+    {
+      "a": "dsh-external/dsh-wecom-bot",
+      "b": "krudiy/wecom-bridge",
+      "slots": [
+        "output",
+        "action"
+      ],
+      "shared": [
+        "企业微信",
+        "机器人"
+      ]
+    },
+    {
+      "a": "dsh-external/dsh-weixin-bot",
+      "b": "gtaifu/dsh-wechat-bridge",
+      "slots": [
+        "output",
+        "action"
+      ],
+      "shared": [
+        "微信",
+        "机器人"
+      ]
+    },
+    {
+      "a": "awesome-dsh-plugin/awesome-dsh-plugin",
+      "b": "Dominic789654/awesome-deepseek-harness",
+      "slots": [
+        "output",
+        "action"
+      ],
+      "shared": [
+        "插件列表",
+        "资源"
+      ]
+    },
+    {
+      "a": "humblebanana/open-record-replay",
+      "b": "humblebanana/dsh-record-replay",
+      "slots": [
+        "action",
+        "output"
+      ],
+      "shared": [
+        "录制",
+        "回放"
+      ]
+    },
+    {
+      "a": "Alex-Yanggg/awesome-DSH-plugin",
+      "b": "Dominic789654/awesome-deepseek-harness",
+      "slots": [
+        "output",
+        "action"
+      ],
+      "shared": [
+        "插件列表",
+        "资源"
+      ]
+    },
+    {
+      "a": "bradeGithub/DSH-Plugins-Marketplace",
+      "b": "Nexus-Aethra/DSH-plugin-switch",
+      "slots": [
+        "output",
+        "decision"
+      ],
+      "shared": [
+        "插件市场",
+        "浏览"
+      ]
+    },
+    {
+      "a": "titanwings/dsh-automation",
+      "b": "cnyac/dsh-polling",
+      "slots": [
+        "decision",
+        "action"
+      ],
+      "shared": [
+        "定时任务",
+        "调度"
+      ]
+    },
+    {
+      "a": "titanwings/dsh-automation",
+      "b": "Jesse-njx/dsh-routines",
+      "slots": [
+        "decision",
+        "action"
+      ],
+      "shared": [
+        "定时任务",
+        "调度"
+      ]
+    },
+    {
+      "a": "AtlasCloudAI/atlas-cloud-skills",
+      "b": "AtropinolTT/dsh-guide-dog",
+      "slots": [
+        "action",
+        "perception"
+      ],
+      "shared": [
+        "图像生成",
+        "视频生成"
+      ]
+    },
+    {
+      "a": "dsh-market/dsh-market",
+      "b": "Nexus-Aethra/DSH-plugin-switch",
+      "slots": [
+        "output",
+        "decision"
+      ],
+      "shared": [
+        "插件市场",
+        "浏览"
+      ]
+    },
+    {
+      "a": "Sanqi-normal/dsh-webui-market-plugin",
+      "b": "6kongbai/dsh-plugin-market",
+      "slots": [
+        "output",
+        "action"
+      ],
+      "shared": [
+        "插件市场",
+        "卸载"
+      ]
+    },
+    {
+      "a": "WilliamLIiii/DeepSeek-Harness-billing-plugin",
+      "b": "golitter/dsh-deepseek-billing",
+      "slots": [
+        "output",
+        "action"
+      ],
+      "shared": [
+        "计费",
+        "余额"
+      ]
+    },
+    {
+      "a": "icodesign/orbis",
+      "b": "yuko0331/DSH-telegram",
+      "slots": [
+        "output",
+        "action"
+      ],
+      "shared": [
+        "远程",
+        "控制"
+      ]
+    },
+    {
+      "a": "imetn/dsh-lark-bridge",
+      "b": "happyren/dsh-agent-messaging",
+      "slots": [
+        "action",
+        "decision"
+      ],
+      "shared": [
+        "消息",
+        "通信"
+      ]
+    },
+    {
+      "a": "omdsh-dev/plugin-template",
+      "b": "RayYeung1989/dsh-plugin-development",
+      "slots": [
+        "action",
+        "decision"
+      ],
+      "shared": [
+        "插件开发",
+        "开发工具"
+      ]
+    },
+    {
+      "a": "mishibeikejie/zat-dsh-engine",
+      "b": "Nexus-Aethra/DSH-plugin-switch",
+      "slots": [
+        "output",
+        "decision"
+      ],
+      "shared": [
+        "插件市场",
+        "浏览"
+      ]
+    },
+    {
+      "a": "lhh010/dsh-input-history",
+      "b": "hisaniwo/dsh-ergonomics",
+      "slots": [
+        "output",
+        "action"
+      ],
+      "shared": [
+        "输入历史",
+        "快捷键"
+      ]
+    },
+    {
+      "a": "happyren/dsh-agent-messaging",
+      "b": "Jesse-njx/dsh-crosstalk",
+      "slots": [
+        "decision",
+        "action"
+      ],
+      "shared": [
+        "消息",
+        "通信"
+      ]
+    },
+    {
+      "a": "1514100951/dsh-usage-footer",
+      "b": "ben7am1n/dsh-deepseek-usage",
+      "slots": [
+        "output",
+        "action"
+      ],
+      "shared": [
+        "用量",
+        "余额"
+      ]
+    },
+    {
+      "a": "TwotwoPiggy/dsh-balance",
+      "b": "YYTbit/dsh-plugin-cost-tracker",
+      "slots": [
+        "action",
+        "output"
+      ],
+      "shared": [
+        "追踪",
+        "成本"
+      ]
+    },
+    {
+      "a": "Player-MINEPIG/dsh-llm-codex-oauth",
+      "b": "yoke233/dsh-openai-codex-auth",
+      "slots": [
+        "action",
+        "output"
+      ],
+      "shared": [
+        "OAuth",
+        "登录"
+      ]
+    },
+    {
+      "a": "YYTbit/dsh-plugin-cost-tracker",
+      "b": "GiantGKL/dsh-cost",
+      "slots": [
+        "output",
+        "action"
+      ],
+      "shared": [
+        "成本",
+        "费用"
+      ]
+    },
+    {
+      "a": "YYTbit/dsh-plugin-cost-tracker",
+      "b": "yflmq001/dsh-cost-tracker",
+      "slots": [
+        "output",
+        "action"
+      ],
+      "shared": [
+        "成本",
+        "追踪",
+        "Token"
+      ]
+    },
+    {
+      "a": "omdsh-dev/dsh-book2skill",
+      "b": "omdsh-dev/dsh-tool-csv",
+      "slots": [
+        "decision",
+        "action"
+      ],
+      "shared": [
+        "转换",
+        "解析"
+      ]
+    },
+    {
+      "a": "omdsh-dev/dsh-book2skill",
+      "b": "SamFirefly096/dsh-docflow-workflow",
+      "slots": [
+        "decision",
+        "action"
+      ],
+      "shared": [
+        "解析",
+        "生成"
+      ]
+    },
+    {
+      "a": "HuanLinOTO/dsh-plugin-aigc-canvas",
+      "b": "Jinsong-Zhou/dsh-html-canvas",
+      "slots": [
+        "perception",
+        "output"
+      ],
+      "shared": [
+        "画布",
+        "编辑"
+      ]
+    },
+    {
+      "a": "yuko0331/DSH-telegram",
+      "b": "Asaiuta/dsh-session-hub",
+      "slots": [
+        "action",
+        "output"
+      ],
+      "shared": [
+        "远程",
+        "控制"
+      ]
+    },
+    {
+      "a": "keepermttl/dsh-archive-viewer",
+      "b": "Zephyr-vibe/dsh-archived-sessions",
+      "slots": [
+        "output",
+        "action"
+      ],
+      "shared": [
+        "归档",
+        "恢复"
+      ]
+    },
+    {
+      "a": "keepermttl/dsh-archive-viewer",
+      "b": "hxyz486/dsh-archived-conversations",
+      "slots": [
+        "output",
+        "action"
+      ],
+      "shared": [
+        "查看",
+        "恢复"
+      ]
+    },
+    {
+      "a": "XCNXNXNX/dsh-portable-tavern",
+      "b": "xiagaogaozi/dsh-silly-plugin",
+      "slots": [
+        "output",
+        "action"
+      ],
+      "shared": [
+        "角色卡",
+        "导入"
+      ]
+    },
+    {
+      "a": "LingLambda/dsh-undo",
+      "b": "lire1131/dsh-undo-plugin",
+      "slots": [
+        "action",
+        "output"
+      ],
+      "shared": [
+        "撤销",
+        "重做",
+        "回滚"
+      ]
+    },
+    {
+      "a": "lire1131/dsh-undo-plugin",
+      "b": "PerryLink/dsh-checkpoint-rewind",
+      "slots": [
+        "output",
+        "decision"
+      ],
+      "shared": [
+        "快照",
+        "回滚"
+      ]
+    },
+    {
+      "a": "GiantGKL/dsh-cost",
+      "b": "Way2LOose4/dsh-agent-pricing",
+      "slots": [
+        "action",
+        "output"
+      ],
+      "shared": [
+        "成本",
+        "费用"
+      ]
+    },
+    {
+      "a": "Zephyr-vibe/dsh-archived-sessions",
+      "b": "csiroqa/dsh-archive-viewer",
+      "slots": [
+        "action",
+        "decision"
+      ],
+      "shared": [
+        "归档",
+        "删除"
+      ]
+    },
+    {
+      "a": "Zephyr-vibe/dsh-archived-sessions",
+      "b": "byJming/dsh-session-cleaner",
+      "slots": [
+        "action",
+        "output"
+      ],
+      "shared": [
+        "会话管理",
+        "删除"
+      ]
+    },
+    {
+      "a": "TheTianzz/dsh-billing",
+      "b": "golitter/dsh-deepseek-billing",
+      "slots": [
+        "output",
+        "action"
+      ],
+      "shared": [
+        "余额",
+        "账单"
+      ]
+    },
+    {
+      "a": "moduqishi/GrassVison",
+      "b": "jypjypjypjyp/dsh-vqa-agent",
+      "slots": [
+        "action",
+        "perception"
+      ],
+      "shared": [
+        "图像理解",
+        "多模态"
+      ]
+    },
+    {
+      "a": "moduqishi/GrassVison",
+      "b": "Arnoldkevin/prismrelay-mcp",
+      "slots": [
+        "action",
+        "decision"
+      ],
+      "shared": [
+        "图像理解",
+        "多模态"
+      ]
+    },
+    {
+      "a": "moduqishi/GrassVison",
+      "b": "welsione/dsh-mmx-multimodal",
+      "slots": [
+        "action",
+        "perception"
+      ],
+      "shared": [
+        "图像理解",
+        "多模态"
+      ]
+    },
+    {
+      "a": "moduqishi/GrassVison",
+      "b": "zhuiyueya/dsh-visionary",
+      "slots": [
+        "action",
+        "perception"
+      ],
+      "shared": [
+        "图像理解",
+        "多模态"
+      ]
+    },
+    {
+      "a": "gnulife/dsh-plugin-wechat",
+      "b": "xiaoshihou514/dsh-weixin",
+      "slots": [
+        "action",
+        "output"
+      ],
+      "shared": [
+        "微信集成",
+        "消息"
+      ]
+    },
+    {
+      "a": "Toukaiteio/dsh-effort-tweak",
+      "b": "sanshanya/better-model-provider",
+      "slots": [
+        "output",
+        "perception"
+      ],
+      "shared": [
+        "推理强度",
+        "模型配置"
+      ]
+    },
+    {
+      "a": "sanshanya/better-model-provider",
+      "b": "cyberlieflife/dsh-model-thinking",
+      "slots": [
+        "perception",
+        "output"
+      ],
+      "shared": [
+        "推理强度",
+        "模型配置"
+      ]
+    },
+    {
+      "a": "sanshanya/better-model-provider",
+      "b": "shijunan126-creator/dsh-subagent-effort",
+      "slots": [
+        "perception",
+        "output"
+      ],
+      "shared": [
+        "推理强度",
+        "模型配置"
+      ]
+    },
+    {
+      "a": "forrestahha/dsh-voice-input",
+      "b": "Jesse-njx/dsh-voice",
+      "slots": [
+        "output",
+        "action"
+      ],
+      "shared": [
+        "语音输入",
+        "语音识别"
+      ]
+    },
+    {
+      "a": "forrestahha/dsh-voice-input",
+      "b": "zhuiyueya/dsh-voice",
+      "slots": [
+        "output",
+        "perception"
+      ],
+      "shared": [
+        "语音输入",
+        "语音识别"
+      ]
+    },
+    {
+      "a": "omdsh-dev/dsh-science",
+      "b": "mingger77/research-skills",
+      "slots": [
+        "decision",
+        "action"
+      ],
+      "shared": [
+        "Python",
+        "可复现"
+      ]
+    },
+    {
+      "a": "Ericwong5021/dsh-kanban",
+      "b": "penguinpanda/sebastian-kitchen-board",
+      "slots": [
+        "output",
+        "decision"
+      ],
+      "shared": [
+        "看板",
+        "任务管理"
+      ]
+    },
+    {
+      "a": "omdsh-dev/dsh-kb-sieve",
+      "b": "chancelu/dsh-llmwiki",
+      "slots": [
+        "decision",
+        "action"
+      ],
+      "shared": [
+        "知识库",
+        "检索"
+      ]
+    },
+    {
+      "a": "TheYoungChen/dsh-plugin-market",
+      "b": "Nexus-Aethra/DSH-plugin-switch",
+      "slots": [
+        "output",
+        "decision"
+      ],
+      "shared": [
+        "插件市场",
+        "浏览"
+      ]
+    },
+    {
+      "a": "Momojie-S/dsh-workspace-env",
+      "b": "SiYue-ZO/dsh-translator",
+      "slots": [
+        "action",
+        "output"
+      ],
+      "shared": [
+        "工作区",
+        "配置"
+      ]
+    },
+    {
+      "a": "hisaniwo/dsh-ergonomics",
+      "b": "omdsh-dev/dsh-input-history",
+      "slots": [
+        "action",
+        "output"
+      ],
+      "shared": [
+        "输入历史",
+        "快捷键"
+      ]
+    },
+    {
+      "a": "golitter/dsh-deepseek-billing",
+      "b": "Wanbinyu/dsh-billing",
+      "slots": [
+        "action",
+        "output"
+      ],
+      "shared": [
+        "计费",
+        "账单"
+      ]
+    },
+    {
+      "a": "golitter/dsh-deepseek-billing",
+      "b": "940842546/dsh-usage-billing",
+      "slots": [
+        "action",
+        "output"
+      ],
+      "shared": [
+        "计费",
+        "账单"
+      ]
+    },
+    {
+      "a": "golitter/dsh-deepseek-billing",
+      "b": "cxlg66you-bot/dsh-token-billing",
+      "slots": [
+        "action",
+        "output"
+      ],
+      "shared": [
+        "计费",
+        "账单"
+      ]
+    },
+    {
+      "a": "MirDie/dsh-xai",
+      "b": "Yuuz12/dsh-webui-auth",
+      "slots": [
+        "action",
+        "output"
+      ],
+      "shared": [
+        "登录",
+        "认证"
+      ]
+    },
+    {
+      "a": "MirDie/dsh-xai",
+      "b": "yoke233/dsh-openai-codex-auth",
+      "slots": [
+        "action",
+        "output"
+      ],
+      "shared": [
+        "登录",
+        "认证",
+        "OAuth"
+      ]
+    },
+    {
+      "a": "Yuuz12/dsh-webui-auth",
+      "b": "suntianc/dsh-codex-auth",
+      "slots": [
+        "output",
+        "action"
+      ],
+      "shared": [
+        "认证",
+        "登录"
+      ]
+    },
+    {
+      "a": "yoke233/dsh-openai-codex-auth",
+      "b": "DGPisces/deepseek-harness-openai-oauth",
+      "slots": [
+        "output",
+        "action"
+      ],
+      "shared": [
+        "认证",
+        "OAuth"
+      ]
+    },
+    {
+      "a": "yoke233/dsh-openai-codex-auth",
+      "b": "hahaha-taotao/dsh-oauth-api",
+      "slots": [
+        "output",
+        "action"
+      ],
+      "shared": [
+        "认证",
+        "OAuth"
+      ]
+    },
+    {
+      "a": "yoke233/dsh-openai-codex-auth",
+      "b": "suntianc/dsh-codex-auth",
+      "slots": [
+        "output",
+        "action"
+      ],
+      "shared": [
+        "登录",
+        "认证"
+      ]
+    },
+    {
+      "a": "yoke233/dsh-openai-codex-auth",
+      "b": "dyuan311/dsh-openai-codex-oauth",
+      "slots": [
+        "output",
+        "action"
+      ],
+      "shared": [
+        "登录",
+        "OAuth"
+      ]
+    },
+    {
+      "a": "lordqyxz/dsh-ark-quota",
+      "b": "WSL043/dsh-codex-subscription",
+      "slots": [
+        "output",
+        "action"
+      ],
+      "shared": [
+        "额度",
+        "订阅"
+      ]
+    },
+    {
+      "a": "Dino6021/dsh-usage-cost",
+      "b": "xyidong/deepseek-usage-info-check",
+      "slots": [
+        "action",
+        "output"
+      ],
+      "shared": [
+        "用量统计",
+        "费用"
+      ]
+    },
+    {
+      "a": "jypjypjypjyp/dsh-vqa-agent",
+      "b": "xlight/deepseek-visionary",
+      "slots": [
+        "perception",
+        "action"
+      ],
+      "shared": [
+        "多模态",
+        "图像理解"
+      ]
+    },
+    {
+      "a": "jypjypjypjyp/dsh-vqa-agent",
+      "b": "Arnoldkevin/prismrelay-mcp",
+      "slots": [
+        "perception",
+        "decision"
+      ],
+      "shared": [
+        "多模态",
+        "图像理解"
+      ]
+    },
+    {
+      "a": "0lidaxiang/dsh-plugin-greet",
+      "b": "YohtHill/dsh-plugin-greeter",
+      "slots": [
+        "decision",
+        "action"
+      ],
+      "shared": [
+        "问候",
+        "欢迎"
+      ]
+    },
+    {
+      "a": "Nexus-Aethra/DSH-plugin-switch",
+      "b": "w1661884010-jpg/dsh-plugin-github-market",
+      "slots": [
+        "decision",
+        "output"
+      ],
+      "shared": [
+        "插件市场",
+        "浏览"
+      ]
+    },
+    {
+      "a": "csiroqa/dsh-schedule",
+      "b": "cnyac/dsh-polling",
+      "slots": [
+        "decision",
+        "action"
+      ],
+      "shared": [
+        "定时任务",
+        "调度"
+      ]
+    },
+    {
+      "a": "csiroqa/dsh-schedule",
+      "b": "Jesse-njx/dsh-routines",
+      "slots": [
+        "decision",
+        "action"
+      ],
+      "shared": [
+        "定时任务",
+        "调度"
+      ]
+    },
+    {
+      "a": "miaobuao/dsh-document-parser",
+      "b": "Sqhao-O/dsh-docling",
+      "slots": [
+        "action",
+        "perception"
+      ],
+      "shared": [
+        "文档",
+        "解析"
+      ]
+    },
+    {
+      "a": "TingRuDeng/dsh-feishu-bot",
+      "b": "kriskwok/dsh-feishu-gateway",
+      "slots": [
+        "output",
+        "action"
+      ],
+      "shared": [
+        "飞书",
+        "聊天"
+      ]
+    },
+    {
+      "a": "ropon/dsh-plugin-clawrouters",
+      "b": "dmsobtl/dsh-llm-vision-router",
+      "slots": [
+        "action",
+        "perception"
+      ],
+      "shared": [
+        "路由",
+        "多模态"
+      ]
+    },
+    {
+      "a": "ben7am1n/dsh-deepseek-usage",
+      "b": "WinterOne-hub/ai-monitor",
+      "slots": [
+        "action",
+        "output"
+      ],
+      "shared": [
+        "余额",
+        "用量"
+      ]
+    },
+    {
+      "a": "hexbee/dsh-skill-panel",
+      "b": "YTxue/dsh-skill-manager",
+      "slots": [
+        "decision",
+        "output"
+      ],
+      "shared": [
+        "技能管理",
+        "设置"
+      ]
+    },
+    {
+      "a": "fly3366/DeepJIT",
+      "b": "sybolization/agent-jit",
+      "slots": [
+        "decision",
+        "action"
+      ],
+      "shared": [
+        "编译",
+        "优化"
+      ]
+    },
+    {
+      "a": "dpskh/dsh-rewind",
+      "b": "PerryLink/dsh-checkpoint-rewind",
+      "slots": [
+        "action",
+        "decision"
+      ],
+      "shared": [
+        "回滚",
+        "检查点"
+      ]
+    },
+    {
+      "a": "Sqhao-O/dsh-docling",
+      "b": "SamFirefly096/dsh-docflow-workflow",
+      "slots": [
+        "perception",
+        "action"
+      ],
+      "shared": [
+        "文档",
+        "解析"
+      ]
+    },
+    {
+      "a": "AmaTsumeAkira/opencode-usage",
+      "b": "WSL043/dsh-codex-subscription",
+      "slots": [
+        "output",
+        "action"
+      ],
+      "shared": [
+        "额度",
+        "订阅"
+      ]
+    },
+    {
+      "a": "QT-Chen/dsh-mic-input",
+      "b": "Jesse-njx/dsh-voice",
+      "slots": [
+        "output",
+        "action"
+      ],
+      "shared": [
+        "语音输入",
+        "语音识别"
+      ]
+    },
+    {
+      "a": "QT-Chen/dsh-mic-input",
+      "b": "zhuiyueya/dsh-voice",
+      "slots": [
+        "output",
+        "perception"
+      ],
+      "shared": [
+        "语音输入",
+        "语音识别"
+      ]
+    },
+    {
+      "a": "WSL043/dsh-codex-subscription",
+      "b": "jasper-zsh/dsh-plugin-provider-quota",
+      "slots": [
+        "action",
+        "output"
+      ],
+      "shared": [
+        "订阅",
+        "额度"
+      ]
+    },
+    {
+      "a": "zjzqs/dsh-client-ui-voice-input",
+      "b": "JOJO666888888/prompt-polish",
+      "slots": [
+        "output",
+        "decision"
+      ],
+      "shared": [
+        "提示词",
+        "优化"
+      ]
+    },
+    {
+      "a": "xlight/deepseek-visionary",
+      "b": "Arnoldkevin/prismrelay-mcp",
+      "slots": [
+        "action",
+        "decision"
+      ],
+      "shared": [
+        "多模态",
+        "图像理解"
+      ]
+    },
+    {
+      "a": "xlight/deepseek-visionary",
+      "b": "welsione/dsh-mmx-multimodal",
+      "slots": [
+        "action",
+        "perception"
+      ],
+      "shared": [
+        "多模态",
+        "图像理解"
+      ]
+    },
+    {
+      "a": "xlight/deepseek-visionary",
+      "b": "zhuiyueya/dsh-visionary",
+      "slots": [
+        "action",
+        "perception"
+      ],
+      "shared": [
+        "多模态",
+        "图像理解"
+      ]
+    },
+    {
+      "a": "BeyondXinXin/deepseek-harness-box",
+      "b": "NaNExist/dsh-win-launchscript",
+      "slots": [
+        "decision",
+        "action"
+      ],
+      "shared": [
+        "Windows",
+        "一键启动"
+      ]
+    },
+    {
+      "a": "Awu12277/dsh-stock-watch",
+      "b": "dmsobtl/dsh-tool-market-data",
+      "slots": [
+        "output",
+        "action"
+      ],
+      "shared": [
+        "股票",
+        "行情"
+      ]
+    },
+    {
+      "a": "RRRosmontis/dsh-qwen-mm",
+      "b": "Arnoldkevin/prismrelay-mcp",
+      "slots": [
+        "perception",
+        "decision"
+      ],
+      "shared": [
+        "多模态",
+        "视觉识别"
+      ]
+    },
+    {
+      "a": "Jesse-njx/dsh-voice",
+      "b": "zhuiyueya/dsh-voice",
+      "slots": [
+        "action",
+        "perception"
+      ],
+      "shared": [
+        "语音输入",
+        "语音识别"
+      ]
+    },
+    {
+      "a": "Arnoldkevin/prismrelay-mcp",
+      "b": "welsione/dsh-mmx-multimodal",
+      "slots": [
+        "decision",
+        "perception"
+      ],
+      "shared": [
+        "图像理解",
+        "多模态"
+      ]
+    },
+    {
+      "a": "Arnoldkevin/prismrelay-mcp",
+      "b": "zhuiyueya/dsh-visionary",
+      "slots": [
+        "decision",
+        "perception"
+      ],
+      "shared": [
+        "图像理解",
+        "多模态"
+      ]
+    },
+    {
+      "a": "dmsobtl/dsh-tool-market-data",
+      "b": "kangjinghang/dsh-xueqiu",
+      "slots": [
+        "action",
+        "output"
+      ],
+      "shared": [
+        "行情",
+        "股票"
+      ]
+    },
+    {
+      "a": "synmindai/dsh-seedance2",
+      "b": "AtropinolTT/dsh-guide-dog",
+      "slots": [
+        "action",
+        "perception"
+      ],
+      "shared": [
+        "图像生成",
+        "视频生成"
+      ]
+    },
+    {
+      "a": "AtropinolTT/dsh-guide-dog",
+      "b": "synmindai/dsh-nanobananapro",
+      "slots": [
+        "perception",
+        "action"
+      ],
+      "shared": [
+        "图像生成",
+        "视频生成"
+      ]
+    },
+    {
+      "a": "JOJO666888888/prompt-polish",
+      "b": "JoukoPuro/dsh-prompt-polish",
+      "slots": [
+        "decision",
+        "output"
+      ],
+      "shared": [
+        "提示词",
+        "优化"
+      ]
+    }
+  ],
+  "totals": {
+    "conflicts": 17,
+    "complements": 141,
+    "whitelist": 0
+  }
+}

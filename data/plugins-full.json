@@ -1,0 +1,6351 @@
+[
+  {
+    "id": "dsh-external/dsh-deepresearch",
+    "name": "DeepResearch",
+    "slot": "decision",
+    "capabilities": [
+      "研究",
+      "检索",
+      "多源",
+      "报告",
+      "搜索"
+    ],
+    "tags": [
+      "research",
+      "deep"
+    ],
+    "conflicts": [
+      "dsh-external/dsh-deep-research"
+    ],
+    "complements": [],
+    "cost": 0.4,
+    "desc": "DeepResearch 插件（cordis）",
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "source": "manual",
+    "display": "DeepResearch",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-deep-research",
+    "name": "Deep Research Orchestrator",
+    "slot": "decision",
+    "capabilities": [
+      "研究",
+      "编排",
+      "工作流",
+      "agent",
+      "多步"
+    ],
+    "tags": [
+      "research",
+      "workflow"
+    ],
+    "conflicts": [
+      "dsh-external/dsh-deepresearch"
+    ],
+    "complements": [
+      "dsh-external/dsh-plan-execute"
+    ],
+    "cost": 0.5,
+    "desc": "自适应深度研究编排器（工作流引擎）",
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "source": "manual",
+    "display": "Deep Research Orchestrator",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-plan-execute",
+    "name": "Plan/Execute Router",
+    "slot": "decision",
+    "capabilities": [
+      "规划",
+      "执行",
+      "路由",
+      "双模型",
+      "计划"
+    ],
+    "tags": [
+      "planning",
+      "router"
+    ],
+    "conflicts": [],
+    "complements": [
+      "dsh-external/dsh-toolkit"
+    ],
+    "cost": 0.2,
+    "desc": "双模型规划/执行路由：规划模型想，执行模型做",
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "source": "manual",
+    "display": "Plan/Execute Router",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-toolkit",
+    "name": "Toolkit",
+    "slot": "action",
+    "capabilities": [
+      "工具",
+      "计算",
+      "csv",
+      "diff",
+      "json",
+      "markdown",
+      "regex",
+      "时间",
+      "编码"
+    ],
+    "tags": [
+      "tools",
+      "utils"
+    ],
+    "conflicts": [],
+    "complements": [
+      "dsh-external/dsh-plan-execute"
+    ],
+    "cost": 0.1,
+    "desc": "零依赖工具套件（calculator/csv/diff/json/markdown/regex/time）",
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "source": "manual",
+    "display": "Toolkit",
+    "verified": null
+  },
+  {
+    "id": "ccch1mneyyy/dsh-TUI",
+    "name": "DSH TUI",
+    "slot": "output",
+    "capabilities": [
+      "终端",
+      "tui",
+      "界面",
+      "cli",
+      "全屏",
+      "交互"
+    ],
+    "tags": [
+      "ui",
+      "terminal"
+    ],
+    "conflicts": [
+      "Easyhoov/deepseek-harness-desktop"
+    ],
+    "complements": [],
+    "cost": 0.2,
+    "desc": "Claude Code 风格全屏终端 TUI（像素鲸鱼顶栏/思考流式展开/上下文进度条）",
+    "stars": 861,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "source": "manual",
+    "display": "DSH TUI",
+    "verified": null
+  },
+  {
+    "id": "Easyhoov/deepseek-harness-desktop",
+    "name": "Harness Desktop",
+    "slot": "output",
+    "capabilities": [
+      "桌面",
+      "gui",
+      "electron",
+      "窗口",
+      "客户端"
+    ],
+    "tags": [
+      "ui",
+      "desktop"
+    ],
+    "conflicts": [
+      "ccch1mneyyy/dsh-TUI"
+    ],
+    "complements": [],
+    "cost": 0.3,
+    "desc": "Electron 桌面客户端（macOS/Windows 开箱即用）",
+    "stars": 778,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "source": "manual",
+    "display": "Harness Desktop",
+    "verified": null
+  },
+  {
+    "id": "Anionex/agent-vision-toolkit",
+    "name": "Vision Toolkit",
+    "slot": "perception",
+    "capabilities": [
+      "视觉",
+      "看图",
+      "图片",
+      "ocr",
+      "截图",
+      "ui还原",
+      "gui自动化",
+      "识别"
+    ],
+    "tags": [
+      "vision",
+      "ocr",
+      "multimodal"
+    ],
+    "conflicts": [],
+    "complements": [
+      "biociao/dsh-science"
+    ],
+    "cost": 0.4,
+    "desc": "纯文本模型视觉工具箱：多图理解/图片问答/长截图OCR/UI还原/GUI自动化",
+    "stars": 818,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "source": "manual",
+    "display": "Vision Toolkit",
+    "verified": null
+  },
+  {
+    "id": "Tyan66666/billion-context-dsh",
+    "name": "Billion Context",
+    "slot": "memory",
+    "capabilities": [
+      "上下文",
+      "压缩",
+      "记忆",
+      "token",
+      "省token"
+    ],
+    "tags": [
+      "context",
+      "compression"
+    ],
+    "conflicts": [
+      "Zhenyu98/dsh-context-doctor"
+    ],
+    "complements": [
+      "flymysql/dsh-memory"
+    ],
+    "cost": 0.3,
+    "desc": "模型驱动上下文压缩（ACP）：模型决定何时压缩什么",
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "source": "manual",
+    "display": "Billion Context",
+    "verified": null
+  },
+  {
+    "id": "Zhenyu98/dsh-context-doctor",
+    "name": "Context Doctor",
+    "slot": "memory",
+    "capabilities": [
+      "上下文",
+      "审计",
+      "token",
+      "检查",
+      "分析"
+    ],
+    "tags": [
+      "context",
+      "audit"
+    ],
+    "conflicts": [
+      "Tyan66666/billion-context-dsh"
+    ],
+    "complements": [],
+    "cost": 0.2,
+    "desc": "上下文审计：每请求携带的token成本/重复冲突检测/剪枝建议",
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "source": "manual",
+    "display": "Context Doctor",
+    "verified": true
+  },
+  {
+    "id": "acefun29/dsh-file-mount",
+    "name": "File Mount",
+    "slot": "memory",
+    "capabilities": [
+      "文件",
+      "挂载",
+      "读取",
+      "增量",
+      "token"
+    ],
+    "tags": [
+      "files",
+      "context"
+    ],
+    "conflicts": [],
+    "complements": [
+      "flymysql/dsh-memory"
+    ],
+    "cost": 0.2,
+    "desc": "增量文件挂载+读去重：已挂载行范围不重发模型，磁盘变更失效重挂",
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "source": "manual",
+    "display": "File Mount",
+    "verified": null
+  },
+  {
+    "id": "flymysql/dsh-memory",
+    "name": "Memory Vault",
+    "slot": "memory",
+    "capabilities": [
+      "记忆",
+      "会话",
+      "跨会话",
+      "remember",
+      "recall",
+      "遗忘"
+    ],
+    "tags": [
+      "memory"
+    ],
+    "conflicts": [],
+    "complements": [
+      "Tyan66666/billion-context-dsh",
+      "acefun29/dsh-file-mount"
+    ],
+    "cost": 0.3,
+    "desc": "跨会话记忆库：memory_remember/recall/forget 工具+设置页",
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "source": "manual",
+    "display": "Memory Vault",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-cot-summary",
+    "name": "CoT Summary",
+    "slot": "memory",
+    "capabilities": [
+      "摘要",
+      "思维链",
+      "总结",
+      "精简"
+    ],
+    "tags": [
+      "context",
+      "summary"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.2,
+    "desc": "思维链摘要（Summary-CoT）",
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "source": "manual",
+    "display": "CoT Summary",
+    "verified": null
+  },
+  {
+    "id": "cendaifeng/dsh-learn-everything",
+    "name": "Learn Everything",
+    "slot": "decision",
+    "capabilities": [
+      "学习",
+      "教学",
+      "费曼",
+      "解释",
+      "教育"
+    ],
+    "tags": [
+      "learning",
+      "education"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "desc": "费曼学习模式：教→复述→评判→重解释循环，HTML 课程卡片",
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "source": "manual",
+    "display": "Learn Everything",
+    "verified": null
+  },
+  {
+    "id": "biociao/dsh-science",
+    "name": "Science Workbench",
+    "slot": "decision",
+    "capabilities": [
+      "科研",
+      "研究",
+      "实验",
+      "基因组",
+      "生信",
+      "论文"
+    ],
+    "tags": [
+      "research",
+      "science"
+    ],
+    "conflicts": [],
+    "complements": [
+      "Anionex/agent-vision-toolkit"
+    ],
+    "cost": 0.5,
+    "desc": "科研工作台：ReAct 研究循环+版本化工件+10个科学技能（基因组/病原体/生信）",
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "source": "manual",
+    "display": "Science Workbench",
+    "verified": null
+  },
+  {
+    "id": "dhicoc/dsh-reverse-skill",
+    "name": "Reverse Skill Pack",
+    "slot": "action",
+    "capabilities": [
+      "逆向",
+      "安全",
+      "渗透",
+      "审计",
+      "漏洞"
+    ],
+    "tags": [
+      "security",
+      "reverse"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.4,
+    "desc": "85 个逆向工程/授权渗透/安全研究 SKILL.md 路由",
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "source": "manual",
+    "display": "Reverse Skill Pack",
+    "verified": null
+  },
+  {
+    "id": "nexu-io/open-design",
+    "name": "Open Design",
+    "slot": "output",
+    "capabilities": [
+      "设计",
+      "原型",
+      "落地页",
+      "仪表盘",
+      "幻灯片",
+      "图片",
+      "视频",
+      "导出"
+    ],
+    "tags": [
+      "design",
+      "ui",
+      "creative"
+    ],
+    "conflicts": [],
+    "complements": [
+      "Anionex/agent-vision-toolkit"
+    ],
+    "cost": 0.5,
+    "desc": "开源 Claude Design 替代：编码 agent 变设计引擎，HTML/PDF/PPTX/MP4 导出",
+    "stars": 86200,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "source": "manual",
+    "display": "Open Design",
+    "verified": null
+  },
+  {
+    "id": "tt-a1i/archify",
+    "name": "Archify",
+    "slot": "output",
+    "capabilities": [
+      "架构图",
+      "流程图",
+      "时序图",
+      "数据流",
+      "图",
+      "svg"
+    ],
+    "tags": [
+      "diagram",
+      "design"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.2,
+    "desc": "diagram-as-code：架构/时序/数据流图，自包含 HTML+动效",
+    "stars": 12400,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "source": "manual",
+    "display": "Archify",
+    "verified": null
+  },
+  {
+    "id": "whiteguo233/OpenBiliClaw",
+    "name": "OpenBiliClaw",
+    "slot": "perception",
+    "capabilities": [
+      "内容发现",
+      "b站",
+      "小红书",
+      "视频",
+      "推荐",
+      "爬取"
+    ],
+    "tags": [
+      "content",
+      "discovery"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.5,
+    "desc": "本地私有跨平台 AI 内容发现 Agent（B站/小红书/抖音/YouTube 等）",
+    "stars": 2300,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "source": "manual",
+    "display": "OpenBiliClaw",
+    "verified": null
+  },
+  {
+    "id": "the-beating-light-of-the-nail/dsh-meme-hub",
+    "name": "Meme Hub",
+    "slot": "output",
+    "capabilities": [
+      "表情包",
+      "皮肤",
+      "宠物",
+      "游戏",
+      "导航"
+    ],
+    "tags": [
+      "fun",
+      "lifestyle"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.1,
+    "desc": "社区 meme 插件导航（皮肤/桌面宠物/小游戏）",
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "source": "manual",
+    "display": "Meme Hub",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-101",
+    "name": "dsh-101",
+    "slot": "decision",
+    "capabilities": [
+      "文档",
+      "阅读",
+      "模式"
+    ],
+    "tags": [
+      "文档",
+      "学习"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "DSH documentation reading mode.",
+    "source": "generated",
+    "display": "dsh-101",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-client-ui-plan-execute",
+    "name": "dsh-client-ui-plan-execute",
+    "slot": "decision",
+    "capabilities": [
+      "设置",
+      "路由",
+      "模型"
+    ],
+    "tags": [
+      "配置",
+      "模型"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Web Settings row for plan/execute model routing.",
+    "source": "generated",
+    "display": "dsh-client-ui-plan-execute",
+    "verified": null
+  },
+  {
+    "id": "GooodWei/context-vista",
+    "name": "context-vista",
+    "slot": "memory",
+    "capabilities": [
+      "上下文",
+      "图表",
+      "令牌"
+    ],
+    "tags": [
+      "监控",
+      "可视化"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "A right-side floating panel and /context command for DeepSeek Harness — a live donut chart of context token usage, allocation, and estimated cost.",
+    "source": "generated",
+    "display": "context-vista",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-explain",
+    "name": "dsh-explain",
+    "slot": "memory",
+    "capabilities": [
+      "解释",
+      "学习",
+      "步骤"
+    ],
+    "tags": [
+      "学习",
+      "辅助"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Learning mode that explains each agent step (WIP).",
+    "source": "generated",
+    "display": "dsh-explain",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-session-search",
+    "name": "dsh-session-search",
+    "slot": "memory",
+    "capabilities": [
+      "搜索",
+      "会话",
+      "只读"
+    ],
+    "tags": [
+      "搜索",
+      "会话"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Index-free read-only search across dsh/Codex/Claude Code/pi/OpenCode sessions.",
+    "source": "generated",
+    "display": "dsh-session-search",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/cross-harness-cite",
+    "name": "cross-harness-cite",
+    "slot": "memory",
+    "capabilities": [
+      "引用",
+      "会话",
+      "跨平台"
+    ],
+    "tags": [
+      "引用",
+      "跨平台"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Cite past conversations across harnesses.",
+    "source": "generated",
+    "display": "cross-harness-cite",
+    "verified": null
+  },
+  {
+    "id": "dongsheng123132/task-passport",
+    "name": "task-passport",
+    "slot": "memory",
+    "capabilities": [
+      "任务",
+      "状态",
+      "检查点"
+    ],
+    "tags": [
+      "任务",
+      "状态"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Carry durable task state across DeepSeek Harness, WorkBuddy, Claude Code and Codex with machine-readable checkpoints and optimistic locking.",
+    "source": "generated",
+    "display": "task-passport",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-session-cluster",
+    "name": "dsh-session-cluster",
+    "slot": "memory",
+    "capabilities": [
+      "会话",
+      "聚类"
+    ],
+    "tags": [
+      "会话",
+      "分析"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Session clustering.",
+    "source": "generated",
+    "display": "dsh-session-cluster",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/session-chatlog",
+    "name": "session-chatlog",
+    "slot": "memory",
+    "capabilities": [
+      "会话",
+      "日志"
+    ],
+    "tags": [
+      "日志",
+      "会话"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Session chat logs.",
+    "source": "generated",
+    "display": "session-chatlog",
+    "verified": null
+  },
+  {
+    "id": "jiayan-xu/dsh-memoria",
+    "name": "dsh-memoria",
+    "slot": "memory",
+    "capabilities": [
+      "记忆",
+      "向量",
+      "图"
+    ],
+    "tags": [
+      "记忆",
+      "数据库"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Memoria memory backend for dsh: 4 tools (observe/remember/search/recall) into a vector+graph memory layer (memoria) with namespace isolation, auto-write (turn-end observe + positive-feedback -> import",
+    "source": "generated",
+    "display": "dsh-memoria",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-memory-evolve",
+    "name": "dsh-memory-evolve",
+    "slot": "memory",
+    "capabilities": [
+      "记忆",
+      "进化",
+      "长期"
+    ],
+    "tags": [
+      "记忆",
+      "进化"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Cross-session long-term memory + background self-evolution (5-track memory/git-branch awareness/skill evolution).",
+    "source": "generated",
+    "display": "dsh-memory-evolve",
+    "verified": null
+  },
+  {
+    "id": "GIT121995/dsh-memory-gate",
+    "name": "dsh-memory-gate",
+    "slot": "memory",
+    "capabilities": [
+      "记忆",
+      "权限",
+      "SQLite"
+    ],
+    "tags": [
+      "记忆",
+      "安全"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Bounded local long-term memory with CBDC (Claim→Belief→Decision→Consumption) authority gating: SQLite + FTS5 claims, scoped dual-channel recall, /memory management commands, ≤3-claim/1200-char injecti",
+    "source": "generated",
+    "display": "dsh-memory-gate",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-engram-relay",
+    "name": "dsh-engram-relay",
+    "slot": "memory",
+    "capabilities": [
+      "记忆",
+      "模型",
+      "唤醒"
+    ],
+    "tags": [
+      "记忆",
+      "模型"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Built-in <1B model for 100k-equivalent long memory with causal-graph wake-up.",
+    "source": "generated",
+    "display": "dsh-engram-relay",
+    "verified": null
+  },
+  {
+    "id": "modusensus/dsh-mneme",
+    "name": "dsh-mneme",
+    "slot": "memory",
+    "capabilities": [
+      "记忆",
+      "SQLite",
+      "Markdown"
+    ],
+    "tags": [
+      "记忆",
+      "存储"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Cross-session memory with memory sovereignty: SQLite + human-editable Markdown mirror, autoDream background consolidation, 106 tests.",
+    "source": "generated",
+    "display": "dsh-mneme",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-mnemon",
+    "name": "dsh-mnemon",
+    "slot": "memory",
+    "capabilities": [
+      "记忆",
+      "分层",
+      "本地"
+    ],
+    "tags": [
+      "记忆",
+      "本地"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Mnemon-powered local memory system: three-tier memory (runtime hot memory / project Documents / long-term Memory Spaces) with supervised writeback, retrieval tools, and Web UI.",
+    "source": "generated",
+    "display": "dsh-mnemon",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/zotero-harvest",
+    "name": "zotero-harvest",
+    "slot": "memory",
+    "capabilities": [
+      "Zotero",
+      "文献",
+      "集成"
+    ],
+    "tags": [
+      "文献",
+      "集成"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Zotero library integration.",
+    "source": "generated",
+    "display": "zotero-harvest",
+    "verified": null
+  },
+  {
+    "id": "Piccolo123/url-manager",
+    "name": "url-manager",
+    "slot": "memory",
+    "capabilities": [
+      "链接",
+      "收藏",
+      "管理"
+    ],
+    "tags": [
+      "链接",
+      "管理"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Agent-first URL collection & knowledge management: save links from any platform, auto-categorize/tag, full-text search, shared categories, and deliver results as magic-link cards. Zero setup — agents ",
+    "source": "generated",
+    "display": "url-manager",
+    "verified": null
+  },
+  {
+    "id": "Piccolo123/url-manager-mcp",
+    "name": "url-manager-mcp",
+    "slot": "memory",
+    "capabilities": [
+      "链接",
+      "搜索",
+      "分类"
+    ],
+    "tags": [
+      "链接",
+      "管理"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "MCP server companion for url-manager: 21 tools (mcp\\_\\_url\\_manager\\_\\_\\*) for save/search/categorize/share and magic-link delivery. Stdio or streamable-http.",
+    "source": "generated",
+    "display": "url-manager-mcp",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/zotero-wave-rag",
+    "name": "zotero-wave-rag",
+    "slot": "memory",
+    "capabilities": [
+      "Zotero",
+      "检索",
+      "RAG"
+    ],
+    "tags": [
+      "文献",
+      "检索"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Zotero RAG retrieval.",
+    "source": "generated",
+    "display": "zotero-wave-rag",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-data-agent",
+    "name": "dsh-data-agent",
+    "slot": "memory",
+    "capabilities": [
+      "数据库",
+      "SQL",
+      "连接"
+    ],
+    "tags": [
+      "数据库",
+      "查询"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Let the model connect to databases and write SQL.",
+    "source": "generated",
+    "display": "dsh-data-agent",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-easy-ctx-manager",
+    "name": "dsh-easy-ctx-manager",
+    "slot": "memory",
+    "capabilities": [
+      "上下文",
+      "管理",
+      "保存"
+    ],
+    "tags": [
+      "上下文",
+      "管理"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Context management: context saving and more (cordis).",
+    "source": "generated",
+    "display": "dsh-easy-ctx-manager",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-kb-sieve",
+    "name": "dsh-kb-sieve",
+    "slot": "memory",
+    "capabilities": [
+      "知识库",
+      "构建",
+      "审计"
+    ],
+    "tags": [
+      "知识库",
+      "构建"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Knowledge-base plugin: build auditable KB packages (references + SQL).",
+    "source": "generated",
+    "display": "dsh-kb-sieve",
+    "verified": null
+  },
+  {
+    "id": "moeblack/dsh-payload-capture",
+    "name": "dsh-payload-capture",
+    "slot": "memory",
+    "capabilities": [
+      "捕获",
+      "JSON",
+      "调试"
+    ],
+    "tags": [
+      "调试",
+      "监控"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Capture every upstream model API payload to JSON (debug & observability).",
+    "source": "generated",
+    "display": "dsh-payload-capture",
+    "verified": null
+  },
+  {
+    "id": "PerryLink/dsh-memento",
+    "name": "dsh-memento",
+    "slot": "memory",
+    "capabilities": [
+      "记忆",
+      "分层",
+      "审计"
+    ],
+    "tags": [
+      "记忆",
+      "安全"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Bounded, layered, approval-gated, auditable cross-session memory: typed ctx.memory seam, zero-dependency SQLite provider, memory tool and frozen snapshot injection.",
+    "source": "generated",
+    "display": "dsh-memento",
+    "verified": null
+  },
+  {
+    "id": "canghai666x/dsh-news-plugin",
+    "name": "dsh-news-plugin",
+    "slot": "memory",
+    "capabilities": [
+      "新闻",
+      "RSS",
+      "获取"
+    ],
+    "tags": [
+      "新闻",
+      "订阅"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "RSS news fetch tool: grabs 10+ CN/EN feeds into structured items (title/link/source/date/summary) with per-source timeout, ready for model-side scoring and briefing (cordis).",
+    "source": "generated",
+    "display": "dsh-news-plugin",
+    "verified": null
+  },
+  {
+    "id": "canghai666x/dsh-news-briefing",
+    "name": "dsh-news-briefing",
+    "slot": "memory",
+    "capabilities": [
+      "新闻",
+      "简报",
+      "评分"
+    ],
+    "tags": [
+      "新闻",
+      "简报"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "News briefing skill: 5-dimension scoring (story/timeliness/depth/fun/uniqueness), anti-clickbait writing rules, Tier-based content preference, de-AI-style Chinese writing guide.",
+    "source": "generated",
+    "display": "dsh-news-briefing",
+    "verified": null
+  },
+  {
+    "id": "canghai666x/dsh-web-novel-research",
+    "name": "dsh-web-novel-research",
+    "slot": "memory",
+    "capabilities": [
+      "小说",
+      "查询",
+      "研究"
+    ],
+    "tags": [
+      "小说",
+      "研究"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Chinese web-novel plot lookup skill: free mirror-site workflow (GBK decoding, cross-volume duplicate chapter disambiguation, multi-source completion check) without paid sources.",
+    "source": "generated",
+    "display": "dsh-web-novel-research",
+    "verified": null
+  },
+  {
+    "id": "TonyDua/dsh-web-search-exa",
+    "name": "dsh-web-search-exa",
+    "slot": "memory",
+    "capabilities": [
+      "搜索",
+      "Exa",
+      "无密钥"
+    ],
+    "tags": [
+      "搜索",
+      "工具"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Zero-config Exa web search provider: keyless anonymous MCP fallback (mcp.exa.ai/mcp) plus keyed REST search, for the ctx.web seam.",
+    "source": "generated",
+    "display": "dsh-web-search-exa",
+    "verified": null
+  },
+  {
+    "id": "anweat/dsh-web-search-pro",
+    "name": "dsh-web-search-pro",
+    "slot": "memory",
+    "capabilities": [
+      "搜索",
+      "多引擎",
+      "路由"
+    ],
+    "tags": [
+      "搜索",
+      "工具"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Persistent enhanced web search for DSH: multi-engine routing (DeepSeek/Exa/DDG/Bing/Jina + GitHub/Bilibili/YouTube/V2EX/Xiaohongshu/Twitter/Reddit/RSS), SQLite+LRU cache, userscript-style extraction, ",
+    "source": "generated",
+    "display": "dsh-web-search-pro",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-better-sidebar-plugin-office",
+    "name": "dsh-better-sidebar-plugin-office",
+    "slot": "action",
+    "capabilities": [
+      "办公",
+      "集成",
+      "侧边栏"
+    ],
+    "tags": [
+      "办公",
+      "集成"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Office integration for DSH-better-sidebar.",
+    "source": "generated",
+    "display": "dsh-better-sidebar-plugin-office",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-message-edit",
+    "name": "dsh-message-edit",
+    "slot": "action",
+    "capabilities": [
+      "编辑",
+      "消息",
+      "分支"
+    ],
+    "tags": [
+      "编辑",
+      "消息"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Branch-based message editing / reroll / retry / version timeline.",
+    "source": "generated",
+    "display": "dsh-message-edit",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-prompt-studio",
+    "name": "dsh-prompt-studio",
+    "slot": "action",
+    "capabilities": [
+      "提示词",
+      "编辑",
+      "预览"
+    ],
+    "tags": [
+      "提示词",
+      "编辑"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Edit system-prompt sections with live preview.",
+    "source": "generated",
+    "display": "dsh-prompt-studio",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-paste-input",
+    "name": "dsh-paste-input",
+    "slot": "action",
+    "capabilities": [
+      "粘贴",
+      "文件",
+      "拖放"
+    ],
+    "tags": [
+      "输入",
+      "文件"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Ctrl+V paste files / drag & drop / picker.",
+    "source": "generated",
+    "display": "dsh-paste-input",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-drag-and-drop",
+    "name": "dsh-drag-and-drop",
+    "slot": "action",
+    "capabilities": [
+      "拖放",
+      "路径",
+      "跨平台"
+    ],
+    "tags": [
+      "输入",
+      "文件"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Cross-platform drag & drop with original path insertion.",
+    "source": "generated",
+    "display": "dsh-drag-and-drop",
+    "verified": null
+  },
+  {
+    "id": "l541402398/dsh-file-uploads",
+    "name": "dsh-file-uploads",
+    "slot": "action",
+    "capabilities": [
+      "上传",
+      "文件",
+      "管理"
+    ],
+    "tags": [
+      "文件",
+      "上传"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Upload arbitrary local files from the Web composer, show pending cards, and manage stored files in Settings.",
+    "source": "generated",
+    "display": "dsh-file-uploads",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-input-history",
+    "name": "dsh-input-history",
+    "slot": "action",
+    "capabilities": [
+      "输入",
+      "历史"
+    ],
+    "tags": [
+      "输入",
+      "历史"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Input history.",
+    "source": "generated",
+    "display": "dsh-input-history",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-multimedia-webui-input",
+    "name": "dsh-multimedia-webui-input",
+    "slot": "action",
+    "capabilities": [
+      "多媒体",
+      "文件",
+      "输入"
+    ],
+    "tags": [
+      "输入",
+      "多媒体"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Multimedia file/folder input.",
+    "source": "generated",
+    "display": "dsh-multimedia-webui-input",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-office",
+    "name": "dsh-office",
+    "slot": "action",
+    "capabilities": [
+      "办公",
+      "文件",
+      "读写"
+    ],
+    "tags": [
+      "办公",
+      "文件"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Office file read/write bundle: model edits Office files, docx/pdf preview in web client.",
+    "source": "generated",
+    "display": "dsh-office",
+    "verified": null
+  },
+  {
+    "id": "Nwflower/dsh-chat-import",
+    "name": "dsh-chat-import",
+    "slot": "action",
+    "capabilities": [
+      "导入",
+      "对话",
+      "历史"
+    ],
+    "tags": [
+      "导入",
+      "对话"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Import full-fidelity conversation histories from 13 coding agents (Claude Code / Codex / ChatGPT / Cursor / Gemini / Reasonix / opencode / ZCode / Grok Build / OpenClaw / Pi / Hermes / Kimi) as resuma",
+    "source": "generated",
+    "display": "dsh-chat-import",
+    "verified": true
+  },
+  {
+    "id": "Nwflower/dsh-file-claim",
+    "name": "dsh-file-claim",
+    "slot": "action",
+    "capabilities": [
+      "文件",
+      "保护",
+      "并发"
+    ],
+    "tags": [
+      "文件",
+      "并发"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "File claim/release protection for parallel DSH sessions on the same workspace (heartbeat stale takeover, pending 3-way merge area).",
+    "source": "generated",
+    "display": "dsh-file-claim",
+    "verified": null
+  },
+  {
+    "id": "Meredith2328/dsh-sticky-note",
+    "name": "dsh-sticky-note",
+    "slot": "action",
+    "capabilities": [
+      "便签",
+      "笔记",
+      "待办"
+    ],
+    "tags": [
+      "便签",
+      "笔记"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Quick sticky notes in the composer: ideas/feelings/TODO with Markdown preview, auto-save, one-click send to chat.",
+    "source": "generated",
+    "display": "dsh-sticky-note",
+    "verified": null
+  },
+  {
+    "id": "yangYzc/dsh-plugin-quote-reply",
+    "name": "dsh-plugin-quote-reply",
+    "slot": "action",
+    "capabilities": [
+      "引用",
+      "回复",
+      "选中"
+    ],
+    "tags": [
+      "引用",
+      "回复"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Select text in a conversation, then quote it into the composer or reply in a new window.",
+    "source": "generated",
+    "display": "dsh-plugin-quote-reply",
+    "verified": null
+  },
+  {
+    "id": "PicGo/dsh-plugin",
+    "name": "@picgo/dsh-plugin",
+    "slot": "action",
+    "capabilities": [
+      "上传",
+      "图片",
+      "图床"
+    ],
+    "tags": [
+      "图片",
+      "上传"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Official PicGo plugin: upload local files to your image host and get public URLs, reusing the hosts and uploader plugins already configured in PicGo.",
+    "source": "generated",
+    "display": "@picgo/dsh-plugin",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-suggested-replies",
+    "name": "dsh-suggested-replies",
+    "slot": "action",
+    "capabilities": [
+      "建议",
+      "回复",
+      "推荐"
+    ],
+    "tags": [
+      "回复",
+      "推荐"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Suggested replies above the DSH Web composer.",
+    "source": "generated",
+    "display": "dsh-suggested-replies",
+    "verified": null
+  },
+  {
+    "id": "arcmosin/dsh-wordbox",
+    "name": "dsh-wordbox",
+    "slot": "action",
+    "capabilities": [
+      "词库",
+      "短语",
+      "插入"
+    ],
+    "tags": [
+      "词库",
+      "输入"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Persistent common-word/phrase panel beside the composer input with global/current-project buckets and one-click insert.",
+    "source": "generated",
+    "display": "dsh-wordbox",
+    "verified": null
+  },
+  {
+    "id": "anweat/dsh-voice-webspeech",
+    "name": "dsh-voice-webspeech",
+    "slot": "action",
+    "capabilities": [
+      "语音",
+      "输入",
+      "浏览器"
+    ],
+    "tags": [
+      "语音",
+      "输入"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Browser Web Speech API voice input for DSH: zero server, zero keys, zero model downloads (Edge=Azure, Chrome=Google speech).",
+    "source": "generated",
+    "display": "dsh-voice-webspeech",
+    "verified": null
+  },
+  {
+    "id": "beancookie/dsh-plugin-anydoc",
+    "name": "dsh-plugin-anydoc",
+    "slot": "action",
+    "capabilities": [
+      "文档",
+      "提取",
+      "解析"
+    ],
+    "tags": [
+      "文档",
+      "解析"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "This plugin exports a reusable function that takes a file path or a Buffer, extracts the content via @firecrawl/anydoc, and returns GitHub‑Flavored Markdown (GFM). It also includes configuration optio",
+    "source": "generated",
+    "display": "dsh-plugin-anydoc",
+    "verified": null
+  },
+  {
+    "id": "0xsline/dsh-spotlight",
+    "name": "dsh-spotlight",
+    "slot": "output",
+    "capabilities": [
+      "命令",
+      "面板",
+      "快捷键"
+    ],
+    "tags": [
+      "命令",
+      "快捷"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Keyboard-first command palette for DeepSeek Harness Web.",
+    "source": "generated",
+    "display": "dsh-spotlight",
+    "verified": null
+  },
+  {
+    "id": "GooodWei/arcana",
+    "name": "arcana",
+    "slot": "output",
+    "capabilities": [
+      "命令",
+      "面板",
+      "按钮"
+    ],
+    "tags": [
+      "命令",
+      "快捷"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "A floating command deck that lists every slash command in DeepSeek Harness as runnable buttons, sorted by usage.",
+    "source": "generated",
+    "display": "arcana",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-aigc-canvas",
+    "name": "dsh-aigc-canvas",
+    "slot": "output",
+    "capabilities": [
+      "画布",
+      "AIGC",
+      "生成"
+    ],
+    "tags": [
+      "画布",
+      "生成"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "AIGC canvas plugin (cordis).",
+    "source": "generated",
+    "display": "dsh-aigc-canvas",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-deepcel",
+    "name": "dsh-deepcel",
+    "slot": "output",
+    "capabilities": [
+      "表格",
+      "皮肤",
+      "独立"
+    ],
+    "tags": [
+      "表格",
+      "界面"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Deepcel spreadsheet skin and standalone distribution.",
+    "source": "generated",
+    "display": "dsh-deepcel",
+    "verified": null
+  },
+  {
+    "id": "yingjunnan/dsh-deepseek-quota",
+    "name": "dsh-deepseek-quota",
+    "slot": "output",
+    "capabilities": [
+      "余额",
+      "配额",
+      "卡片"
+    ],
+    "tags": [
+      "余额",
+      "监控"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "DeepSeek API balance in a bottom-right floating card on the DSH Web page (auto-refresh + manual refresh).",
+    "source": "generated",
+    "display": "dsh-deepseek-quota",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-diff-viewer",
+    "name": "dsh-diff-viewer",
+    "slot": "output",
+    "capabilities": [
+      "差异",
+      "查看",
+      "Web"
+    ],
+    "tags": [
+      "差异",
+      "查看"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "PiUI-style Web diff viewer replacing the default diff view.",
+    "source": "generated",
+    "display": "dsh-diff-viewer",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-mobile",
+    "name": "dsh-mobile",
+    "slot": "output",
+    "capabilities": [
+      "移动",
+      "客户端",
+      "适配"
+    ],
+    "tags": [
+      "移动",
+      "客户端"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Mobile client plugin (cordis + dsh.plugin.json).",
+    "source": "generated",
+    "display": "dsh-mobile",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-openpencil",
+    "name": "dsh-openpencil",
+    "slot": "output",
+    "capabilities": [
+      "设计",
+      "预览",
+      "编辑"
+    ],
+    "tags": [
+      "设计",
+      "编辑"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "OpenPencil design preview and editing plugin.",
+    "source": "generated",
+    "display": "dsh-openpencil",
+    "verified": null
+  },
+  {
+    "id": "kerwin2046/dsh-pin-recall",
+    "name": "dsh-pin-recall",
+    "slot": "output",
+    "capabilities": [
+      "固定",
+      "召回",
+      "回复"
+    ],
+    "tags": [
+      "固定",
+      "回复"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Pin assistant replies from the Web action strip and recall them into the next model turn (`/pin``/recall`, with optional wake).",
+    "source": "generated",
+    "display": "dsh-pin-recall",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-turn-navigator",
+    "name": "dsh-turn-navigator",
+    "slot": "output",
+    "capabilities": [
+      "导航",
+      "轮次",
+      "切换"
+    ],
+    "tags": [
+      "导航",
+      "轮次"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "DSH Web turn navigation plugin.",
+    "source": "generated",
+    "display": "dsh-turn-navigator",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-ultra-ui",
+    "name": "dsh-ultra-ui",
+    "slot": "output",
+    "capabilities": [
+      "界面",
+      "UI",
+      "插件"
+    ],
+    "tags": [
+      "界面",
+      "UI"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Ultra UI plugin (cordis).",
+    "source": "generated",
+    "display": "dsh-ultra-ui",
+    "verified": null
+  },
+  {
+    "id": "bpc-oss/dsh-web-billing",
+    "name": "dsh-web-billing",
+    "slot": "output",
+    "capabilities": [
+      "计费",
+      "账单",
+      "费用"
+    ],
+    "tags": [
+      "计费",
+      "费用"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "RMB/USD token billing for the DSH web: official-policy auto pricing (incl. peak/off-peak hours), per-message cost ledger, account balance, locale-driven currency display.",
+    "source": "generated",
+    "display": "dsh-web-billing",
+    "verified": null
+  },
+  {
+    "id": "Ghost011118/dsh-balance-meter",
+    "name": "dsh-balance-meter",
+    "slot": "output",
+    "capabilities": [
+      "余额",
+      "费用",
+      "监控"
+    ],
+    "tags": [
+      "余额",
+      "监控"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "DeepSeek account balance and session cost in the DSH Web composer dock (auto-fetched official pricing, peak/off-peak support).",
+    "source": "generated",
+    "display": "dsh-balance-meter",
+    "verified": null
+  },
+  {
+    "id": "Sttrevens/dsh-cost-meter",
+    "name": "dsh-cost-meter",
+    "slot": "output",
+    "capabilities": [
+      "费用",
+      "预算",
+      "统计"
+    ],
+    "tags": [
+      "费用",
+      "统计"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Per-session and daily API cost, budget with usage %, official balance, history dashboard, and one-click official price sync with peak/off-peak pricing.",
+    "source": "generated",
+    "display": "dsh-cost-meter",
+    "verified": null
+  },
+  {
+    "id": "yweilai77-dev/dsh-plugin-cost",
+    "name": "dsh-plugin-cost",
+    "slot": "output",
+    "capabilities": [
+      "费用",
+      "估算",
+      "令牌"
+    ],
+    "tags": [
+      "费用",
+      "估算"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Session cost estimate in the DSH Web composer dock (tokenUsage × configurable price table, one-click official-price refresh).",
+    "source": "generated",
+    "display": "dsh-plugin-cost",
+    "verified": null
+  },
+  {
+    "id": "nonewind/dsh-spend",
+    "name": "dsh-spend",
+    "slot": "output",
+    "capabilities": [
+      "令牌",
+      "费用",
+      "统计"
+    ],
+    "tags": [
+      "费用",
+      "统计"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Token usage and estimated spend for the DSH web UI: floating panel with per-model / per-day / per-session stats and auto-detected billing plans.",
+    "source": "generated",
+    "display": "dsh-spend",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-live-stats",
+    "name": "dsh-live-stats",
+    "slot": "output",
+    "capabilities": [
+      "实时",
+      "令牌",
+      "速度"
+    ],
+    "tags": [
+      "监控",
+      "统计"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Live token estimates and generation TPS.",
+    "source": "generated",
+    "display": "dsh-live-stats",
+    "verified": null
+  },
+  {
+    "id": "NigelYao/dsh-view-modes",
+    "name": "dsh-view-modes",
+    "slot": "output",
+    "capabilities": [
+      "视图",
+      "模式",
+      "摘要"
+    ],
+    "tags": [
+      "视图",
+      "模式"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "DSH Web output modes with Verbose, Normal, and Summary views, semantic grouping for tool calls and thinking, and live execution status.",
+    "source": "generated",
+    "display": "dsh-view-modes",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-tps",
+    "name": "dsh-tps",
+    "slot": "output",
+    "capabilities": [
+      "TPS",
+      "速度",
+      "监控"
+    ],
+    "tags": [
+      "监控",
+      "性能"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "TPS meter.",
+    "source": "generated",
+    "display": "dsh-tps",
+    "verified": null
+  },
+  {
+    "id": "yyyyukari/dsh-plugin-workshop",
+    "name": "dsh-plugin-workshop",
+    "slot": "output",
+    "capabilities": [
+      "插件",
+      "浏览",
+      "搜索"
+    ],
+    "tags": [
+      "插件",
+      "浏览"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Steam Workshop-style in-app plugin browser: search, hot/newest/trending windows, Chinese keyword mapping, bilingual translation, plugin-signature filtering, and smart one-click install/update/uninstal",
+    "source": "generated",
+    "display": "dsh-plugin-workshop",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-cc-tui",
+    "name": "dsh-cc-tui",
+    "slot": "output",
+    "capabilities": [
+      "终端",
+      "TUI",
+      "全屏"
+    ],
+    "tags": [
+      "终端",
+      "界面"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Claude Code-style fullscreen TUI (streaming expand / double-Esc rollback).",
+    "source": "generated",
+    "display": "dsh-cc-tui",
+    "verified": null
+  },
+  {
+    "id": "chen-001/dsh-grok-tui",
+    "name": "dsh-grok-tui",
+    "slot": "output",
+    "capabilities": [
+      "终端",
+      "TUI",
+      "构建"
+    ],
+    "tags": [
+      "终端",
+      "界面"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "TUI built with grok-build.",
+    "source": "generated",
+    "display": "dsh-grok-tui",
+    "verified": null
+  },
+  {
+    "id": "lqhl/dsh-pi-tui",
+    "name": "dsh-pi-tui",
+    "slot": "output",
+    "capabilities": [
+      "终端",
+      "TUI",
+      "流式"
+    ],
+    "tags": [
+      "终端",
+      "界面"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Pi TUI (differential-rendering terminal framework) front end: streaming markdown, thinking collapse, tool cards, slash commands, approval/question overlays, shared dsh session store.",
+    "source": "generated",
+    "display": "dsh-pi-tui",
+    "verified": null
+  },
+  {
+    "id": "openma-ai/deepseek-harness-tui",
+    "name": "deepseek-harness-tui",
+    "slot": "output",
+    "capabilities": [
+      "终端",
+      "TUI",
+      "Rust"
+    ],
+    "tags": [
+      "终端",
+      "界面"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Rust/ratatui terminal client that speaks the DSH SDK JSON-RPC protocol directly and runs standalone or as a profile bundle.",
+    "source": "generated",
+    "display": "deepseek-harness-tui",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/DSH-better-sidebar",
+    "name": "DSH-better-sidebar",
+    "slot": "output",
+    "capabilities": [
+      "侧边栏",
+      "文件",
+      "终端"
+    ],
+    "tags": [
+      "侧边栏",
+      "集成"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Sidebar: file rendering/terminal/Git/subagents/custom APIs.",
+    "source": "generated",
+    "display": "DSH-better-sidebar",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-web-panel",
+    "name": "dsh-web-panel",
+    "slot": "output",
+    "capabilities": [
+      "终端",
+      "面板",
+      "文件"
+    ],
+    "tags": [
+      "终端",
+      "面板"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Embedded terminal dock + Git Review + file view.",
+    "source": "generated",
+    "display": "dsh-web-panel",
+    "verified": null
+  },
+  {
+    "id": "CanglongCl/dsh-web-review",
+    "name": "dsh-web-review",
+    "slot": "output",
+    "capabilities": [
+      "预览",
+      "网页",
+      "注释"
+    ],
+    "tags": [
+      "预览",
+      "网页"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Isolated web page previews with element annotations and visual adjustments that guide source edits.",
+    "source": "generated",
+    "display": "dsh-web-review",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-mobileweb-adapter",
+    "name": "dsh-mobileweb-adapter",
+    "slot": "output",
+    "capabilities": [
+      "移动",
+      "适配",
+      "PWA"
+    ],
+    "tags": [
+      "移动",
+      "适配"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Mobile/PWA layout adaptation + LAN WebSocket fix.",
+    "source": "generated",
+    "display": "dsh-mobileweb-adapter",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-subagent-tree",
+    "name": "dsh-subagent-tree",
+    "slot": "output",
+    "capabilities": [
+      "子代理",
+      "树",
+      "可视化"
+    ],
+    "tags": [
+      "子代理",
+      "可视化"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Subagent tree visualization.",
+    "source": "generated",
+    "display": "dsh-subagent-tree",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-web-workflow-visualizer",
+    "name": "dsh-web-workflow-visualizer",
+    "slot": "output",
+    "capabilities": [
+      "工作流",
+      "可视化"
+    ],
+    "tags": [
+      "工作流",
+      "可视化"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Workflow visualization.",
+    "source": "generated",
+    "display": "dsh-web-workflow-visualizer",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-teamwork",
+    "name": "dsh-teamwork",
+    "slot": "output",
+    "capabilities": [
+      "团队协作",
+      "协同工作",
+      "项目管理"
+    ],
+    "tags": [
+      "协作",
+      "团队"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Team collaboration (cordis).",
+    "source": "generated",
+    "display": "dsh-teamwork",
+    "verified": null
+  },
+  {
+    "id": "whyihaveyou/dsh-suite#packages/plugins/plugin-notify",
+    "name": "plugin-notify",
+    "slot": "output",
+    "capabilities": [
+      "通知",
+      "消息推送",
+      "Webhook",
+      "提醒"
+    ],
+    "tags": [
+      "通知",
+      "集成"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "IM webhook + local notifications on turn completion / errors / approval requests (Feishu, WeCom, DingTalk, Slack, Discord, custom).",
+    "source": "generated",
+    "display": "plugin-notify",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-agent-rp",
+    "name": "dsh-agent-rp",
+    "slot": "output",
+    "capabilities": [
+      "角色扮演",
+      "迁移",
+      "智能体"
+    ],
+    "tags": [
+      "角色扮演",
+      "智能体"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "SillyTavern migration and next-generation agent roleplay for DSH.",
+    "source": "generated",
+    "display": "dsh-agent-rp",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-emoji",
+    "name": "dsh-emoji",
+    "slot": "output",
+    "capabilities": [
+      "表情",
+      "表情符号"
+    ],
+    "tags": [
+      "表情"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Emoji plugin (cordis).",
+    "source": "generated",
+    "display": "dsh-emoji",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-stock-market",
+    "name": "dsh-stock-market",
+    "slot": "output",
+    "capabilities": [
+      "股票",
+      "行情",
+      "市场数据"
+    ],
+    "tags": [
+      "金融",
+      "数据"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Stock market data plugin.",
+    "source": "generated",
+    "display": "dsh-stock-market",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-travel-plugin",
+    "name": "dsh-travel-plugin",
+    "slot": "output",
+    "capabilities": [
+      "旅行",
+      "旅游",
+      "出行"
+    ],
+    "tags": [
+      "旅行"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Travel plugin.",
+    "source": "generated",
+    "display": "dsh-travel-plugin",
+    "verified": null
+  },
+  {
+    "id": "sunshine-lang/dsh-weather",
+    "name": "dsh-weather",
+    "slot": "output",
+    "capabilities": [
+      "天气",
+      "预报",
+      "气温"
+    ],
+    "tags": [
+      "天气"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Weather tool: current conditions and multi-day forecasts via Open-Meteo (free, no API key).",
+    "source": "generated",
+    "display": "dsh-weather",
+    "verified": null
+  },
+  {
+    "id": "sunshine-lang/dsh-pdf",
+    "name": "dsh-pdf",
+    "slot": "output",
+    "capabilities": [
+      "PDF",
+      "文本提取",
+      "元数据",
+      "页面范围"
+    ],
+    "tags": [
+      "文档处理"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "PDF toolbox: extract text, metadata, and page ranges via pdfjs-dist (local, no API key).",
+    "source": "generated",
+    "display": "dsh-pdf",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-ui-whale",
+    "name": "dsh-ui-whale",
+    "slot": "output",
+    "capabilities": [
+      "宠物",
+      "动画",
+      "交互"
+    ],
+    "tags": [
+      "娱乐",
+      "UI"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Pixel whale companion (blink/tail/spout/hearts).",
+    "source": "generated",
+    "display": "dsh-ui-whale",
+    "verified": null
+  },
+  {
+    "id": "FlytoMAYDAY80/dsh-pet",
+    "name": "dsh-pet",
+    "slot": "output",
+    "capabilities": [
+      "宠物",
+      "桌面",
+      "状态"
+    ],
+    "tags": [
+      "娱乐",
+      "桌面"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Desktop whale pet with live session state.",
+    "source": "generated",
+    "display": "dsh-pet",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-pet-rs",
+    "name": "dsh-pet-rs",
+    "slot": "output",
+    "capabilities": [
+      "宠物",
+      "桌面",
+      "Rust"
+    ],
+    "tags": [
+      "娱乐",
+      "桌面"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Desktop pet, Rust edition.",
+    "source": "generated",
+    "display": "dsh-pet-rs",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-stickers",
+    "name": "dsh-stickers",
+    "slot": "output",
+    "capabilities": [
+      "贴纸",
+      "表情"
+    ],
+    "tags": [
+      "表情"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Stickers.",
+    "source": "generated",
+    "display": "dsh-stickers",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-ads",
+    "name": "dsh-ads",
+    "slot": "output",
+    "capabilities": [
+      "广告",
+      "恶搞",
+      "网页风格"
+    ],
+    "tags": [
+      "娱乐",
+      "恶搞"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "2005 Chinese-web-style ad layer (joke plugin).",
+    "source": "generated",
+    "display": "dsh-ads",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-gomoku",
+    "name": "dsh-gomoku",
+    "slot": "output",
+    "capabilities": [
+      "五子棋",
+      "游戏"
+    ],
+    "tags": [
+      "游戏"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Gomoku (five-in-a-row).",
+    "source": "generated",
+    "display": "dsh-gomoku",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-qq2006",
+    "name": "dsh-qq2006",
+    "slot": "output",
+    "capabilities": [
+      "皮肤",
+      "QQ",
+      "界面"
+    ],
+    "tags": [
+      "界面",
+      "怀旧"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "QQ2006 skin.",
+    "source": "generated",
+    "display": "dsh-qq2006",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-lazyfish",
+    "name": "dsh-lazyfish",
+    "slot": "output",
+    "capabilities": [
+      "摸鱼",
+      "信息流",
+      "视频播放"
+    ],
+    "tags": [
+      "娱乐",
+      "效率"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Slack-off panel (feed + Bilibili player).",
+    "source": "generated",
+    "display": "dsh-lazyfish",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-tavern-plugin",
+    "name": "dsh-tavern-plugin",
+    "slot": "output",
+    "capabilities": [
+      "角色卡",
+      "角色扮演"
+    ],
+    "tags": [
+      "角色扮演"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Tavern character cards.",
+    "source": "generated",
+    "display": "dsh-tavern-plugin",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-sfw",
+    "name": "dsh-sfw",
+    "slot": "output",
+    "capabilities": [
+      "安全",
+      "过滤",
+      "内容审核"
+    ],
+    "tags": [
+      "安全"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Safety filter.",
+    "source": "generated",
+    "display": "dsh-sfw",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/ui-status-label",
+    "name": "ui-status-label",
+    "slot": "output",
+    "capabilities": [
+      "状态标签",
+      "自定义",
+      "UI"
+    ],
+    "tags": [
+      "UI"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Custom status labels for the whale's deep-diving (cordis).",
+    "source": "generated",
+    "display": "ui-status-label",
+    "verified": null
+  },
+  {
+    "id": "leechen298/Code2Skill",
+    "name": "Code2Skill",
+    "slot": "action",
+    "capabilities": [
+      "代码生成",
+      "技能",
+      "MCP工具",
+      "工作流"
+    ],
+    "tags": [
+      "开发",
+      "自动化"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Generate Functions, MCP tools, workflow Skills, and offline test packages from user-authorized source code.",
+    "source": "generated",
+    "display": "Code2Skill",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-hmz",
+    "name": "dsh-hmz",
+    "slot": "action",
+    "capabilities": [
+      "占位",
+      "待定"
+    ],
+    "tags": [
+      "其他"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Placeholder repository; description pending.",
+    "source": "generated",
+    "display": "dsh-hmz",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-interpreters",
+    "name": "dsh-interpreters",
+    "slot": "action",
+    "capabilities": [
+      "解释器",
+      "代码执行"
+    ],
+    "tags": [
+      "开发"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Interpreter plugin (cordis).",
+    "source": "generated",
+    "display": "dsh-interpreters",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-notebooks",
+    "name": "dsh-notebooks",
+    "slot": "action",
+    "capabilities": [
+      "笔记本",
+      "文档"
+    ],
+    "tags": [
+      "文档"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Notebooks plugin (cordis).",
+    "source": "generated",
+    "display": "dsh-notebooks",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-plugin-radar",
+    "name": "dsh-plugin-radar",
+    "slot": "action",
+    "capabilities": [
+      "插件雷达",
+      "兼容性",
+      "检测"
+    ],
+    "tags": [
+      "插件",
+      "兼容性"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Daily DSH plugin compatibility radar, renamed from dsh-external-research.",
+    "source": "generated",
+    "display": "dsh-plugin-radar",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-scout",
+    "name": "dsh-scout",
+    "slot": "action",
+    "capabilities": [
+      "侦察",
+      "探索"
+    ],
+    "tags": [
+      "工具"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Scout plugin (cordis).",
+    "source": "generated",
+    "display": "dsh-scout",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-share",
+    "name": "dsh-share",
+    "slot": "action",
+    "capabilities": [
+      "分享",
+      "对话"
+    ],
+    "tags": [
+      "社交",
+      "分享"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Share DSH conversations.",
+    "source": "generated",
+    "display": "dsh-share",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-sonar",
+    "name": "dsh-sonar",
+    "slot": "action",
+    "capabilities": [
+      "声呐",
+      "检测"
+    ],
+    "tags": [
+      "工具"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Sonar plugin (cordis).",
+    "source": "generated",
+    "display": "dsh-sonar",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/plugin-registry",
+    "name": "plugin-registry",
+    "slot": "action",
+    "capabilities": [
+      "插件控制台",
+      "开发指南",
+      "技能"
+    ],
+    "tags": [
+      "插件",
+      "开发"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Plugin console + make-dsh-plugin skill + dev guide.",
+    "source": "generated",
+    "display": "plugin-registry",
+    "verified": null
+  },
+  {
+    "id": "Jesse-njx/dsh-plugin-manager-registry",
+    "name": "dsh-plugin-manager-registry",
+    "slot": "action",
+    "capabilities": [
+      "插件管理",
+      "发现",
+      "去重"
+    ],
+    "tags": [
+      "插件",
+      "管理"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Offline-tolerant registry that discovers and deduplicates DSH plugins from awesome lists, GitHub topics, and npm.",
+    "source": "generated",
+    "display": "dsh-plugin-manager-registry",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/marisa",
+    "name": "marisa",
+    "slot": "action",
+    "capabilities": [
+      "插件管理",
+      "安装",
+      "CLI",
+      "设置"
+    ],
+    "tags": [
+      "插件",
+      "管理"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "External plugin manager (parasitic install/CLI/settings panel).",
+    "source": "generated",
+    "display": "marisa",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/hub",
+    "name": "hub",
+    "slot": "action",
+    "capabilities": [
+      "索引",
+      "目录",
+      "统一"
+    ],
+    "tags": [
+      "插件",
+      "目录"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Org-wide index + unified catalog.json (CI-generated).",
+    "source": "generated",
+    "display": "hub",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dshx-update-check",
+    "name": "dshx-update-check",
+    "slot": "action",
+    "capabilities": [
+      "更新检查",
+      "插件更新"
+    ],
+    "tags": [
+      "插件",
+      "更新"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Plugin update checker.",
+    "source": "generated",
+    "display": "dshx-update-check",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/toybox",
+    "name": "toybox",
+    "slot": "action",
+    "capabilities": [
+      "MCP插件",
+      "集合",
+      "工具"
+    ],
+    "tags": [
+      "插件",
+      "工具"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "MCP plugin collection (almanac/bug-tamer/naming master/time capsule, etc.).",
+    "source": "generated",
+    "display": "toybox",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-github-integration",
+    "name": "dsh-github-integration",
+    "slot": "action",
+    "capabilities": [
+      "GitHub",
+      "集成"
+    ],
+    "tags": [
+      "集成",
+      "开发"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "GitHub integration plugin.",
+    "source": "generated",
+    "display": "dsh-github-integration",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-super-injector",
+    "name": "dsh-super-injector",
+    "slot": "action",
+    "capabilities": [
+      "注入",
+      "增强"
+    ],
+    "tags": [
+      "工具"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Super-injector (cordis).",
+    "source": "generated",
+    "display": "dsh-super-injector",
+    "verified": null
+  },
+  {
+    "id": "hyqhyq3/dsh-mcp-manager",
+    "name": "dsh-mcp-manager",
+    "slot": "action",
+    "capabilities": [
+      "MCP服务器",
+      "管理",
+      "OAuth",
+      "认证"
+    ],
+    "tags": [
+      "MCP",
+      "管理"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "MCP server manager: Settings page with OAuth (PKCE + dynamic client registration) or static-token auth; tools registered as mcp\\_\\_\\_\\_\\*.",
+    "source": "generated",
+    "display": "dsh-mcp-manager",
+    "verified": null
+  },
+  {
+    "id": "asdf17128/dsh-doctor",
+    "name": "dsh-doctor",
+    "slot": "action",
+    "capabilities": [
+      "健康检查",
+      "配置修复",
+      "诊断"
+    ],
+    "tags": [
+      "诊断",
+      "维护"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Profile health check: finds config fields a patch dropped by whole-config replacement, patches targeting missing entry ids, and tool-name collisions.",
+    "source": "generated",
+    "display": "dsh-doctor",
+    "verified": null
+  },
+  {
+    "id": "15828148/dsh-portable-launcher",
+    "name": "dsh-portable-launcher",
+    "slot": "action",
+    "capabilities": [
+      "便携启动器",
+      "Windows",
+      "自动安装"
+    ],
+    "tags": [
+      "启动器",
+      "Windows"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "One-click portable Windows launcher for the dsh Web UI: auto-installs Node.js and dsh, CN mirror fallback, retries and resume.",
+    "source": "generated",
+    "display": "dsh-portable-launcher",
+    "verified": null
+  },
+  {
+    "id": "becomeless/dsh-desktop-launcher",
+    "name": "dsh-desktop-launcher",
+    "slot": "action",
+    "capabilities": [
+      "桌面启动器",
+      "Windows",
+      "无控制台"
+    ],
+    "tags": [
+      "启动器",
+      "Windows"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Windows desktop launcher: double-click to start dsh Web with zero console windows, auto-stop on close, session resume, one-line install.",
+    "source": "generated",
+    "display": "dsh-desktop-launcher",
+    "verified": null
+  },
+  {
+    "id": "qzhqzh/dsh-quickstart",
+    "name": "dsh-quickstart",
+    "slot": "action",
+    "capabilities": [
+      "快速启动",
+      "桌面快捷方式",
+      "零依赖"
+    ],
+    "tags": [
+      "启动器",
+      "效率"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Windows desktop launcher (zero-dependency npm CLI): double-click a desktop shortcut to start dsh web with zero console windows and auto-open the browser once ready.",
+    "source": "generated",
+    "display": "dsh-quickstart",
+    "verified": null
+  },
+  {
+    "id": "asdf17128/dshp",
+    "name": "dshp",
+    "slot": "action",
+    "capabilities": [
+      "配置文件管理",
+      "克隆",
+      "导出"
+    ],
+    "tags": [
+      "配置",
+      "管理"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Profile manager: list, create, clone and diff profiles, and export a whole setup (bundle order, plugin versions, patch) as one portable file.",
+    "source": "generated",
+    "display": "dshp",
+    "verified": null
+  },
+  {
+    "id": "zp-home/dsh-recommend",
+    "name": "dsh-recommend",
+    "slot": "action",
+    "capabilities": [
+      "推荐",
+      "排名",
+      "评分"
+    ],
+    "tags": [
+      "推荐",
+      "插件"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Transparent plugin rankings and recommendations: daily auto-fetched dsh-plugin topic data, open scoring model, rank/search/recommend tools and a settings-page leaderboard.",
+    "source": "generated",
+    "display": "dsh-recommend",
+    "verified": null
+  },
+  {
+    "id": "hccccc01333/dsh-eval",
+    "name": "dsh-eval",
+    "slot": "action",
+    "capabilities": [
+      "评估",
+      "基准测试",
+      "指标"
+    ],
+    "tags": [
+      "评估",
+      "测试"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Agent evaluation platform: benchmark YAML, headless dsh runs, trace-based metrics, scripted grading, and run compare/report.",
+    "source": "generated",
+    "display": "dsh-eval",
+    "verified": null
+  },
+  {
+    "id": "fountunt/dsh-session-cleaner",
+    "name": "dsh-session-cleaner",
+    "slot": "action",
+    "capabilities": [
+      "会话清理",
+      "删除",
+      "运行时"
+    ],
+    "tags": [
+      "会话",
+      "清理"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Delete sessions from a running web runtime: live store, workspace records, and on-disk artifacts (no restart needed).",
+    "source": "generated",
+    "display": "dsh-session-cleaner",
+    "verified": null
+  },
+  {
+    "id": "ChenChen913/dsh-session-cleaner-cli",
+    "name": "dsh-session-cleaner-cli",
+    "slot": "action",
+    "capabilities": [
+      "会话清理",
+      "CLI",
+      "备份"
+    ],
+    "tags": [
+      "会话",
+      "清理"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Offline CLI that deep-cleans workspace sessions: interactive/batch delete with trash + restore + backups, workspace-registry and projection-cache sync, ghost-entry pruning. Companion to the runtime de",
+    "source": "generated",
+    "display": "dsh-session-cleaner-cli",
+    "verified": null
+  },
+  {
+    "id": "PerryLink/dsh-mcp-panel",
+    "name": "dsh-mcp-panel",
+    "slot": "action",
+    "capabilities": [
+      "MCP管理",
+      "状态",
+      "工具"
+    ],
+    "tags": [
+      "MCP",
+      "管理"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Read-only runtime management panel for the official DSH MCP client: connection status, registered tools, errors and reconnect counts via the /mcp command and a Settings tab, with sanitized display and",
+    "source": "generated",
+    "display": "dsh-mcp-panel",
+    "verified": null
+  },
+  {
+    "id": "slywalker2006/dsh-passwords",
+    "name": "dsh-passwords",
+    "slot": "action",
+    "capabilities": [
+      "密码",
+      "登录",
+      "加密",
+      "安全"
+    ],
+    "tags": [
+      "安全",
+      "认证"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Login gateway for the DSH web UI: first-run setup, bcrypt + at-rest encryption (AES-256-GCM/HMAC), brute-force lockout, audit log, TLS 1.2+ with 80→443 redirect, CSRF and anti-framing headers.",
+    "source": "generated",
+    "display": "dsh-passwords",
+    "verified": null
+  },
+  {
+    "id": "zhoushoujianwork/easyeda-agent",
+    "name": "easyeda-agent",
+    "slot": "action",
+    "capabilities": [
+      "EasyEDA",
+      "自动化",
+      "PCB",
+      "原理图"
+    ],
+    "tags": [
+      "硬件",
+      "自动化"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "EasyEDA Pro automation: Go daemon + in-app connector + agent skill + stdio MCP server for typed schematic/PCB actions, workflow gates, and DRC.",
+    "source": "generated",
+    "display": "easyeda-agent",
+    "verified": null
+  },
+  {
+    "id": "SamXiaBing/dsh-adb",
+    "name": "dsh-adb",
+    "slot": "action",
+    "capabilities": [
+      "ADB",
+      "设备管理",
+      "日志",
+      "文件传输"
+    ],
+    "tags": [
+      "开发",
+      "设备"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "ADB device & bench operations: device discovery, structured logcat (background streaming), apk install, file pull/push, dumpsys performance snapshots.",
+    "source": "generated",
+    "display": "dsh-adb",
+    "verified": null
+  },
+  {
+    "id": "anweat/dsh-restart",
+    "name": "dsh-restart",
+    "slot": "action",
+    "capabilities": [
+      "重启",
+      "配置",
+      "监视"
+    ],
+    "tags": [
+      "维护",
+      "重启"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Restart DSH: configurable restart method (Node native / legacy PowerShell), post-restart continue prompt, optional watchdog auto-relaunch.",
+    "source": "generated",
+    "display": "dsh-restart",
+    "verified": null
+  },
+  {
+    "id": "whyihaveyou/dsh-suite",
+    "name": "dsh-suite",
+    "slot": "action",
+    "capabilities": [
+      "插件目录",
+      "兼容性",
+      "搜索"
+    ],
+    "tags": [
+      "插件",
+      "目录"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Living DSH plugin directory (785+ plugins, refreshed hourly) with a daily compatibility CI, a bilingual searchable catalog site, and an in-app plugin store.",
+    "source": "generated",
+    "display": "dsh-suite",
+    "verified": null
+  },
+  {
+    "id": "whyihaveyou/dsh-suite#packages/create-dsh-plugin",
+    "name": "create-dsh-plugin",
+    "slot": "action",
+    "capabilities": [
+      "脚手架",
+      "插件创建",
+      "模板"
+    ],
+    "tags": [
+      "开发",
+      "插件"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Scaffold a DSH plugin in seconds (tool / events / webui templates, `next`-tag version pinning, built-in `--verify` smoke test).",
+    "source": "generated",
+    "display": "create-dsh-plugin",
+    "verified": null
+  },
+  {
+    "id": "whyihaveyou/dsh-suite#packages/plugins/plugin-manager",
+    "name": "plugin-manager",
+    "slot": "action",
+    "capabilities": [
+      "插件商店",
+      "安装",
+      "浏览"
+    ],
+    "tags": [
+      "插件",
+      "管理"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "In-app plugin store for the DSH Web UI: browse, search, one-click install, compat badges, installed list.",
+    "source": "generated",
+    "display": "plugin-manager",
+    "verified": null
+  },
+  {
+    "id": "whyihaveyou/dsh-suite#packages/plugins/plugin-team-board",
+    "name": "plugin-team-board",
+    "slot": "action",
+    "capabilities": [
+      "任务板",
+      "多智能体",
+      "协作"
+    ],
+    "tags": [
+      "协作",
+      "任务"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Shared multi-agent task board (create / claim / transition / query) over a Cordis service key.",
+    "source": "generated",
+    "display": "plugin-team-board",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-openmaic",
+    "name": "dsh-openmaic",
+    "slot": "decision",
+    "capabilities": [
+      "AI课堂",
+      "生成",
+      "互动"
+    ],
+    "tags": [
+      "教育",
+      "AI"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Generate interactive OpenMAIC AI classrooms.",
+    "source": "generated",
+    "display": "dsh-openmaic",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/issues",
+    "name": "dsh-external/issues",
+    "slot": "action",
+    "capabilities": [
+      "问题聚合",
+      "Issue"
+    ],
+    "tags": [
+      "开发",
+      "管理"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Issue aggregation hub.",
+    "source": "generated",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-split-panes",
+    "name": "dsh-split-panes",
+    "slot": "output",
+    "capabilities": [
+      "分屏",
+      "布局",
+      "界面"
+    ],
+    "tags": [
+      "界面",
+      "布局"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Split panes.",
+    "source": "generated",
+    "display": "dsh-split-panes",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-ui-progress",
+    "name": "dsh-ui-progress",
+    "slot": "output",
+    "capabilities": [
+      "进度",
+      "指示器",
+      "界面"
+    ],
+    "tags": [
+      "界面",
+      "进度"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Progress indicators.",
+    "source": "generated",
+    "display": "dsh-ui-progress",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-skins",
+    "name": "dsh-skins",
+    "slot": "output",
+    "capabilities": [
+      "皮肤",
+      "主题",
+      "界面"
+    ],
+    "tags": [
+      "界面",
+      "主题"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Web UI skins.",
+    "source": "generated",
+    "display": "dsh-skins",
+    "verified": null
+  },
+  {
+    "id": "KinGao294/dsh-skin",
+    "name": "dsh-skin",
+    "slot": "output",
+    "capabilities": [
+      "皮肤",
+      "主题",
+      "壁纸",
+      "切换器"
+    ],
+    "tags": [
+      "界面",
+      "主题"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Codex-style skin switcher + custom wallpaper for the Web UI: curated --dsw-alias-\\* palettes and a translucent wallpaper layer with opacity/blur controls.",
+    "source": "generated",
+    "display": "dsh-skin",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-chat-thumb",
+    "name": "dsh-chat-thumb",
+    "slot": "output",
+    "capabilities": [
+      "缩略图",
+      "聊天",
+      "预览"
+    ],
+    "tags": [
+      "聊天",
+      "预览"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Chat thumbnails (cordis).",
+    "source": "generated",
+    "display": "dsh-chat-thumb",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/show-bash-command",
+    "name": "show-bash-command",
+    "slot": "output",
+    "capabilities": [
+      "命令",
+      "显示",
+      "终端"
+    ],
+    "tags": [
+      "终端",
+      "命令"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Show actual command content instead of descriptions.",
+    "source": "generated",
+    "display": "show-bash-command",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/turtle-ui",
+    "name": "turtle-ui",
+    "slot": "output",
+    "capabilities": [
+      "界面",
+      "参考实现",
+      "UI"
+    ],
+    "tags": [
+      "界面",
+      "参考"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Official UI plugin reference implementation.",
+    "source": "generated",
+    "display": "turtle-ui",
+    "verified": null
+  },
+  {
+    "id": "zhaoolee/notes",
+    "name": "@zhaoolee/dsh-notes",
+    "slot": "output",
+    "capabilities": [
+      "导出",
+      "笔记",
+      "Markdown",
+      "图片"
+    ],
+    "tags": [
+      "笔记",
+      "导出"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Export DSH conversations as Smartisan Notes-style PNGs, or create and update Markdown notes in a configured account-scoped workspace.",
+    "source": "generated",
+    "display": "@zhaoolee/dsh-notes",
+    "verified": null
+  },
+  {
+    "id": "baiyuscc13724-max/deepseek-harness-desktop",
+    "name": "Harness Desktop",
+    "slot": "output",
+    "capabilities": [
+      "桌面应用",
+      "Windows",
+      "安装",
+      "主题"
+    ],
+    "tags": [
+      "桌面",
+      "Windows"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Windows desktop app for the official DSH Web UI with a Chinese installer and portable build, quick themes, an in-app plugin marketplace, separate main/subagent model selection, and verified updates.",
+    "source": "generated",
+    "display": "Harness Desktop",
+    "verified": null
+  },
+  {
+    "id": "foolgry/dsh-desktop",
+    "name": "dsh-desktop",
+    "slot": "output",
+    "capabilities": [
+      "桌面",
+      "Electron",
+      "安装",
+      "跨平台"
+    ],
+    "tags": [
+      "桌面",
+      "跨平台"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Download-and-run Electron desktop build (macOS/Windows installers): no Node.js or terminal needed, tracks upstream `@deepseek-ai/dsh` releases automatically, with built-in web UI and auto-update.",
+    "source": "generated",
+    "display": "dsh-desktop",
+    "verified": null
+  },
+  {
+    "id": "SnowCrescenter-tech/dsh-milestone",
+    "name": "dsh-milestone",
+    "slot": "output",
+    "capabilities": [
+      "时间线",
+      "跳转",
+      "导航"
+    ],
+    "tags": [
+      "导航",
+      "时间线"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Right-side dot-timeline rail to jump between user messages.",
+    "source": "generated",
+    "display": "dsh-milestone",
+    "verified": true
+  },
+  {
+    "id": "Simon314620/dsh-turn-index",
+    "name": "dsh-turn-index",
+    "slot": "output",
+    "capabilities": [
+      "索引",
+      "侧边栏",
+      "跳转",
+      "高亮"
+    ],
+    "tags": [
+      "导航",
+      "索引"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Turn-index sidebar: one entry per user turn, click to jump, scroll-spy highlighting.",
+    "source": "generated",
+    "display": "dsh-turn-index",
+    "verified": null
+  },
+  {
+    "id": "Luaphes/dsh-web-attention-badge",
+    "name": "dsh-web-attention-badge",
+    "slot": "output",
+    "capabilities": [
+      "提醒",
+      "徽章",
+      "标签页",
+      "图标"
+    ],
+    "tags": [
+      "提醒",
+      "界面"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Attention reminders: frame badge, tab-title count and whale-favicon recolor for sessions waiting for input or finished unopened.",
+    "source": "generated",
+    "display": "dsh-web-attention-badge",
+    "verified": null
+  },
+  {
+    "id": "MysaDC/dsh-plugin-description",
+    "name": "dsh-plugin-description",
+    "slot": "output",
+    "capabilities": [
+      "描述",
+      "双语",
+      "插件",
+      "信息"
+    ],
+    "tags": [
+      "插件",
+      "信息"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Adds bilingual (zh/en) descriptions to every plugin card on the Web Settings plugin list; publishes a `pluginDescriptions` service for other plugins to register their own.",
+    "source": "generated",
+    "display": "dsh-plugin-description",
+    "verified": null
+  },
+  {
+    "id": "Starfie1d1272/dsh-builtin-toggles",
+    "name": "dsh-builtin-toggles",
+    "slot": "output",
+    "capabilities": [
+      "内置",
+      "开关",
+      "目录",
+      "状态"
+    ],
+    "tags": [
+      "配置",
+      "内置"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Human-readable catalog for official DSH Web built-ins with status explanations and an audited set of safe UI toggles.",
+    "source": "generated",
+    "display": "dsh-builtin-toggles",
+    "verified": null
+  },
+  {
+    "id": "a903067276-rgb/dsh-hud",
+    "name": "dsh-hud",
+    "slot": "output",
+    "capabilities": [
+      "状态",
+      "面板",
+      "Git",
+      "MCP",
+      "模型",
+      "令牌"
+    ],
+    "tags": [
+      "状态",
+      "监控"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "HUD status panel: git status, MCP servers, skills, model and token usage in a floating side panel.",
+    "source": "generated",
+    "display": "dsh-hud",
+    "verified": null
+  },
+  {
+    "id": "a903067276-rgb/dsh-file-mentions",
+    "name": "dsh-file-mentions",
+    "slot": "output",
+    "capabilities": [
+      "文件",
+      "路径",
+      "点击",
+      "打开",
+      "列表"
+    ],
+    "tags": [
+      "文件",
+      "交互"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Clickable file paths in DSH replies: Codex-style inline open, 📂 reveal in file manager, and a mentioned-files chip list at the turn tail.",
+    "source": "generated",
+    "display": "dsh-file-mentions",
+    "verified": null
+  },
+  {
+    "id": "HsiangNianian/dsh-auto-continue",
+    "name": "dsh-auto-continue",
+    "slot": "output",
+    "capabilities": [
+      "自动",
+      "继续",
+      "重试",
+      "恢复"
+    ],
+    "tags": [
+      "自动化",
+      "恢复"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Auto-resumes interrupted DSH Web requests: sends a queued 「继续」 after network/timeout/host-crash failures, with error classification, adaptive backoff, templated continue text and browser notifications",
+    "source": "generated",
+    "display": "dsh-auto-continue",
+    "verified": null
+  },
+  {
+    "id": "devmom/dsh-trajectory-debug",
+    "name": "dsh-trajectory-debug",
+    "slot": "output",
+    "capabilities": [
+      "调试",
+      "轨迹",
+      "回放",
+      "断点",
+      "性能"
+    ],
+    "tags": [
+      "调试",
+      "性能"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Trajectory waterfall, deterministic replay, breakpoints, edit-and-rerun, fork compare and performance analytics for DeepSeek Harness.",
+    "source": "generated",
+    "display": "dsh-trajectory-debug",
+    "verified": null
+  },
+  {
+    "id": "DoggyHU/dsh4vscode",
+    "name": "dsh4vscode",
+    "slot": "output",
+    "capabilities": [
+      "VS Code",
+      "聊天",
+      "会话",
+      "模型路由"
+    ],
+    "tags": [
+      "编辑器",
+      "集成"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "VS Code chat windows backed by the DSH agent: OpenCode-style independent sessions, model auto-routing (Flash/Pro/Pro Max).",
+    "source": "generated",
+    "display": "dsh4vscode",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-browser-panel",
+    "name": "dsh-browser-panel",
+    "slot": "perception",
+    "capabilities": [
+      "浏览器",
+      "嵌入",
+      "模型驱动"
+    ],
+    "tags": [
+      "浏览器",
+      "集成"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Headed browser embedded in the WebUI, model-driven (Codex-style, zero vision deps).",
+    "source": "generated",
+    "display": "dsh-browser-panel",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-browser",
+    "name": "dsh-browser",
+    "slot": "perception",
+    "capabilities": [
+      "浏览器",
+      "侧边栏",
+      "扩展"
+    ],
+    "tags": [
+      "浏览器",
+      "扩展"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Chrome sidebar extension.",
+    "source": "generated",
+    "display": "dsh-browser",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-deeplink",
+    "name": "dsh-deeplink",
+    "slot": "perception",
+    "capabilities": [
+      "链接",
+      "URL",
+      "打开",
+      "会话"
+    ],
+    "tags": [
+      "链接",
+      "导航"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Open DSH WebUI sessions or workspaces directly from URL parameters.",
+    "source": "generated",
+    "display": "dsh-deeplink",
+    "verified": null
+  },
+  {
+    "id": "flymysql/dsh-remote",
+    "name": "dsh-remote",
+    "slot": "perception",
+    "capabilities": [
+      "远程",
+      "SSH",
+      "多机",
+      "工作区"
+    ],
+    "tags": [
+      "远程",
+      "多机"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Multi-machine remote workspace: manage many SSH hosts, pick a local or remote workspace in the native Add-workspace flow (system folder / path browse), mirror a remote workspace to a real local folder",
+    "source": "generated",
+    "display": "dsh-remote",
+    "verified": null
+  },
+  {
+    "id": "Leon0555/dsh-lan-access",
+    "name": "dsh-lan-access",
+    "slot": "perception",
+    "capabilities": [
+      "局域网",
+      "访问",
+      "绑定",
+      "HTTP"
+    ],
+    "tags": [
+      "网络",
+      "访问"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "LAN access for the Web GUI: 0.0.0.0 bind plus a crypto.randomUUID polyfill for non-secure (LAN HTTP) contexts (npm: dsh-lan-access).",
+    "source": "generated",
+    "display": "dsh-lan-access",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/ego-browser",
+    "name": "ego-browser",
+    "slot": "perception",
+    "capabilities": [
+      "浏览器",
+      "代理",
+      "自动化"
+    ],
+    "tags": [
+      "浏览器",
+      "代理"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Browser agent.",
+    "source": "generated",
+    "display": "ego-browser",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-webbridge",
+    "name": "dsh-webbridge",
+    "slot": "perception",
+    "capabilities": [
+      "Web",
+      "桥接",
+      "集成"
+    ],
+    "tags": [
+      "集成",
+      "Web"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Web bridge.",
+    "source": "generated",
+    "display": "dsh-webbridge",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/browser4-dsh",
+    "name": "browser4-dsh",
+    "slot": "perception",
+    "capabilities": [
+      "浏览器",
+      "引擎",
+      "技能"
+    ],
+    "tags": [
+      "浏览器",
+      "引擎"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Browser4 AI-native browser engine (skills).",
+    "source": "generated",
+    "display": "browser4-dsh",
+    "verified": null
+  },
+  {
+    "id": "anweat/dsh-browser",
+    "name": "dsh-browser-runtime",
+    "slot": "perception",
+    "capabilities": [
+      "浏览器",
+      "运行时",
+      "Playwright",
+      "依赖"
+    ],
+    "tags": [
+      "浏览器",
+      "运行时"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Self-contained browser runtime plugin: Playwright (chromium) + OpenCLI as plugin-local deps (global reuse fallback), exposes a `browser` service and interactive browser tools.",
+    "source": "generated",
+    "display": "dsh-browser-runtime",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-vision",
+    "name": "dsh-vision",
+    "slot": "decision",
+    "capabilities": [
+      "视觉",
+      "图像",
+      "VLM",
+      "理解"
+    ],
+    "tags": [
+      "视觉",
+      "AI"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Vision bridge: view\\_image tool over any OpenAI-compatible VLM (Zhipu free tier by default).",
+    "source": "generated",
+    "display": "dsh-vision",
+    "verified": null
+  },
+  {
+    "id": "tdf1995/dsh-plugin-vision",
+    "name": "dsh-plugin-vision",
+    "slot": "decision",
+    "capabilities": [
+      "视觉",
+      "图像",
+      "描述",
+      "OCR",
+      "问答"
+    ],
+    "tags": [
+      "视觉",
+      "OCR"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Vision for text-only LLMs: image description / OCR / VQA via free Gemini and GLM vision APIs.",
+    "source": "generated",
+    "display": "dsh-plugin-vision",
+    "verified": null
+  },
+  {
+    "id": "ysr666/dsh-vision-router",
+    "name": "ysr666/dsh-vision-router",
+    "slot": "decision",
+    "capabilities": [
+      "视觉",
+      "路由",
+      "像素",
+      "问答",
+      "裁剪"
+    ],
+    "tags": [
+      "视觉",
+      "路由"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Free vision for text-only agents: built-in keyless vision chain plus pixel tools (Q&A, grounding, crop, pixel diff, colors, OCR, SVG trace, cutout, screenshots); paste an image and it just works — no ",
+    "source": "generated",
+    "verified": null
+  },
+  {
+    "id": "Flyvhidbwo/dsh-vision-proxy",
+    "name": "dsh-vision-proxy",
+    "slot": "decision",
+    "capabilities": [
+      "视觉",
+      "图像",
+      "转写",
+      "代理"
+    ],
+    "tags": [
+      "视觉",
+      "代理"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "DeepSeek brain + automatic image transcription: attach images in the GUI and each one is transcribed to text via any OpenAI-compatible VLM before reaching the text-only DeepSeek — a keyed fast path (d",
+    "source": "generated",
+    "display": "dsh-vision-proxy",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-advisor",
+    "name": "dsh-advisor",
+    "slot": "decision",
+    "capabilities": [
+      "顾问",
+      "审查",
+      "注入",
+      "建议"
+    ],
+    "tags": [
+      "辅助",
+      "审查"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Second model passively reviews each turn and injects notes.",
+    "source": "generated",
+    "display": "dsh-advisor",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-llm-fallbacks",
+    "name": "dsh-llm-fallbacks",
+    "slot": "decision",
+    "capabilities": [
+      "回退",
+      "重试",
+      "策略",
+      "LLM"
+    ],
+    "tags": [
+      "容错",
+      "策略"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Role-based LLM retry/fallback strategy.",
+    "source": "generated",
+    "display": "dsh-llm-fallbacks",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-pi-adapter",
+    "name": "dsh-pi-adapter",
+    "slot": "decision",
+    "capabilities": [
+      "适配器",
+      "桥接",
+      "扩展"
+    ],
+    "tags": [
+      "适配",
+      "集成"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "ExtensionAPI bridge for pi.",
+    "source": "generated",
+    "display": "dsh-pi-adapter",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-a2a",
+    "name": "dsh-a2a",
+    "slot": "decision",
+    "capabilities": [
+      "代理",
+      "网格",
+      "通信"
+    ],
+    "tags": [
+      "代理",
+      "网络"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Agent2Agent mesh.",
+    "source": "generated",
+    "display": "dsh-a2a",
+    "verified": null
+  },
+  {
+    "id": "acnlabs/dsh-plugin-acn",
+    "name": "dsh-plugin-acn",
+    "slot": "decision",
+    "capabilities": [
+      "ACN",
+      "注册",
+      "发现",
+      "消息",
+      "收件箱"
+    ],
+    "tags": [
+      "网络",
+      "通信"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Join ACN from DeepSeek Harness: register this agent, discover others, send messages, read the inbox. Defaults to the China region.",
+    "source": "generated",
+    "display": "dsh-plugin-acn",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-acp",
+    "name": "dsh-acp",
+    "slot": "decision",
+    "capabilities": [
+      "适配器",
+      "ACP",
+      "客户端"
+    ],
+    "tags": [
+      "适配",
+      "协议"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Client-neutral ACP adapter.",
+    "source": "generated",
+    "display": "dsh-acp",
+    "verified": null
+  },
+  {
+    "id": "openma-ai/deepseek-harness-acp",
+    "name": "deepseek-harness-acp",
+    "slot": "decision",
+    "capabilities": [
+      "代理",
+      "服务器",
+      "集成"
+    ],
+    "tags": [
+      "代理",
+      "集成"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "ACP profile plugin and standalone server that exposes the full DSH agent to Zed and other ACP clients while reusing DSH credentials, sessions, and MCP configuration.",
+    "source": "generated",
+    "display": "deepseek-harness-acp",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-slice-agent-loop",
+    "name": "dsh-slice-agent-loop",
+    "slot": "decision",
+    "capabilities": [
+      "代理循环",
+      "上下文",
+      "切片"
+    ],
+    "tags": [
+      "代理",
+      "上下文管理"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Drop-in agent loop with bounded-slice context engine (cordis).",
+    "source": "generated",
+    "display": "dsh-slice-agent-loop",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/savemoneybenchmark",
+    "name": "savemoneybenchmark",
+    "slot": "decision",
+    "capabilities": [
+      "成本",
+      "基准",
+      "示例",
+      "技能"
+    ],
+    "tags": [
+      "成本优化",
+      "基准测试"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Cost-reduction benchmark (examples + skills).",
+    "source": "generated",
+    "display": "savemoneybenchmark",
+    "verified": null
+  },
+  {
+    "id": "chushixixin/dsh-harness-mcp-server",
+    "name": "dsh-harness-mcp-server",
+    "slot": "decision",
+    "capabilities": [
+      "服务器",
+      "代理",
+      "集成"
+    ],
+    "tags": [
+      "服务器",
+      "集成"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "MCP server exposing Harness agent: any MCP client (e.g. Hermes) drives Harness as its 'arms'.",
+    "source": "generated",
+    "display": "dsh-harness-mcp-server",
+    "verified": null
+  },
+  {
+    "id": "lynx-gt/dsh-subagent-tools",
+    "name": "dsh-subagent-tools",
+    "slot": "decision",
+    "capabilities": [
+      "子代理",
+      "模型",
+      "提供者",
+      "角色",
+      "工具过滤"
+    ],
+    "tags": [
+      "子代理",
+      "配置"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Per-call model / provider / persona / toolFilter overrides for subagent delegation, @preset: references, provider/model composite ids (bundle, no patched files).",
+    "source": "generated",
+    "display": "dsh-subagent-tools",
+    "verified": null
+  },
+  {
+    "id": "lynx-gt/dsh-subagent-cwd",
+    "name": "dsh-subagent-cwd",
+    "slot": "decision",
+    "capabilities": [
+      "子代理",
+      "工作目录",
+      "提供者"
+    ],
+    "tags": [
+      "子代理",
+      "配置"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Extends dsh-subagent-tools with a per-call cwd for subagents and the two in-process provider patches it requires.",
+    "source": "generated",
+    "display": "dsh-subagent-cwd",
+    "verified": null
+  },
+  {
+    "id": "Khellendros97/dsh-subscription-auth",
+    "name": "dsh-subscription-auth",
+    "slot": "decision",
+    "capabilities": [
+      "订阅",
+      "登录",
+      "OAuth",
+      "模型发现"
+    ],
+    "tags": [
+      "认证",
+      "订阅"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Subscription OAuth login: use ChatGPT/Claude/Grok/Kimi subscription accounts (not API keys) with automatic model discovery.",
+    "source": "generated",
+    "display": "dsh-subscription-auth",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-git-identity",
+    "name": "dsh-git-identity",
+    "slot": "action",
+    "capabilities": [
+      "Git",
+      "身份",
+      "提交"
+    ],
+    "tags": [
+      "Git",
+      "身份管理"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Pin Git commit authorship to the environment identity (gh account + noreply email).",
+    "source": "generated",
+    "display": "dsh-git-identity",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-gh-bridge",
+    "name": "dsh-gh-bridge",
+    "slot": "action",
+    "capabilities": [
+      "GitHub",
+      "令牌",
+      "桥接"
+    ],
+    "tags": [
+      "GitHub",
+      "认证"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Bridge macOS Keychain GitHub token into sandboxed gh.",
+    "source": "generated",
+    "display": "dsh-gh-bridge",
+    "verified": null
+  },
+  {
+    "id": "Lixiaoyiao/deepseek-harness-action",
+    "name": "deepseek-harness-action",
+    "slot": "action",
+    "capabilities": [
+      "GitHub Action",
+      "代码审查",
+      "CI诊断",
+      "修复",
+      "实现"
+    ],
+    "tags": [
+      "GitHub",
+      "自动化"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "GitHub Action that runs DeepSeek Harness for pull request review, CI diagnosis, trusted fixes, and issue-to-PR implementation.",
+    "source": "generated",
+    "display": "deepseek-harness-action",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-auto-blame",
+    "name": "dsh-auto-blame",
+    "slot": "action",
+    "capabilities": [
+      "自动",
+      "责任归属"
+    ],
+    "tags": [
+      "自动化",
+      "代码分析"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Auto blame.",
+    "source": "generated",
+    "display": "dsh-auto-blame",
+    "verified": null
+  },
+  {
+    "id": "lxj808624/dsh-tool-git",
+    "name": "dsh-tool-git",
+    "slot": "action",
+    "capabilities": [
+      "Git",
+      "工具",
+      "状态",
+      "差异",
+      "日志",
+      "分支",
+      "暂存",
+      "提交",
+      "存储",
+      "显示",
+      "保护"
+    ],
+    "tags": [
+      "Git",
+      "工具"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Structured Git tools (status/diff/log/branch/stage/commit/stash/show) with a destructive-command guard.",
+    "source": "generated",
+    "display": "dsh-tool-git",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-plugin-check",
+    "name": "dsh-plugin-check",
+    "slot": "action",
+    "capabilities": [
+      "插件",
+      "健康检查",
+      "清单",
+      "补丁",
+      "构建",
+      "状态"
+    ],
+    "tags": [
+      "插件",
+      "健康检查"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Plugin health checks (manifest/patch format/build pitfalls/hub status).",
+    "source": "generated",
+    "display": "dsh-plugin-check",
+    "verified": null
+  },
+  {
+    "id": "030611/dsh-telemetry-redactor",
+    "name": "dsh-telemetry-redactor",
+    "slot": "action",
+    "capabilities": [
+      "遥测",
+      "脱敏",
+      "秘密",
+      "模式"
+    ],
+    "tags": [
+      "隐私",
+      "安全"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Redacts supported secret patterns from the `session-telemetry/record` export copy before configured telemetry backends receive it.",
+    "source": "generated",
+    "display": "dsh-telemetry-redactor",
+    "verified": null
+  },
+  {
+    "id": "030611/dsh-verification-receipt",
+    "name": "dsh-verification-receipt",
+    "slot": "action",
+    "capabilities": [
+      "验证",
+      "收据",
+      "摘要",
+      "工具计数"
+    ],
+    "tags": [
+      "验证",
+      "日志"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Writes local JSONL summaries of per-turn tool counts and coarse verification signals without storing prompts, tool arguments, or result text.",
+    "source": "generated",
+    "display": "dsh-verification-receipt",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-inspect",
+    "name": "dsh-inspect",
+    "slot": "action",
+    "capabilities": [
+      "检查",
+      "修复",
+      "审查",
+      "循环"
+    ],
+    "tags": [
+      "代码审查",
+      "修复"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Adversarial checkup → fix → review loop.",
+    "source": "generated",
+    "display": "dsh-inspect",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-alphasolve",
+    "name": "dsh-alphasolve",
+    "slot": "action",
+    "capabilities": [
+      "工作流",
+      "解决"
+    ],
+    "tags": [
+      "工作流"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "AlphaSolve workflow.",
+    "source": "generated",
+    "display": "dsh-alphasolve",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/mstar-workflow",
+    "name": "mstar-workflow",
+    "slot": "action",
+    "capabilities": [
+      "工作流",
+      "引擎"
+    ],
+    "tags": [
+      "工作流"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Workflow engine.",
+    "source": "generated",
+    "display": "mstar-workflow",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-spur",
+    "name": "dsh-spur",
+    "slot": "action",
+    "capabilities": [
+      "任务",
+      "引擎"
+    ],
+    "tags": [
+      "任务管理"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Task engine.",
+    "source": "generated",
+    "display": "dsh-spur",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-involute",
+    "name": "dsh-involute",
+    "slot": "action",
+    "capabilities": [
+      "任务管理",
+      "引擎"
+    ],
+    "tags": [
+      "任务管理"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Embedded task-management engine.",
+    "source": "generated",
+    "display": "dsh-involute",
+    "verified": null
+  },
+  {
+    "id": "wuxiangru915/dsh-review-loop",
+    "name": "dsh-review-loop",
+    "slot": "action",
+    "capabilities": [
+      "审查",
+      "差异",
+      "检查点",
+      "队列",
+      "Web UI",
+      "命令",
+      "反馈"
+    ],
+    "tags": [
+      "代码审查",
+      "界面"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Incremental diff reviewer: checkpoint-based since-review queue with a Web UI panel, /review command, and feedback injection into the agent.",
+    "source": "generated",
+    "display": "dsh-review-loop",
+    "verified": null
+  },
+  {
+    "id": "suimi8/dsh-test-runner",
+    "name": "dsh-test-runner",
+    "slot": "action",
+    "capabilities": [
+      "测试",
+      "运行",
+      "检测",
+      "失败",
+      "摘要"
+    ],
+    "tags": [
+      "测试",
+      "自动化"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Structured test runner tool (test\\_run): auto-detect Vitest/Jest/pytest/node:test, run tests, parse failure summaries for the model.",
+    "source": "generated",
+    "display": "dsh-test-runner",
+    "verified": null
+  },
+  {
+    "id": "mixin-ai/dsh-git-branch-switcher",
+    "name": "dsh-git-branch-switcher",
+    "slot": "action",
+    "capabilities": [
+      "Git",
+      "分支",
+      "切换",
+      "Web UI"
+    ],
+    "tags": [
+      "Git",
+      "界面"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Session-header Git branch pill: shows the current workspace branch and switches branches from the Web UI.",
+    "source": "generated",
+    "display": "dsh-git-branch-switcher",
+    "verified": null
+  },
+  {
+    "id": "PerryLink/dsh-doublecheck",
+    "name": "dsh-doublecheck",
+    "slot": "action",
+    "capabilities": [
+      "工程",
+      "纪律",
+      "需求",
+      "测试",
+      "证据",
+      "对抗",
+      "交付"
+    ],
+    "tags": [
+      "工程",
+      "质量"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Engineering-discipline loop: requirement grilling before edits, red/green test-evidence gates, and an adversarial delivery review.",
+    "source": "generated",
+    "display": "dsh-doublecheck",
+    "verified": null
+  },
+  {
+    "id": "ciceroyang/dsh-report-studio",
+    "name": "dsh-report-studio",
+    "slot": "output",
+    "capabilities": [
+      "报告",
+      "日报",
+      "周报",
+      "交接",
+      "文章",
+      "收据"
+    ],
+    "tags": [
+      "报告",
+      "输出"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Turn a DeepSeek Harness session into deliverable work reports (daily/weekly/handoff/article) with verifiable receipts.",
+    "source": "generated",
+    "display": "dsh-report-studio",
+    "verified": null
+  },
+  {
+    "id": "whyihaveyou/dsh-suite#packages/plugins/plugin-session-export",
+    "name": "plugin-session-export",
+    "slot": "output",
+    "capabilities": [
+      "导出",
+      "会话",
+      "日志",
+      "Markdown",
+      "HTML"
+    ],
+    "tags": [
+      "导出",
+      "日志"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Export the append-only session log as human-readable Markdown or HTML, grouped by trajectory source.",
+    "source": "generated",
+    "display": "plugin-session-export",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-feishu-bot",
+    "name": "dsh-feishu-bot",
+    "slot": "output",
+    "capabilities": [
+      "飞书",
+      "机器人"
+    ],
+    "tags": [
+      "飞书",
+      "机器人"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Feishu bot.",
+    "source": "generated",
+    "display": "dsh-feishu-bot",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-feishu-notify",
+    "name": "dsh-feishu-notify",
+    "slot": "output",
+    "capabilities": [
+      "飞书",
+      "通知",
+      "会话结束",
+      "输入"
+    ],
+    "tags": [
+      "飞书",
+      "通知"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Feishu notifications (session end / input needed).",
+    "source": "generated",
+    "display": "dsh-feishu-notify",
+    "verified": null
+  },
+  {
+    "id": "yeruizhi/dsh-lark-meeting-notifier",
+    "name": "dsh-lark-meeting-notifier",
+    "slot": "output",
+    "capabilities": [
+      "飞书",
+      "会议",
+      "提醒",
+      "面板",
+      "闹钟"
+    ],
+    "tags": [
+      "飞书",
+      "会议"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Feishu meeting reminder: a right-side floating panel listing today's/tomorrow's Feishu meetings with multi-alarm flashing reminders.",
+    "source": "generated",
+    "display": "dsh-lark-meeting-notifier",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/telegram",
+    "name": "telegram",
+    "slot": "output",
+    "capabilities": [
+      "Telegram",
+      "频道",
+      "集成"
+    ],
+    "tags": [
+      "Telegram",
+      "集成"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Channel integration for Telegram.",
+    "source": "generated",
+    "display": "telegram",
+    "verified": null
+  },
+  {
+    "id": "hi-wenw/dsh-telegram-channel",
+    "name": "dsh-telegram-channel",
+    "slot": "output",
+    "capabilities": [
+      "Telegram",
+      "远程",
+      "会话",
+      "选择",
+      "绑定"
+    ],
+    "tags": [
+      "Telegram",
+      "远程"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Telegram mobile remote for live DSH Web sessions: `/sessions` picker, bind/unbind, same trajectory as desktop (Codex-style).",
+    "source": "generated",
+    "display": "dsh-telegram-channel",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/tg-bot",
+    "name": "tg-bot",
+    "slot": "output",
+    "capabilities": [
+      "Telegram",
+      "机器人"
+    ],
+    "tags": [
+      "Telegram",
+      "机器人"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Telegram bot.",
+    "source": "generated",
+    "display": "tg-bot",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/qqbot",
+    "name": "qqbot",
+    "slot": "output",
+    "capabilities": [
+      "QQ",
+      "机器人"
+    ],
+    "tags": [
+      "QQ",
+      "机器人"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "QQ bot.",
+    "source": "generated",
+    "display": "qqbot",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-wecom-bot",
+    "name": "dsh-wecom-bot",
+    "slot": "output",
+    "capabilities": [
+      "企业微信",
+      "机器人"
+    ],
+    "tags": [
+      "企业微信",
+      "机器人"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "WeCom bot.",
+    "source": "generated",
+    "display": "dsh-wecom-bot",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-weixin-bot",
+    "name": "dsh-weixin-bot",
+    "slot": "output",
+    "capabilities": [
+      "微信",
+      "机器人"
+    ],
+    "tags": [
+      "微信",
+      "机器人"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "WeChat bot.",
+    "source": "generated",
+    "display": "dsh-weixin-bot",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-voice-chat",
+    "name": "dsh-voice-chat",
+    "slot": "output",
+    "capabilities": [
+      "语音",
+      "聊天"
+    ],
+    "tags": [
+      "语音",
+      "聊天"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Voice chat.",
+    "source": "generated",
+    "display": "dsh-voice-chat",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-web-ui-notify",
+    "name": "dsh-web-ui-notify",
+    "slot": "output",
+    "capabilities": [
+      "Web UI",
+      "通知"
+    ],
+    "tags": [
+      "界面",
+      "通知"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "WebUI notifications.",
+    "source": "generated",
+    "display": "dsh-web-ui-notify",
+    "verified": null
+  },
+  {
+    "id": "SeverusZh/dsh-notify-windows",
+    "name": "dsh-notify-windows",
+    "slot": "output",
+    "capabilities": [
+      "Windows",
+      "通知",
+      "零依赖"
+    ],
+    "tags": [
+      "Windows",
+      "通知"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Windows notifications, zero dependencies.",
+    "source": "generated",
+    "display": "dsh-notify-windows",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-ica",
+    "name": "dsh-ica",
+    "slot": "output",
+    "capabilities": [
+      "ICalingua",
+      "前端"
+    ],
+    "tags": [
+      "前端",
+      "集成"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "ICalingua frontend.",
+    "source": "generated",
+    "display": "dsh-ica",
+    "verified": null
+  },
+  {
+    "id": "dsh-external/dsh-opencode-server",
+    "name": "dsh-opencode-server",
+    "slot": "output",
+    "capabilities": [
+      "TUI",
+      "opencode",
+      "附加"
+    ],
+    "tags": [
+      "界面",
+      "集成"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    },
+    "desc": "Smooth TUI via opencode attach.",
+    "source": "generated",
+    "display": "dsh-opencode-server",
+    "verified": null
+  }
+]

@@ -1,0 +1,1858 @@
+[
+  {
+    "id": "Notifications",
+    "name": "Notifications",
+    "url": "https://github.com/login?return_to=%2F0xsline%2Fawesome-deepseek-harness",
+    "desc": "You must be signed in to change notification settings",
+    "category": "misc",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-deepresearch",
+    "name": "dsh-deepresearch",
+    "url": "https://github.com/dsh-external/dsh-deepresearch",
+    "desc": "DeepResearch plugin (cordis).",
+    "category": "Core",
+    "slot": "decision"
+  },
+  {
+    "id": "dsh-plan-execute",
+    "name": "dsh-plan-execute",
+    "url": "https://github.com/dsh-external/dsh-plan-execute",
+    "desc": "Dual-model plan/execute routing: planner model thinks, executor model acts.",
+    "category": "Core",
+    "slot": "decision"
+  },
+  {
+    "id": "dsh-toolkit",
+    "name": "dsh-toolkit",
+    "url": "https://github.com/dsh-external/dsh-toolkit",
+    "desc": "Zero-dependency tool suite (calculator/csv/diff/encoding/json/markdown/regex/time).",
+    "category": "Core",
+    "slot": "decision"
+  },
+  {
+    "id": "dsh-deep-research",
+    "name": "dsh-deep-research",
+    "url": "https://github.com/dsh-external/dsh-deep-research",
+    "desc": "Adaptive deep-research orchestrator (workflow engine).",
+    "category": "Core",
+    "slot": "decision"
+  },
+  {
+    "id": "dsh-101",
+    "name": "dsh-101",
+    "url": "https://github.com/dsh-external/dsh-101",
+    "desc": "DSH documentation reading mode.",
+    "category": "Core",
+    "slot": "decision"
+  },
+  {
+    "id": "dsh-client-ui-plan-execute",
+    "name": "dsh-client-ui-plan-execute",
+    "url": "https://github.com/dsh-external/dsh-client-ui-plan-execute",
+    "desc": "Web Settings row for plan/execute model routing.",
+    "category": "Core",
+    "slot": "decision"
+  },
+  {
+    "id": "dsh\\_workflow",
+    "name": "dsh\\_workflow",
+    "url": "https://github.com/dsh-external/dsh_workflow",
+    "desc": "Dynamic workflow for DSH (placeholder).",
+    "category": "Core",
+    "slot": "decision"
+  },
+  {
+    "id": "billion-context-dsh",
+    "name": "billion-context-dsh",
+    "url": "https://github.com/Tyan66666/billion-context-dsh",
+    "desc": "Model-driven context compression (ACP) for DeepSeek Harness, ported from billion-context-pi; the model decides when and what to compress.",
+    "category": "Context & Search",
+    "slot": "memory"
+  },
+  {
+    "id": "context-vista",
+    "name": "context-vista",
+    "url": "https://github.com/GooodWei/context-vista",
+    "desc": "A right-side floating panel and /context command for DeepSeek Harness — a live donut chart of context token usage, allocation, and estimated cost.",
+    "category": "Context & Search",
+    "slot": "memory"
+  },
+  {
+    "id": "dsh-context-doctor",
+    "name": "dsh-context-doctor",
+    "url": "https://github.com/Zhenyu98/dsh-context-doctor",
+    "desc": "See exactly what every request carries: token cost of the AGENTS.md chain, skill catalog and tool schemas, with duplicate/conflict detection and actionable pruning tips (Web UI gauge + context\\_audit ",
+    "category": "Context & Search",
+    "slot": "memory"
+  },
+  {
+    "id": "dsh-cot-summary",
+    "name": "dsh-cot-summary",
+    "url": "https://github.com/dsh-external/dsh-cot-summary",
+    "desc": "External Summary-CoT plugin workspace.",
+    "category": "Context & Search",
+    "slot": "memory"
+  },
+  {
+    "id": "dsh-explain",
+    "name": "dsh-explain",
+    "url": "https://github.com/dsh-external/dsh-explain",
+    "desc": "Learning mode that explains each agent step (WIP).",
+    "category": "Context & Search",
+    "slot": "memory"
+  },
+  {
+    "id": "dsh-file-mount",
+    "name": "dsh-file-mount",
+    "url": "https://github.com/acefun29/dsh-file-mount",
+    "desc": "Incremental file mounting with read dedupe: mounted line ranges are never re-sent to the model, on-disk changes invalidate and remount, with a Mounted Files tab and token-savings accounting.",
+    "category": "Context & Search",
+    "slot": "memory"
+  },
+  {
+    "id": "dsh-learn-everything",
+    "name": "dsh-learn-everything",
+    "url": "https://github.com/cendaifeng/dsh-learn-everything",
+    "desc": "Feynman learning-mode plugin: teach → teach-back → judge → re-explain loop rendered as rich HTML lesson cards (mermaid diagrams + shiki code highlighting).",
+    "category": "Context & Search",
+    "slot": "memory"
+  },
+  {
+    "id": "dsh-memory-vault",
+    "name": "dsh-memory-vault",
+    "url": "https://github.com/flymysql/dsh-memory",
+    "desc": "Cross-session memory vault: memory\\_remember / memory\\_recall / memory\\_forget tools, latest entries injected into system-prompt assembly, Settings page (记忆库 / Memory).",
+    "category": "Context & Search",
+    "slot": "memory"
+  },
+  {
+    "id": "dsh-session-search",
+    "name": "dsh-session-search",
+    "url": "https://github.com/dsh-external/dsh-session-search",
+    "desc": "Index-free read-only search across dsh/Codex/Claude Code/pi/OpenCode sessions.",
+    "category": "Context & Search",
+    "slot": "memory"
+  },
+  {
+    "id": "cross-harness-cite",
+    "name": "cross-harness-cite",
+    "url": "https://github.com/dsh-external/cross-harness-cite",
+    "desc": "Cite past conversations across harnesses.",
+    "category": "Context & Search",
+    "slot": "memory"
+  },
+  {
+    "id": "task-passport",
+    "name": "task-passport",
+    "url": "https://github.com/dongsheng123132/task-passport",
+    "desc": "Carry durable task state across DeepSeek Harness, WorkBuddy, Claude Code and Codex with machine-readable checkpoints and optimistic locking.",
+    "category": "Context & Search",
+    "slot": "memory"
+  },
+  {
+    "id": "dsh-session-cluster",
+    "name": "dsh-session-cluster",
+    "url": "https://github.com/dsh-external/dsh-session-cluster",
+    "desc": "Session clustering.",
+    "category": "Context & Search",
+    "slot": "memory"
+  },
+  {
+    "id": "session-chatlog",
+    "name": "session-chatlog",
+    "url": "https://github.com/dsh-external/session-chatlog",
+    "desc": "Session chat logs.",
+    "category": "Context & Search",
+    "slot": "memory"
+  },
+  {
+    "id": "dsh-memoria",
+    "name": "dsh-memoria",
+    "url": "https://github.com/jiayan-xu/dsh-memoria",
+    "desc": "Memoria memory backend for dsh: 4 tools (observe/remember/search/recall) into a vector+graph memory layer (memoria) with namespace isolation, auto-write (turn-end observe + positive-feedback -> import",
+    "category": "Context & Search",
+    "slot": "memory"
+  },
+  {
+    "id": "dsh-memory-evolve",
+    "name": "dsh-memory-evolve",
+    "url": "https://github.com/dsh-external/dsh-memory-evolve",
+    "desc": "Cross-session long-term memory + background self-evolution (5-track memory/git-branch awareness/skill evolution).",
+    "category": "Context & Search",
+    "slot": "memory"
+  },
+  {
+    "id": "dsh-memory-gate",
+    "name": "dsh-memory-gate",
+    "url": "https://github.com/GIT121995/dsh-memory-gate",
+    "desc": "Bounded local long-term memory with CBDC (Claim→Belief→Decision→Consumption) authority gating: SQLite + FTS5 claims, scoped dual-channel recall, /memory management commands, ≤3-claim/1200-char injecti",
+    "category": "Context & Search",
+    "slot": "memory"
+  },
+  {
+    "id": "dsh-engram-relay",
+    "name": "dsh-engram-relay",
+    "url": "https://github.com/dsh-external/dsh-engram-relay",
+    "desc": "Built-in <1B model for 100k-equivalent long memory with causal-graph wake-up.",
+    "category": "Context & Search",
+    "slot": "memory"
+  },
+  {
+    "id": "dsh-mneme",
+    "name": "dsh-mneme",
+    "url": "https://github.com/modusensus/dsh-mneme",
+    "desc": "Cross-session memory with memory sovereignty: SQLite + human-editable Markdown mirror, autoDream background consolidation, 106 tests.",
+    "category": "Context & Search",
+    "slot": "memory"
+  },
+  {
+    "id": "dsh-mnemon",
+    "name": "dsh-mnemon",
+    "url": "https://github.com/omdsh-dev/dsh-mnemon",
+    "desc": "Mnemon-powered local memory system: three-tier memory (runtime hot memory / project Documents / long-term Memory Spaces) with supervised writeback, retrieval tools, and Web UI.",
+    "category": "Context & Search",
+    "slot": "memory"
+  },
+  {
+    "id": "zotero-harvest",
+    "name": "zotero-harvest",
+    "url": "https://github.com/dsh-external/zotero-harvest",
+    "desc": "Zotero library integration.",
+    "category": "Context & Search",
+    "slot": "memory"
+  },
+  {
+    "id": "url-manager",
+    "name": "url-manager",
+    "url": "https://github.com/Piccolo123/url-manager",
+    "desc": "Agent-first URL collection & knowledge management: save links from any platform, auto-categorize/tag, full-text search, shared categories, and deliver results as magic-link cards. Zero setup — agents ",
+    "category": "Context & Search",
+    "slot": "memory"
+  },
+  {
+    "id": "url-manager-mcp",
+    "name": "url-manager-mcp",
+    "url": "https://github.com/Piccolo123/url-manager-mcp",
+    "desc": "MCP server companion for url-manager: 21 tools (mcp\\_\\_url\\_manager\\_\\_\\*) for save/search/categorize/share and magic-link delivery. Stdio or streamable-http.",
+    "category": "Context & Search",
+    "slot": "memory"
+  },
+  {
+    "id": "zotero-wave-rag",
+    "name": "zotero-wave-rag",
+    "url": "https://github.com/dsh-external/zotero-wave-rag",
+    "desc": "Zotero RAG retrieval.",
+    "category": "Context & Search",
+    "slot": "memory"
+  },
+  {
+    "id": "dsh-data-agent",
+    "name": "dsh-data-agent",
+    "url": "https://github.com/dsh-external/dsh-data-agent",
+    "desc": "Let the model connect to databases and write SQL.",
+    "category": "Context & Search",
+    "slot": "memory"
+  },
+  {
+    "id": "dsh-easy-ctx-manager",
+    "name": "dsh-easy-ctx-manager",
+    "url": "https://github.com/dsh-external/dsh-easy-ctx-manager",
+    "desc": "Context management: context saving and more (cordis).",
+    "category": "Context & Search",
+    "slot": "memory"
+  },
+  {
+    "id": "dsh-kb-sieve",
+    "name": "dsh-kb-sieve",
+    "url": "https://github.com/dsh-external/dsh-kb-sieve",
+    "desc": "Knowledge-base plugin: build auditable KB packages (references + SQL).",
+    "category": "Context & Search",
+    "slot": "memory"
+  },
+  {
+    "id": "dsh-payload-capture",
+    "name": "dsh-payload-capture",
+    "url": "https://github.com/moeblack/dsh-payload-capture",
+    "desc": "Capture every upstream model API payload to JSON (debug & observability).",
+    "category": "Context & Search",
+    "slot": "memory"
+  },
+  {
+    "id": "dsh-memento",
+    "name": "dsh-memento",
+    "url": "https://github.com/PerryLink/dsh-memento",
+    "desc": "Bounded, layered, approval-gated, auditable cross-session memory: typed ctx.memory seam, zero-dependency SQLite provider, memory tool and frozen snapshot injection.",
+    "category": "Context & Search",
+    "slot": "memory"
+  },
+  {
+    "id": "dsh-news-plugin",
+    "name": "dsh-news-plugin",
+    "url": "https://github.com/canghai666x/dsh-news-plugin",
+    "desc": "RSS news fetch tool: grabs 10+ CN/EN feeds into structured items (title/link/source/date/summary) with per-source timeout, ready for model-side scoring and briefing (cordis).",
+    "category": "Context & Search",
+    "slot": "memory"
+  },
+  {
+    "id": "dsh-news-briefing",
+    "name": "dsh-news-briefing",
+    "url": "https://github.com/canghai666x/dsh-news-briefing",
+    "desc": "News briefing skill: 5-dimension scoring (story/timeliness/depth/fun/uniqueness), anti-clickbait writing rules, Tier-based content preference, de-AI-style Chinese writing guide.",
+    "category": "Context & Search",
+    "slot": "memory"
+  },
+  {
+    "id": "dsh-web-novel-research",
+    "name": "dsh-web-novel-research",
+    "url": "https://github.com/canghai666x/dsh-web-novel-research",
+    "desc": "Chinese web-novel plot lookup skill: free mirror-site workflow (GBK decoding, cross-volume duplicate chapter disambiguation, multi-source completion check) without paid sources.",
+    "category": "Context & Search",
+    "slot": "memory"
+  },
+  {
+    "id": "dsh-web-search-exa",
+    "name": "dsh-web-search-exa",
+    "url": "https://github.com/TonyDua/dsh-web-search-exa",
+    "desc": "Zero-config Exa web search provider: keyless anonymous MCP fallback (mcp.exa.ai/mcp) plus keyed REST search, for the ctx.web seam.",
+    "category": "Context & Search",
+    "slot": "memory"
+  },
+  {
+    "id": "dsh-web-search-pro",
+    "name": "dsh-web-search-pro",
+    "url": "https://github.com/anweat/dsh-web-search-pro",
+    "desc": "Persistent enhanced web search for DSH: multi-engine routing (DeepSeek/Exa/DDG/Bing/Jina + GitHub/Bilibili/YouTube/V2EX/Xiaohongshu/Twitter/Reddit/RSS), SQLite+LRU cache, userscript-style extraction, ",
+    "category": "Context & Search",
+    "slot": "memory"
+  },
+  {
+    "id": "dsh-better-sidebar-plugin-office",
+    "name": "dsh-better-sidebar-plugin-office",
+    "url": "https://github.com/dsh-external/dsh-better-sidebar-plugin-office",
+    "desc": "Office integration for DSH-better-sidebar.",
+    "category": "Input & Editing",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-message-edit",
+    "name": "dsh-message-edit",
+    "url": "https://github.com/dsh-external/dsh-message-edit",
+    "desc": "Branch-based message editing / reroll / retry / version timeline.",
+    "category": "Input & Editing",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-prompt-studio",
+    "name": "dsh-prompt-studio",
+    "url": "https://github.com/dsh-external/dsh-prompt-studio",
+    "desc": "Edit system-prompt sections with live preview.",
+    "category": "Input & Editing",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-paste-input",
+    "name": "dsh-paste-input",
+    "url": "https://github.com/dsh-external/dsh-paste-input",
+    "desc": "Ctrl+V paste files / drag & drop / picker.",
+    "category": "Input & Editing",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-drag-and-drop",
+    "name": "dsh-drag-and-drop",
+    "url": "https://github.com/dsh-external/dsh-drag-and-drop",
+    "desc": "Cross-platform drag & drop with original path insertion.",
+    "category": "Input & Editing",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-file-uploads",
+    "name": "dsh-file-uploads",
+    "url": "https://github.com/l541402398/dsh-file-uploads",
+    "desc": "Upload arbitrary local files from the Web composer, show pending cards, and manage stored files in Settings.",
+    "category": "Input & Editing",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-input-history",
+    "name": "dsh-input-history",
+    "url": "https://github.com/dsh-external/dsh-input-history",
+    "desc": "Input history.",
+    "category": "Input & Editing",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-multimedia-webui-input",
+    "name": "dsh-multimedia-webui-input",
+    "url": "https://github.com/dsh-external/dsh-multimedia-webui-input",
+    "desc": "Multimedia file/folder input.",
+    "category": "Input & Editing",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-office",
+    "name": "dsh-office",
+    "url": "https://github.com/dsh-external/dsh-office",
+    "desc": "Office file read/write bundle: model edits Office files, docx/pdf preview in web client.",
+    "category": "Input & Editing",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-chat-import",
+    "name": "dsh-chat-import",
+    "url": "https://github.com/Nwflower/dsh-chat-import",
+    "desc": "Import full-fidelity conversation histories from 13 coding agents (Claude Code / Codex / ChatGPT / Cursor / Gemini / Reasonix / opencode / ZCode / Grok Build / OpenClaw / Pi / Hermes / Kimi) as resuma",
+    "category": "Input & Editing",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-file-claim",
+    "name": "dsh-file-claim",
+    "url": "https://github.com/Nwflower/dsh-file-claim",
+    "desc": "File claim/release protection for parallel DSH sessions on the same workspace (heartbeat stale takeover, pending 3-way merge area).",
+    "category": "Input & Editing",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-sticky-note",
+    "name": "dsh-sticky-note",
+    "url": "https://github.com/Meredith2328/dsh-sticky-note",
+    "desc": "Quick sticky notes in the composer: ideas/feelings/TODO with Markdown preview, auto-save, one-click send to chat.",
+    "category": "Input & Editing",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-plugin-quote-reply",
+    "name": "dsh-plugin-quote-reply",
+    "url": "https://github.com/yangYzc/dsh-plugin-quote-reply",
+    "desc": "Select text in a conversation, then quote it into the composer or reply in a new window.",
+    "category": "Input & Editing",
+    "slot": "action"
+  },
+  {
+    "id": "@picgo/dsh-plugin",
+    "name": "@picgo/dsh-plugin",
+    "url": "https://github.com/PicGo/dsh-plugin",
+    "desc": "Official PicGo plugin: upload local files to your image host and get public URLs, reusing the hosts and uploader plugins already configured in PicGo.",
+    "category": "Input & Editing",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-suggested-replies",
+    "name": "dsh-suggested-replies",
+    "url": "https://github.com/dsh-external/dsh-suggested-replies",
+    "desc": "Suggested replies above the DSH Web composer.",
+    "category": "Input & Editing",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-wordbox",
+    "name": "dsh-wordbox",
+    "url": "https://github.com/arcmosin/dsh-wordbox",
+    "desc": "Persistent common-word/phrase panel beside the composer input with global/current-project buckets and one-click insert.",
+    "category": "Input & Editing",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-voice-webspeech",
+    "name": "dsh-voice-webspeech",
+    "url": "https://github.com/anweat/dsh-voice-webspeech",
+    "desc": "Browser Web Speech API voice input for DSH: zero server, zero keys, zero model downloads (Edge=Azure, Chrome=Google speech).",
+    "category": "Input & Editing",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-plugin-anydoc",
+    "name": "dsh-plugin-anydoc",
+    "url": "https://github.com/beancookie/dsh-plugin-anydoc",
+    "desc": "This plugin exports a reusable function that takes a file path or a Buffer, extracts the content via @firecrawl/anydoc, and returns GitHub‑Flavored Markdown (GFM). It also includes configuration optio",
+    "category": "Input & Editing",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-spotlight",
+    "name": "dsh-spotlight",
+    "url": "https://github.com/0xsline/dsh-spotlight",
+    "desc": "Keyboard-first command palette for DeepSeek Harness Web.",
+    "category": "UI & Experience",
+    "slot": "output"
+  },
+  {
+    "id": "arcana",
+    "name": "arcana",
+    "url": "https://github.com/GooodWei/arcana",
+    "desc": "A floating command deck that lists every slash command in DeepSeek Harness as runnable buttons, sorted by usage.",
+    "category": "UI & Experience",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-aigc-canvas",
+    "name": "dsh-aigc-canvas",
+    "url": "https://github.com/dsh-external/dsh-aigc-canvas",
+    "desc": "AIGC canvas plugin (cordis).",
+    "category": "UI & Experience",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-deepcel",
+    "name": "dsh-deepcel",
+    "url": "https://github.com/dsh-external/dsh-deepcel",
+    "desc": "Deepcel spreadsheet skin and standalone distribution.",
+    "category": "UI & Experience",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-deepseek-quota",
+    "name": "dsh-deepseek-quota",
+    "url": "https://github.com/yingjunnan/dsh-deepseek-quota",
+    "desc": "DeepSeek API balance in a bottom-right floating card on the DSH Web page (auto-refresh + manual refresh).",
+    "category": "UI & Experience",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-diff-viewer",
+    "name": "dsh-diff-viewer",
+    "url": "https://github.com/dsh-external/dsh-diff-viewer",
+    "desc": "PiUI-style Web diff viewer replacing the default diff view.",
+    "category": "UI & Experience",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-mobile",
+    "name": "dsh-mobile",
+    "url": "https://github.com/dsh-external/dsh-mobile",
+    "desc": "Mobile client plugin (cordis + dsh.plugin.json).",
+    "category": "UI & Experience",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-openpencil",
+    "name": "dsh-openpencil",
+    "url": "https://github.com/dsh-external/dsh-openpencil",
+    "desc": "OpenPencil design preview and editing plugin.",
+    "category": "UI & Experience",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-pin-recall",
+    "name": "dsh-pin-recall",
+    "url": "https://github.com/kerwin2046/dsh-pin-recall",
+    "desc": "Pin assistant replies from the Web action strip and recall them into the next model turn (`/pin``/recall`, with optional wake).",
+    "category": "UI & Experience",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-turn-navigator",
+    "name": "dsh-turn-navigator",
+    "url": "https://github.com/dsh-external/dsh-turn-navigator",
+    "desc": "DSH Web turn navigation plugin.",
+    "category": "UI & Experience",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-ultra-ui",
+    "name": "dsh-ultra-ui",
+    "url": "https://github.com/dsh-external/dsh-ultra-ui",
+    "desc": "Ultra UI plugin (cordis).",
+    "category": "UI & Experience",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-web-billing",
+    "name": "dsh-web-billing",
+    "url": "https://github.com/bpc-oss/dsh-web-billing",
+    "desc": "RMB/USD token billing for the DSH web: official-policy auto pricing (incl. peak/off-peak hours), per-message cost ledger, account balance, locale-driven currency display.",
+    "category": "UI & Experience",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-balance-meter",
+    "name": "dsh-balance-meter",
+    "url": "https://github.com/Ghost011118/dsh-balance-meter",
+    "desc": "DeepSeek account balance and session cost in the DSH Web composer dock (auto-fetched official pricing, peak/off-peak support).",
+    "category": "UI & Experience",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-cost-meter",
+    "name": "dsh-cost-meter",
+    "url": "https://github.com/Han-1413141/dsh-cost-meter",
+    "desc": "Per-session and daily API cost, budget with usage %, official balance, history dashboard, and one-click official price sync with peak/off-peak pricing.",
+    "category": "UI & Experience",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-cost-meter",
+    "name": "dsh-cost-meter",
+    "url": "https://github.com/Sttrevens/dsh-cost-meter",
+    "desc": "Per-turn USD cost in the Web UI: session total in the header and per-turn cost in each message footer, with a hover breakdown (token usage × configurable pricing table).",
+    "category": "UI & Experience",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-plugin-cost",
+    "name": "dsh-plugin-cost",
+    "url": "https://github.com/yweilai77-dev/dsh-plugin-cost",
+    "desc": "Session cost estimate in the DSH Web composer dock (tokenUsage × configurable price table, one-click official-price refresh).",
+    "category": "UI & Experience",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-spend",
+    "name": "dsh-spend",
+    "url": "https://github.com/nonewind/dsh-spend",
+    "desc": "Token usage and estimated spend for the DSH web UI: floating panel with per-model / per-day / per-session stats and auto-detected billing plans.",
+    "category": "UI & Experience",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-live-stats",
+    "name": "dsh-live-stats",
+    "url": "https://github.com/dsh-external/dsh-live-stats",
+    "desc": "Live token estimates and generation TPS.",
+    "category": "UI & Experience",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-view-modes",
+    "name": "dsh-view-modes",
+    "url": "https://github.com/NigelYao/dsh-view-modes",
+    "desc": "DSH Web output modes with Verbose, Normal, and Summary views, semantic grouping for tool calls and thinking, and live execution status.",
+    "category": "UI & Experience",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-tps",
+    "name": "dsh-tps",
+    "url": "https://github.com/dsh-external/dsh-tps",
+    "desc": "TPS meter.",
+    "category": "UI & Experience",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-plugin-workshop",
+    "name": "dsh-plugin-workshop",
+    "url": "https://github.com/yyyyukari/dsh-plugin-workshop",
+    "desc": "Steam Workshop-style in-app plugin browser: search, hot/newest/trending windows, Chinese keyword mapping, bilingual translation, plugin-signature filtering, and smart one-click install/update/uninstal",
+    "category": "UI & Experience",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-cc-tui",
+    "name": "dsh-cc-tui",
+    "url": "https://github.com/dsh-external/dsh-cc-tui",
+    "desc": "Claude Code-style fullscreen TUI (streaming expand / double-Esc rollback).",
+    "category": "UI & Experience",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-grok-tui",
+    "name": "dsh-grok-tui",
+    "url": "https://github.com/chen-001/dsh-grok-tui",
+    "desc": "TUI built with grok-build.",
+    "category": "UI & Experience",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-pi-tui",
+    "name": "dsh-pi-tui",
+    "url": "https://github.com/lqhl/dsh-pi-tui",
+    "desc": "Pi TUI (differential-rendering terminal framework) front end: streaming markdown, thinking collapse, tool cards, slash commands, approval/question overlays, shared dsh session store.",
+    "category": "UI & Experience",
+    "slot": "output"
+  },
+  {
+    "id": "deepseek-harness-tui",
+    "name": "deepseek-harness-tui",
+    "url": "https://github.com/openma-ai/deepseek-harness-tui",
+    "desc": "Rust/ratatui terminal client that speaks the DSH SDK JSON-RPC protocol directly and runs standalone or as a profile bundle.",
+    "category": "UI & Experience",
+    "slot": "output"
+  },
+  {
+    "id": "DSH-better-sidebar",
+    "name": "DSH-better-sidebar",
+    "url": "https://github.com/dsh-external/DSH-better-sidebar",
+    "desc": "Sidebar: file rendering/terminal/Git/subagents/custom APIs.",
+    "category": "UI & Experience",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-web-panel",
+    "name": "dsh-web-panel",
+    "url": "https://github.com/dsh-external/dsh-web-panel",
+    "desc": "Embedded terminal dock + Git Review + file view.",
+    "category": "UI & Experience",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-web-review",
+    "name": "dsh-web-review",
+    "url": "https://github.com/CanglongCl/dsh-web-review",
+    "desc": "Isolated web page previews with element annotations and visual adjustments that guide source edits.",
+    "category": "UI & Experience",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-mobileweb-adapter",
+    "name": "dsh-mobileweb-adapter",
+    "url": "https://github.com/dsh-external/dsh-mobileweb-adapter",
+    "desc": "Mobile/PWA layout adaptation + LAN WebSocket fix.",
+    "category": "UI & Experience",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-subagent-tree",
+    "name": "dsh-subagent-tree",
+    "url": "https://github.com/dsh-external/dsh-subagent-tree",
+    "desc": "Subagent tree visualization.",
+    "category": "UI & Experience",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-web-workflow-visualizer",
+    "name": "dsh-web-workflow-visualizer",
+    "url": "https://github.com/dsh-external/dsh-web-workflow-visualizer",
+    "desc": "Workflow visualization.",
+    "category": "UI & Experience",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-split-panes",
+    "name": "dsh-split-panes",
+    "url": "https://github.com/dsh-external/dsh-split-panes",
+    "desc": "Split panes.",
+    "category": "UI & Experience",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-ui-progress",
+    "name": "dsh-ui-progress",
+    "url": "https://github.com/dsh-external/dsh-ui-progress",
+    "desc": "Progress indicators.",
+    "category": "UI & Experience",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-skins",
+    "name": "dsh-skins",
+    "url": "https://github.com/dsh-external/dsh-skins",
+    "desc": "Web UI skins.",
+    "category": "UI & Experience",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-skin",
+    "name": "dsh-skin",
+    "url": "https://github.com/KinGao294/dsh-skin",
+    "desc": "Codex-style skin switcher + custom wallpaper for the Web UI: curated --dsw-alias-\\* palettes and a translucent wallpaper layer with opacity/blur controls.",
+    "category": "UI & Experience",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-chat-thumb",
+    "name": "dsh-chat-thumb",
+    "url": "https://github.com/dsh-external/dsh-chat-thumb",
+    "desc": "Chat thumbnails (cordis).",
+    "category": "UI & Experience",
+    "slot": "output"
+  },
+  {
+    "id": "show-bash-command",
+    "name": "show-bash-command",
+    "url": "https://github.com/dsh-external/show-bash-command",
+    "desc": "Show actual command content instead of descriptions.",
+    "category": "UI & Experience",
+    "slot": "output"
+  },
+  {
+    "id": "turtle-ui",
+    "name": "turtle-ui",
+    "url": "https://github.com/dsh-external/turtle-ui",
+    "desc": "Official UI plugin reference implementation.",
+    "category": "UI & Experience",
+    "slot": "output"
+  },
+  {
+    "id": "@zhaoolee/dsh-notes",
+    "name": "@zhaoolee/dsh-notes",
+    "url": "https://github.com/zhaoolee/notes",
+    "desc": "Export DSH conversations as Smartisan Notes-style PNGs, or create and update Markdown notes in a configured account-scoped workspace.",
+    "category": "UI & Experience",
+    "slot": "output"
+  },
+  {
+    "id": "deepseek-harness-desktop",
+    "name": "deepseek-harness-desktop",
+    "url": "https://github.com/chyra-moon/deepseek-harness-desktop",
+    "desc": "Native Windows desktop shell: 1:1 official web UI with embedded server hosting, tray and auto-recovery.",
+    "category": "UI & Experience",
+    "slot": "output"
+  },
+  {
+    "id": "Harness Desktop",
+    "name": "Harness Desktop",
+    "url": "https://github.com/baiyuscc13724-max/deepseek-harness-desktop",
+    "desc": "Windows desktop app for the official DSH Web UI with a Chinese installer and portable build, quick themes, an in-app plugin marketplace, separate main/subagent model selection, and verified updates.",
+    "category": "UI & Experience",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-desktop",
+    "name": "dsh-desktop",
+    "url": "https://github.com/foolgry/dsh-desktop",
+    "desc": "Download-and-run Electron desktop build (macOS/Windows installers): no Node.js or terminal needed, tracks upstream `@deepseek-ai/dsh` releases automatically, with built-in web UI and auto-update.",
+    "category": "UI & Experience",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-milestone",
+    "name": "dsh-milestone",
+    "url": "https://github.com/SnowCrescenter-tech/dsh-milestone",
+    "desc": "Right-side dot-timeline rail to jump between user messages.",
+    "category": "UI & Experience",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-turn-index",
+    "name": "dsh-turn-index",
+    "url": "https://github.com/Simon314620/dsh-turn-index",
+    "desc": "Turn-index sidebar: one entry per user turn, click to jump, scroll-spy highlighting.",
+    "category": "UI & Experience",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-web-attention-badge",
+    "name": "dsh-web-attention-badge",
+    "url": "https://github.com/Luaphes/dsh-web-attention-badge",
+    "desc": "Attention reminders: frame badge, tab-title count and whale-favicon recolor for sessions waiting for input or finished unopened.",
+    "category": "UI & Experience",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-plugin-description",
+    "name": "dsh-plugin-description",
+    "url": "https://github.com/MysaDC/dsh-plugin-description",
+    "desc": "Adds bilingual (zh/en) descriptions to every plugin card on the Web Settings plugin list; publishes a `pluginDescriptions` service for other plugins to register their own.",
+    "category": "UI & Experience",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-builtin-toggles",
+    "name": "dsh-builtin-toggles",
+    "url": "https://github.com/Starfie1d1272/dsh-builtin-toggles",
+    "desc": "Human-readable catalog for official DSH Web built-ins with status explanations and an audited set of safe UI toggles.",
+    "category": "UI & Experience",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-hud",
+    "name": "dsh-hud",
+    "url": "https://github.com/a903067276-rgb/dsh-hud",
+    "desc": "HUD status panel: git status, MCP servers, skills, model and token usage in a floating side panel.",
+    "category": "UI & Experience",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-file-mentions",
+    "name": "dsh-file-mentions",
+    "url": "https://github.com/a903067276-rgb/dsh-file-mentions",
+    "desc": "Clickable file paths in DSH replies: Codex-style inline open, 📂 reveal in file manager, and a mentioned-files chip list at the turn tail.",
+    "category": "UI & Experience",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-auto-continue",
+    "name": "dsh-auto-continue",
+    "url": "https://github.com/HsiangNianian/dsh-auto-continue",
+    "desc": "Auto-resumes interrupted DSH Web requests: sends a queued 「继续」 after network/timeout/host-crash failures, with error classification, adaptive backoff, templated continue text and browser notifications",
+    "category": "UI & Experience",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-trajectory-debug",
+    "name": "dsh-trajectory-debug",
+    "url": "https://github.com/devmom/dsh-trajectory-debug",
+    "desc": "Trajectory waterfall, deterministic replay, breakpoints, edit-and-rerun, fork compare and performance analytics for DeepSeek Harness.",
+    "category": "UI & Experience",
+    "slot": "output"
+  },
+  {
+    "id": "dsh4vscode",
+    "name": "dsh4vscode",
+    "url": "https://github.com/DoggyHU/dsh4vscode",
+    "desc": "VS Code chat windows backed by the DSH agent: OpenCode-style independent sessions, model auto-routing (Flash/Pro/Pro Max).",
+    "category": "IDE & Clients",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-browser-panel",
+    "name": "dsh-browser-panel",
+    "url": "https://github.com/dsh-external/dsh-browser-panel",
+    "desc": "Headed browser embedded in the WebUI, model-driven (Codex-style, zero vision deps).",
+    "category": "Browser & Remote",
+    "slot": "perception"
+  },
+  {
+    "id": "dsh-browser",
+    "name": "dsh-browser",
+    "url": "https://github.com/dsh-external/dsh-browser",
+    "desc": "Chrome sidebar extension.",
+    "category": "Browser & Remote",
+    "slot": "perception"
+  },
+  {
+    "id": "dsh-deeplink",
+    "name": "dsh-deeplink",
+    "url": "https://github.com/dsh-external/dsh-deeplink",
+    "desc": "Open DSH WebUI sessions or workspaces directly from URL parameters.",
+    "category": "Browser & Remote",
+    "slot": "perception"
+  },
+  {
+    "id": "dsh-remote",
+    "name": "dsh-remote",
+    "url": "https://github.com/flymysql/dsh-remote",
+    "desc": "Multi-machine remote workspace: manage many SSH hosts, pick a local or remote workspace in the native Add-workspace flow (system folder / path browse), mirror a remote workspace to a real local folder",
+    "category": "Browser & Remote",
+    "slot": "perception"
+  },
+  {
+    "id": "dsh-lan-access",
+    "name": "dsh-lan-access",
+    "url": "https://github.com/Leon0555/dsh-lan-access",
+    "desc": "LAN access for the Web GUI: 0.0.0.0 bind plus a crypto.randomUUID polyfill for non-secure (LAN HTTP) contexts (npm: dsh-lan-access).",
+    "category": "Browser & Remote",
+    "slot": "perception"
+  },
+  {
+    "id": "ego-browser",
+    "name": "ego-browser",
+    "url": "https://github.com/dsh-external/ego-browser",
+    "desc": "Browser agent.",
+    "category": "Browser & Remote",
+    "slot": "perception"
+  },
+  {
+    "id": "dsh-webbridge",
+    "name": "dsh-webbridge",
+    "url": "https://github.com/dsh-external/dsh-webbridge",
+    "desc": "Web bridge.",
+    "category": "Browser & Remote",
+    "slot": "perception"
+  },
+  {
+    "id": "browser4-dsh",
+    "name": "browser4-dsh",
+    "url": "https://github.com/dsh-external/browser4-dsh",
+    "desc": "Browser4 AI-native browser engine (skills).",
+    "category": "Browser & Remote",
+    "slot": "perception"
+  },
+  {
+    "id": "dsh-browser-runtime",
+    "name": "dsh-browser-runtime",
+    "url": "https://github.com/anweat/dsh-browser",
+    "desc": "Self-contained browser runtime plugin: Playwright (chromium) + OpenCLI as plugin-local deps (global reuse fallback), exposes a `browser` service and interactive browser tools.",
+    "category": "Browser & Remote",
+    "slot": "perception"
+  },
+  {
+    "id": "dsh-vision",
+    "name": "dsh-vision",
+    "url": "https://github.com/dsh-external/dsh-vision",
+    "desc": "Vision bridge: view\\_image tool over any OpenAI-compatible VLM (Zhipu free tier by default).",
+    "category": "Models & Inference",
+    "slot": "decision"
+  },
+  {
+    "id": "dsh-plugin-vision",
+    "name": "dsh-plugin-vision",
+    "url": "https://github.com/tdf1995/dsh-plugin-vision",
+    "desc": "Vision for text-only LLMs: image description / OCR / VQA via free Gemini and GLM vision APIs.",
+    "category": "Models & Inference",
+    "slot": "decision"
+  },
+  {
+    "id": "ysr666/dsh-vision-router",
+    "name": "ysr666/dsh-vision-router",
+    "url": "https://github.com/ysr666/dsh-vision-router",
+    "desc": "Free vision for text-only agents: built-in keyless vision chain plus pixel tools (Q&A, grounding, crop, pixel diff, colors, OCR, SVG trace, cutout, screenshots); paste an image and it just works — no ",
+    "category": "Models & Inference",
+    "slot": "decision"
+  },
+  {
+    "id": "dsh-vision-proxy",
+    "name": "dsh-vision-proxy",
+    "url": "https://github.com/Flyvhidbwo/dsh-vision-proxy",
+    "desc": "DeepSeek brain + automatic image transcription: attach images in the GUI and each one is transcribed to text via any OpenAI-compatible VLM before reaching the text-only DeepSeek — a keyed fast path (d",
+    "category": "Models & Inference",
+    "slot": "decision"
+  },
+  {
+    "id": "dsh-advisor",
+    "name": "dsh-advisor",
+    "url": "https://github.com/dsh-external/dsh-advisor",
+    "desc": "Second model passively reviews each turn and injects notes.",
+    "category": "Models & Inference",
+    "slot": "decision"
+  },
+  {
+    "id": "dsh-llm-fallbacks",
+    "name": "dsh-llm-fallbacks",
+    "url": "https://github.com/dsh-external/dsh-llm-fallbacks",
+    "desc": "Role-based LLM retry/fallback strategy.",
+    "category": "Models & Inference",
+    "slot": "decision"
+  },
+  {
+    "id": "dsh-pi-adapter",
+    "name": "dsh-pi-adapter",
+    "url": "https://github.com/dsh-external/dsh-pi-adapter",
+    "desc": "ExtensionAPI bridge for pi.",
+    "category": "Models & Inference",
+    "slot": "decision"
+  },
+  {
+    "id": "dsh-a2a",
+    "name": "dsh-a2a",
+    "url": "https://github.com/dsh-external/dsh-a2a",
+    "desc": "Agent2Agent mesh.",
+    "category": "Models & Inference",
+    "slot": "decision"
+  },
+  {
+    "id": "dsh-plugin-acn",
+    "name": "dsh-plugin-acn",
+    "url": "https://github.com/acnlabs/dsh-plugin-acn",
+    "desc": "Join ACN from DeepSeek Harness: register this agent, discover others, send messages, read the inbox. Defaults to the China region.",
+    "category": "Models & Inference",
+    "slot": "decision"
+  },
+  {
+    "id": "dsh-acp",
+    "name": "dsh-acp",
+    "url": "https://github.com/dsh-external/dsh-acp",
+    "desc": "Client-neutral ACP adapter.",
+    "category": "Models & Inference",
+    "slot": "decision"
+  },
+  {
+    "id": "deepseek-harness-acp",
+    "name": "deepseek-harness-acp",
+    "url": "https://github.com/openma-ai/deepseek-harness-acp",
+    "desc": "ACP profile plugin and standalone server that exposes the full DSH agent to Zed and other ACP clients while reusing DSH credentials, sessions, and MCP configuration.",
+    "category": "Models & Inference",
+    "slot": "decision"
+  },
+  {
+    "id": "dsh-mnemon",
+    "name": "dsh-mnemon",
+    "url": "https://github.com/dsh-external/dsh-mnemon",
+    "desc": "Mnemonic layer.",
+    "category": "Models & Inference",
+    "slot": "decision"
+  },
+  {
+    "id": "dsh-slice-agent-loop",
+    "name": "dsh-slice-agent-loop",
+    "url": "https://github.com/dsh-external/dsh-slice-agent-loop",
+    "desc": "Drop-in agent loop with bounded-slice context engine (cordis).",
+    "category": "Models & Inference",
+    "slot": "decision"
+  },
+  {
+    "id": "savemoneybenchmark",
+    "name": "savemoneybenchmark",
+    "url": "https://github.com/dsh-external/savemoneybenchmark",
+    "desc": "Cost-reduction benchmark (examples + skills).",
+    "category": "Models & Inference",
+    "slot": "decision"
+  },
+  {
+    "id": "dsh-harness-mcp-server",
+    "name": "dsh-harness-mcp-server",
+    "url": "https://github.com/chushixixin/dsh-harness-mcp-server",
+    "desc": "MCP server exposing Harness agent: any MCP client (e.g. Hermes) drives Harness as its 'arms'.",
+    "category": "Models & Inference",
+    "slot": "decision"
+  },
+  {
+    "id": "dsh-subagent-tools",
+    "name": "dsh-subagent-tools",
+    "url": "https://github.com/lynx-gt/dsh-subagent-tools",
+    "desc": "Per-call model / provider / persona / toolFilter overrides for subagent delegation, @preset: references, provider/model composite ids (bundle, no patched files).",
+    "category": "Models & Inference",
+    "slot": "decision"
+  },
+  {
+    "id": "dsh-subagent-cwd",
+    "name": "dsh-subagent-cwd",
+    "url": "https://github.com/lynx-gt/dsh-subagent-cwd",
+    "desc": "Extends dsh-subagent-tools with a per-call cwd for subagents and the two in-process provider patches it requires.",
+    "category": "Models & Inference",
+    "slot": "decision"
+  },
+  {
+    "id": "dsh-subscription-auth",
+    "name": "dsh-subscription-auth",
+    "url": "https://github.com/Khellendros97/dsh-subscription-auth",
+    "desc": "Subscription OAuth login: use ChatGPT/Claude/Grok/Kimi subscription accounts (not API keys) with automatic model discovery.",
+    "category": "Models & Inference",
+    "slot": "decision"
+  },
+  {
+    "id": "dsh-git-identity",
+    "name": "dsh-git-identity",
+    "url": "https://github.com/dsh-external/dsh-git-identity",
+    "desc": "Pin Git commit authorship to the environment identity (gh account + noreply email).",
+    "category": "Git & Engineering",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-gh-bridge",
+    "name": "dsh-gh-bridge",
+    "url": "https://github.com/dsh-external/dsh-gh-bridge",
+    "desc": "Bridge macOS Keychain GitHub token into sandboxed gh.",
+    "category": "Git & Engineering",
+    "slot": "action"
+  },
+  {
+    "id": "deepseek-harness-action",
+    "name": "deepseek-harness-action",
+    "url": "https://github.com/Lixiaoyiao/deepseek-harness-action",
+    "desc": "GitHub Action that runs DeepSeek Harness for pull request review, CI diagnosis, trusted fixes, and issue-to-PR implementation.",
+    "category": "Git & Engineering",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-auto-blame",
+    "name": "dsh-auto-blame",
+    "url": "https://github.com/dsh-external/dsh-auto-blame",
+    "desc": "Auto blame.",
+    "category": "Git & Engineering",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-tool-git",
+    "name": "dsh-tool-git",
+    "url": "https://github.com/lxj808624/dsh-tool-git",
+    "desc": "Structured Git tools (status/diff/log/branch/stage/commit/stash/show) with a destructive-command guard.",
+    "category": "Git & Engineering",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-plugin-check",
+    "name": "dsh-plugin-check",
+    "url": "https://github.com/dsh-external/dsh-plugin-check",
+    "desc": "Plugin health checks (manifest/patch format/build pitfalls/hub status).",
+    "category": "Git & Engineering",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-telemetry-redactor",
+    "name": "dsh-telemetry-redactor",
+    "url": "https://github.com/030611/dsh-telemetry-redactor",
+    "desc": "Redacts supported secret patterns from the `session-telemetry/record` export copy before configured telemetry backends receive it.",
+    "category": "Git & Engineering",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-verification-receipt",
+    "name": "dsh-verification-receipt",
+    "url": "https://github.com/030611/dsh-verification-receipt",
+    "desc": "Writes local JSONL summaries of per-turn tool counts and coarse verification signals without storing prompts, tool arguments, or result text.",
+    "category": "Git & Engineering",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-inspect",
+    "name": "dsh-inspect",
+    "url": "https://github.com/dsh-external/dsh-inspect",
+    "desc": "Adversarial checkup → fix → review loop.",
+    "category": "Git & Engineering",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-alphasolve",
+    "name": "dsh-alphasolve",
+    "url": "https://github.com/dsh-external/dsh-alphasolve",
+    "desc": "AlphaSolve workflow.",
+    "category": "Git & Engineering",
+    "slot": "action"
+  },
+  {
+    "id": "mstar-workflow",
+    "name": "mstar-workflow",
+    "url": "https://github.com/dsh-external/mstar-workflow",
+    "desc": "Workflow engine.",
+    "category": "Git & Engineering",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-spur",
+    "name": "dsh-spur",
+    "url": "https://github.com/dsh-external/dsh-spur",
+    "desc": "Task engine.",
+    "category": "Git & Engineering",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-involute",
+    "name": "dsh-involute",
+    "url": "https://github.com/dsh-external/dsh-involute",
+    "desc": "Embedded task-management engine.",
+    "category": "Git & Engineering",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-review-loop",
+    "name": "dsh-review-loop",
+    "url": "https://github.com/wuxiangru915/dsh-review-loop",
+    "desc": "Incremental diff reviewer: checkpoint-based since-review queue with a Web UI panel, /review command, and feedback injection into the agent.",
+    "category": "Git & Engineering",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-test-runner",
+    "name": "dsh-test-runner",
+    "url": "https://github.com/suimi8/dsh-test-runner",
+    "desc": "Structured test runner tool (test\\_run): auto-detect Vitest/Jest/pytest/node:test, run tests, parse failure summaries for the model.",
+    "category": "Git & Engineering",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-git-branch-switcher",
+    "name": "dsh-git-branch-switcher",
+    "url": "https://github.com/mixin-ai/dsh-git-branch-switcher",
+    "desc": "Session-header Git branch pill: shows the current workspace branch and switches branches from the Web UI.",
+    "category": "Git & Engineering",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-doublecheck",
+    "name": "dsh-doublecheck",
+    "url": "https://github.com/PerryLink/dsh-doublecheck",
+    "desc": "Engineering-discipline loop: requirement grilling before edits, red/green test-evidence gates, and an adversarial delivery review.",
+    "category": "Git & Engineering",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-report-studio",
+    "name": "dsh-report-studio",
+    "url": "https://github.com/ciceroyang/dsh-report-studio",
+    "desc": "Turn a DeepSeek Harness session into deliverable work reports (daily/weekly/handoff/article) with verifiable receipts.",
+    "category": "Output & Deliverables",
+    "slot": "output"
+  },
+  {
+    "id": "plugin-session-export",
+    "name": "plugin-session-export",
+    "url": "https://github.com/whyihaveyou/dsh-suite/tree/main/packages/plugins/plugin-session-export",
+    "desc": "Export the append-only session log as human-readable Markdown or HTML, grouped by trajectory source.",
+    "category": "Output & Deliverables",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-feishu-bot",
+    "name": "dsh-feishu-bot",
+    "url": "https://github.com/dsh-external/dsh-feishu-bot",
+    "desc": "Feishu bot.",
+    "category": "Notifications & Channels",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-feishu-notify",
+    "name": "dsh-feishu-notify",
+    "url": "https://github.com/dsh-external/dsh-feishu-notify",
+    "desc": "Feishu notifications (session end / input needed).",
+    "category": "Notifications & Channels",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-lark-meeting-notifier",
+    "name": "dsh-lark-meeting-notifier",
+    "url": "https://github.com/yeruizhi/dsh-lark-meeting-notifier",
+    "desc": "Feishu meeting reminder: a right-side floating panel listing today's/tomorrow's Feishu meetings with multi-alarm flashing reminders.",
+    "category": "Notifications & Channels",
+    "slot": "output"
+  },
+  {
+    "id": "telegram",
+    "name": "telegram",
+    "url": "https://github.com/dsh-external/telegram",
+    "desc": "Channel integration for Telegram.",
+    "category": "Notifications & Channels",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-telegram-channel",
+    "name": "dsh-telegram-channel",
+    "url": "https://github.com/hi-wenw/dsh-telegram-channel",
+    "desc": "Telegram mobile remote for live DSH Web sessions: `/sessions` picker, bind/unbind, same trajectory as desktop (Codex-style).",
+    "category": "Notifications & Channels",
+    "slot": "output"
+  },
+  {
+    "id": "tg-bot",
+    "name": "tg-bot",
+    "url": "https://github.com/dsh-external/tg-bot",
+    "desc": "Telegram bot.",
+    "category": "Notifications & Channels",
+    "slot": "output"
+  },
+  {
+    "id": "qqbot",
+    "name": "qqbot",
+    "url": "https://github.com/dsh-external/qqbot",
+    "desc": "QQ bot.",
+    "category": "Notifications & Channels",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-wecom-bot",
+    "name": "dsh-wecom-bot",
+    "url": "https://github.com/dsh-external/dsh-wecom-bot",
+    "desc": "WeCom bot.",
+    "category": "Notifications & Channels",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-weixin-bot",
+    "name": "dsh-weixin-bot",
+    "url": "https://github.com/dsh-external/dsh-weixin-bot",
+    "desc": "WeChat bot.",
+    "category": "Notifications & Channels",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-voice-chat",
+    "name": "dsh-voice-chat",
+    "url": "https://github.com/dsh-external/dsh-voice-chat",
+    "desc": "Voice chat.",
+    "category": "Notifications & Channels",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-web-ui-notify",
+    "name": "dsh-web-ui-notify",
+    "url": "https://github.com/dsh-external/dsh-web-ui-notify",
+    "desc": "WebUI notifications.",
+    "category": "Notifications & Channels",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-notify-windows",
+    "name": "dsh-notify-windows",
+    "url": "https://github.com/SeverusZh/dsh-notify-windows",
+    "desc": "Windows notifications, zero dependencies.",
+    "category": "Notifications & Channels",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-ica",
+    "name": "dsh-ica",
+    "url": "https://github.com/dsh-external/dsh-ica",
+    "desc": "ICalingua frontend.",
+    "category": "Notifications & Channels",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-opencode-server",
+    "name": "dsh-opencode-server",
+    "url": "https://github.com/dsh-external/dsh-opencode-server",
+    "desc": "Smooth TUI via opencode attach.",
+    "category": "Notifications & Channels",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-teamwork",
+    "name": "dsh-teamwork",
+    "url": "https://github.com/dsh-external/dsh-teamwork",
+    "desc": "Team collaboration (cordis).",
+    "category": "Notifications & Channels",
+    "slot": "output"
+  },
+  {
+    "id": "plugin-notify",
+    "name": "plugin-notify",
+    "url": "https://github.com/whyihaveyou/dsh-suite/tree/main/packages/plugins/plugin-notify",
+    "desc": "IM webhook + local notifications on turn completion / errors / approval requests (Feishu, WeCom, DingTalk, Slack, Discord, custom).",
+    "category": "Notifications & Channels",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-agent-rp",
+    "name": "dsh-agent-rp",
+    "url": "https://github.com/dsh-external/dsh-agent-rp",
+    "desc": "SillyTavern migration and next-generation agent roleplay for DSH.",
+    "category": "Fun & Lifestyle",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-emoji",
+    "name": "dsh-emoji",
+    "url": "https://github.com/dsh-external/dsh-emoji",
+    "desc": "Emoji plugin (cordis).",
+    "category": "Fun & Lifestyle",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-stock-market",
+    "name": "dsh-stock-market",
+    "url": "https://github.com/dsh-external/dsh-stock-market",
+    "desc": "Stock market data plugin.",
+    "category": "Fun & Lifestyle",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-travel-plugin",
+    "name": "dsh-travel-plugin",
+    "url": "https://github.com/dsh-external/dsh-travel-plugin",
+    "desc": "Travel plugin.",
+    "category": "Fun & Lifestyle",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-weather",
+    "name": "dsh-weather",
+    "url": "https://github.com/sunshine-lang/dsh-weather",
+    "desc": "Weather tool: current conditions and multi-day forecasts via Open-Meteo (free, no API key).",
+    "category": "Fun & Lifestyle",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-pdf",
+    "name": "dsh-pdf",
+    "url": "https://github.com/sunshine-lang/dsh-pdf",
+    "desc": "PDF toolbox: extract text, metadata, and page ranges via pdfjs-dist (local, no API key).",
+    "category": "Fun & Lifestyle",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-ui-whale",
+    "name": "dsh-ui-whale",
+    "url": "https://github.com/dsh-external/dsh-ui-whale",
+    "desc": "Pixel whale companion (blink/tail/spout/hearts).",
+    "category": "Fun & Lifestyle",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-pet",
+    "name": "dsh-pet",
+    "url": "https://github.com/FlytoMAYDAY80/dsh-pet",
+    "desc": "Desktop whale pet with live session state.",
+    "category": "Fun & Lifestyle",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-pet-rs",
+    "name": "dsh-pet-rs",
+    "url": "https://github.com/dsh-external/dsh-pet-rs",
+    "desc": "Desktop pet, Rust edition.",
+    "category": "Fun & Lifestyle",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-stickers",
+    "name": "dsh-stickers",
+    "url": "https://github.com/dsh-external/dsh-stickers",
+    "desc": "Stickers.",
+    "category": "Fun & Lifestyle",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-ads",
+    "name": "dsh-ads",
+    "url": "https://github.com/dsh-external/dsh-ads",
+    "desc": "2005 Chinese-web-style ad layer (joke plugin).",
+    "category": "Fun & Lifestyle",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-gomoku",
+    "name": "dsh-gomoku",
+    "url": "https://github.com/dsh-external/dsh-gomoku",
+    "desc": "Gomoku (five-in-a-row).",
+    "category": "Fun & Lifestyle",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-qq2006",
+    "name": "dsh-qq2006",
+    "url": "https://github.com/dsh-external/dsh-qq2006",
+    "desc": "QQ2006 skin.",
+    "category": "Fun & Lifestyle",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-lazyfish",
+    "name": "dsh-lazyfish",
+    "url": "https://github.com/dsh-external/dsh-lazyfish",
+    "desc": "Slack-off panel (feed + Bilibili player).",
+    "category": "Fun & Lifestyle",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-tavern-plugin",
+    "name": "dsh-tavern-plugin",
+    "url": "https://github.com/dsh-external/dsh-tavern-plugin",
+    "desc": "Tavern character cards.",
+    "category": "Fun & Lifestyle",
+    "slot": "output"
+  },
+  {
+    "id": "dsh-sfw",
+    "name": "dsh-sfw",
+    "url": "https://github.com/dsh-external/dsh-sfw",
+    "desc": "Safety filter.",
+    "category": "Fun & Lifestyle",
+    "slot": "output"
+  },
+  {
+    "id": "ui-status-label",
+    "name": "ui-status-label",
+    "url": "https://github.com/dsh-external/ui-status-label",
+    "desc": "Custom status labels for the whale's deep-diving (cordis).",
+    "category": "Fun & Lifestyle",
+    "slot": "output"
+  },
+  {
+    "id": "Code2Skill",
+    "name": "Code2Skill",
+    "url": "https://github.com/leechen298/Code2Skill",
+    "desc": "Generate Functions, MCP tools, workflow Skills, and offline test packages from user-authorized source code.",
+    "category": "Infrastructure & Development",
+    "slot": "action"
+  },
+  {
+    "id": "deepseek-harness-desktop",
+    "name": "deepseek-harness-desktop",
+    "url": "https://github.com/Easyhoov/deepseek-harness-desktop",
+    "desc": "Unofficial in-process Windows desktop app with tray residency, native notifications, and an IPC bridge.",
+    "category": "Infrastructure & Development",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-hmz",
+    "name": "dsh-hmz",
+    "url": "https://github.com/dsh-external/dsh-hmz",
+    "desc": "Placeholder repository; description pending.",
+    "category": "Infrastructure & Development",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-interpreters",
+    "name": "dsh-interpreters",
+    "url": "https://github.com/dsh-external/dsh-interpreters",
+    "desc": "Interpreter plugin (cordis).",
+    "category": "Infrastructure & Development",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-notebooks",
+    "name": "dsh-notebooks",
+    "url": "https://github.com/dsh-external/dsh-notebooks",
+    "desc": "Notebooks plugin (cordis).",
+    "category": "Infrastructure & Development",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-plugin-radar",
+    "name": "dsh-plugin-radar",
+    "url": "https://github.com/dsh-external/dsh-plugin-radar",
+    "desc": "Daily DSH plugin compatibility radar, renamed from dsh-external-research.",
+    "category": "Infrastructure & Development",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-scout",
+    "name": "dsh-scout",
+    "url": "https://github.com/dsh-external/dsh-scout",
+    "desc": "Scout plugin (cordis).",
+    "category": "Infrastructure & Development",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-share",
+    "name": "dsh-share",
+    "url": "https://github.com/dsh-external/dsh-share",
+    "desc": "Share DSH conversations.",
+    "category": "Infrastructure & Development",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-sonar",
+    "name": "dsh-sonar",
+    "url": "https://github.com/dsh-external/dsh-sonar",
+    "desc": "Sonar plugin (cordis).",
+    "category": "Infrastructure & Development",
+    "slot": "action"
+  },
+  {
+    "id": "plugin-registry",
+    "name": "plugin-registry",
+    "url": "https://github.com/dsh-external/plugin-registry",
+    "desc": "Plugin console + make-dsh-plugin skill + dev guide.",
+    "category": "Infrastructure & Development",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-plugin-manager-registry",
+    "name": "dsh-plugin-manager-registry",
+    "url": "https://github.com/Jesse-njx/dsh-plugin-manager-registry",
+    "desc": "Offline-tolerant registry that discovers and deduplicates DSH plugins from awesome lists, GitHub topics, and npm.",
+    "category": "Infrastructure & Development",
+    "slot": "action"
+  },
+  {
+    "id": "marisa",
+    "name": "marisa",
+    "url": "https://github.com/dsh-external/marisa",
+    "desc": "External plugin manager (parasitic install/CLI/settings panel).",
+    "category": "Infrastructure & Development",
+    "slot": "action"
+  },
+  {
+    "id": "hub",
+    "name": "hub",
+    "url": "https://github.com/dsh-external/hub",
+    "desc": "Org-wide index + unified catalog.json (CI-generated).",
+    "category": "Infrastructure & Development",
+    "slot": "action"
+  },
+  {
+    "id": "dshx-update-check",
+    "name": "dshx-update-check",
+    "url": "https://github.com/dsh-external/dshx-update-check",
+    "desc": "Plugin update checker.",
+    "category": "Infrastructure & Development",
+    "slot": "action"
+  },
+  {
+    "id": "toybox",
+    "name": "toybox",
+    "url": "https://github.com/dsh-external/toybox",
+    "desc": "MCP plugin collection (almanac/bug-tamer/naming master/time capsule, etc.).",
+    "category": "Infrastructure & Development",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-github-integration",
+    "name": "dsh-github-integration",
+    "url": "https://github.com/dsh-external/dsh-github-integration",
+    "desc": "GitHub integration plugin.",
+    "category": "Infrastructure & Development",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-super-injector",
+    "name": "dsh-super-injector",
+    "url": "https://github.com/dsh-external/dsh-super-injector",
+    "desc": "Super-injector (cordis).",
+    "category": "Infrastructure & Development",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-mcp-manager",
+    "name": "dsh-mcp-manager",
+    "url": "https://github.com/hyqhyq3/dsh-mcp-manager",
+    "desc": "MCP server manager: Settings page with OAuth (PKCE + dynamic client registration) or static-token auth; tools registered as mcp\\_\\_\\_\\_\\*.",
+    "category": "Infrastructure & Development",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-doctor",
+    "name": "dsh-doctor",
+    "url": "https://github.com/asdf17128/dsh-doctor",
+    "desc": "Profile health check: finds config fields a patch dropped by whole-config replacement, patches targeting missing entry ids, and tool-name collisions.",
+    "category": "Infrastructure & Development",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-portable-launcher",
+    "name": "dsh-portable-launcher",
+    "url": "https://github.com/15828148/dsh-portable-launcher",
+    "desc": "One-click portable Windows launcher for the dsh Web UI: auto-installs Node.js and dsh, CN mirror fallback, retries and resume.",
+    "category": "Infrastructure & Development",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-desktop-launcher",
+    "name": "dsh-desktop-launcher",
+    "url": "https://github.com/becomeless/dsh-desktop-launcher",
+    "desc": "Windows desktop launcher: double-click to start dsh Web with zero console windows, auto-stop on close, session resume, one-line install.",
+    "category": "Infrastructure & Development",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-quickstart",
+    "name": "dsh-quickstart",
+    "url": "https://github.com/qzhqzh/dsh-quickstart",
+    "desc": "Windows desktop launcher (zero-dependency npm CLI): double-click a desktop shortcut to start dsh web with zero console windows and auto-open the browser once ready.",
+    "category": "Infrastructure & Development",
+    "slot": "action"
+  },
+  {
+    "id": "dshp",
+    "name": "dshp",
+    "url": "https://github.com/asdf17128/dshp",
+    "desc": "Profile manager: list, create, clone and diff profiles, and export a whole setup (bundle order, plugin versions, patch) as one portable file.",
+    "category": "Infrastructure & Development",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-recommend",
+    "name": "dsh-recommend",
+    "url": "https://github.com/zp-home/dsh-recommend",
+    "desc": "Transparent plugin rankings and recommendations: daily auto-fetched dsh-plugin topic data, open scoring model, rank/search/recommend tools and a settings-page leaderboard.",
+    "category": "Infrastructure & Development",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-eval",
+    "name": "dsh-eval",
+    "url": "https://github.com/hccccc01333/dsh-eval",
+    "desc": "Agent evaluation platform: benchmark YAML, headless dsh runs, trace-based metrics, scripted grading, and run compare/report.",
+    "category": "Infrastructure & Development",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-session-cleaner",
+    "name": "dsh-session-cleaner",
+    "url": "https://github.com/fountunt/dsh-session-cleaner",
+    "desc": "Delete sessions from a running web runtime: live store, workspace records, and on-disk artifacts (no restart needed).",
+    "category": "Infrastructure & Development",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-session-cleaner-cli",
+    "name": "dsh-session-cleaner-cli",
+    "url": "https://github.com/ChenChen913/dsh-session-cleaner-cli",
+    "desc": "Offline CLI that deep-cleans workspace sessions: interactive/batch delete with trash + restore + backups, workspace-registry and projection-cache sync, ghost-entry pruning. Companion to the runtime de",
+    "category": "Infrastructure & Development",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-mcp-panel",
+    "name": "dsh-mcp-panel",
+    "url": "https://github.com/PerryLink/dsh-mcp-panel",
+    "desc": "Read-only runtime management panel for the official DSH MCP client: connection status, registered tools, errors and reconnect counts via the /mcp command and a Settings tab, with sanitized display and",
+    "category": "Infrastructure & Development",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-passwords",
+    "name": "dsh-passwords",
+    "url": "https://github.com/slywalker2006/dsh-passwords",
+    "desc": "Login gateway for the DSH web UI: first-run setup, bcrypt + at-rest encryption (AES-256-GCM/HMAC), brute-force lockout, audit log, TLS 1.2+ with 80→443 redirect, CSRF and anti-framing headers.",
+    "category": "Infrastructure & Development",
+    "slot": "action"
+  },
+  {
+    "id": "easyeda-agent",
+    "name": "easyeda-agent",
+    "url": "https://github.com/zhoushoujianwork/easyeda-agent",
+    "desc": "EasyEDA Pro automation: Go daemon + in-app connector + agent skill + stdio MCP server for typed schematic/PCB actions, workflow gates, and DRC.",
+    "category": "Infrastructure & Development",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-adb",
+    "name": "dsh-adb",
+    "url": "https://github.com/SamXiaBing/dsh-adb",
+    "desc": "ADB device & bench operations: device discovery, structured logcat (background streaming), apk install, file pull/push, dumpsys performance snapshots.",
+    "category": "Infrastructure & Development",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-restart",
+    "name": "dsh-restart",
+    "url": "https://github.com/anweat/dsh-restart",
+    "desc": "Restart DSH: configurable restart method (Node native / legacy PowerShell), post-restart continue prompt, optional watchdog auto-relaunch.",
+    "category": "Infrastructure & Development",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-suite",
+    "name": "dsh-suite",
+    "url": "https://github.com/whyihaveyou/dsh-suite",
+    "desc": "Living DSH plugin directory (785+ plugins, refreshed hourly) with a daily compatibility CI, a bilingual searchable catalog site, and an in-app plugin store.",
+    "category": "Infrastructure & Development",
+    "slot": "action"
+  },
+  {
+    "id": "create-dsh-plugin",
+    "name": "create-dsh-plugin",
+    "url": "https://github.com/whyihaveyou/dsh-suite/tree/main/packages/create-dsh-plugin",
+    "desc": "Scaffold a DSH plugin in seconds (tool / events / webui templates, `next`-tag version pinning, built-in `--verify` smoke test).",
+    "category": "Infrastructure & Development",
+    "slot": "action"
+  },
+  {
+    "id": "plugin-manager",
+    "name": "plugin-manager",
+    "url": "https://github.com/whyihaveyou/dsh-suite/tree/main/packages/plugins/plugin-manager",
+    "desc": "In-app plugin store for the DSH Web UI: browse, search, one-click install, compat badges, installed list.",
+    "category": "Infrastructure & Development",
+    "slot": "action"
+  },
+  {
+    "id": "plugin-team-board",
+    "name": "plugin-team-board",
+    "url": "https://github.com/whyihaveyou/dsh-suite/tree/main/packages/plugins/plugin-team-board",
+    "desc": "Shared multi-agent task board (create / claim / transition / query) over a Cordis service key.",
+    "category": "Infrastructure & Development",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-openmaic",
+    "name": "dsh-openmaic",
+    "url": "https://github.com/dsh-external/dsh-openmaic",
+    "desc": "Generate interactive OpenMAIC AI classrooms.",
+    "category": "Science & Research",
+    "slot": "decision"
+  },
+  {
+    "id": "dsh-science",
+    "name": "dsh-science",
+    "url": "https://github.com/biociao/dsh-science",
+    "desc": "Claude Science-style research workbench: ReAct research-loop engine (research\\_\\* tools), versioned artifacts with provenance (artifact\\_\\* tools), and 10 science skills for genomics/pathogens/bioinfo",
+    "category": "Science & Research",
+    "slot": "decision"
+  },
+  {
+    "id": "dsh-reverse-skill",
+    "name": "dsh-reverse-skill",
+    "url": "https://github.com/dhicoc/dsh-reverse-skill",
+    "desc": "Complete reverse-skill pack (85 SKILL.md) as a DeepSeek Harness Cordis plugin: reverse engineering, authorized pentesting and security-research skill router.",
+    "category": "Science & Research",
+    "slot": "decision"
+  },
+  {
+    "id": "dsh-external/issues",
+    "name": "dsh-external/issues",
+    "url": "https://github.com/dsh-external/issues",
+    "desc": "Issue aggregation hub.",
+    "category": "Related",
+    "slot": "action"
+  },
+  {
+    "id": "dsh-meme-hub",
+    "name": "dsh-meme-hub",
+    "url": "https://github.com/the-beating-light-of-the-nail/dsh-meme-hub",
+    "desc": "Curated navigation of community meme plugins (skins, desktop pets, mini-games), bilingual.",
+    "category": "Related",
+    "slot": "action"
+  },
+  {
+    "id": "DeepSeek",
+    "name": "DeepSeek",
+    "url": "https://deepseek.com/",
+    "desc": "Official site.",
+    "category": "Related",
+    "slot": "action"
+  }
+]

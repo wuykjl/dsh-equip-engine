@@ -1,0 +1,39 @@
+{
+  "name": "dsh-equip-engine",
+  "version": "0.1.0",
+  "description": "DSH 插件配装引擎：任务 → 双检索(规则+LLM) → 组合评分(协同/冲突/成本/信任) → 配装建议。区别于目录/搜索：按任务自动配整套插件，含冲突检测与安装命令导出。",
+  "license": "MIT",
+  "main": "src/plugin.js",
+  "bin": {
+    "equip": "src/equip-export.js"
+  },
+  "scripts": {
+    "eval": "node src/eval-suite.js",
+    "equip": "node src/equip-export.js"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "files": [
+    "src/",
+    "data/plugins-all.json",
+    "data/plugins.json",
+    "scripts/",
+    "cordis.patch.yml",
+    "LICENSE",
+    "README.md"
+  ],
+  "keywords": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "agent",
+    "plugin",
+    "equip-engine",
+    "llm"
+  ],
+  "engines": {
+    "node": ">=18"
+  }
+}

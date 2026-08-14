@@ -1,0 +1,542 @@
+[
+  {
+    "id": "dsh-deepresearch",
+    "name": "DeepResearch",
+    "slot": "decision",
+    "capabilities": [
+      "研究",
+      "检索",
+      "多源",
+      "报告",
+      "搜索"
+    ],
+    "tags": [
+      "research",
+      "deep"
+    ],
+    "conflicts": [
+      "dsh-deep-research"
+    ],
+    "complements": [],
+    "cost": 0.4,
+    "desc": "DeepResearch 插件（cordis）",
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    }
+  },
+  {
+    "id": "dsh-deep-research",
+    "name": "Deep Research Orchestrator",
+    "slot": "decision",
+    "capabilities": [
+      "研究",
+      "编排",
+      "工作流",
+      "agent",
+      "多步"
+    ],
+    "tags": [
+      "research",
+      "workflow"
+    ],
+    "conflicts": [
+      "dsh-deepresearch"
+    ],
+    "complements": [
+      "dsh-plan-execute"
+    ],
+    "cost": 0.5,
+    "desc": "自适应深度研究编排器（工作流引擎）",
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    }
+  },
+  {
+    "id": "dsh-plan-execute",
+    "name": "Plan/Execute Router",
+    "slot": "decision",
+    "capabilities": [
+      "规划",
+      "执行",
+      "路由",
+      "双模型",
+      "计划"
+    ],
+    "tags": [
+      "planning",
+      "router"
+    ],
+    "conflicts": [],
+    "complements": [
+      "dsh-toolkit"
+    ],
+    "cost": 0.2,
+    "desc": "双模型规划/执行路由：规划模型想，执行模型做",
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    }
+  },
+  {
+    "id": "dsh-toolkit",
+    "name": "Toolkit",
+    "slot": "action",
+    "capabilities": [
+      "工具",
+      "计算",
+      "csv",
+      "diff",
+      "json",
+      "markdown",
+      "regex",
+      "时间",
+      "编码"
+    ],
+    "tags": [
+      "tools",
+      "utils"
+    ],
+    "conflicts": [],
+    "complements": [
+      "dsh-plan-execute"
+    ],
+    "cost": 0.1,
+    "desc": "零依赖工具套件（calculator/csv/diff/json/markdown/regex/time）",
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    }
+  },
+  {
+    "id": "dsh-TUI",
+    "name": "DSH TUI",
+    "slot": "output",
+    "capabilities": [
+      "终端",
+      "tui",
+      "界面",
+      "cli",
+      "全屏",
+      "交互"
+    ],
+    "tags": [
+      "ui",
+      "terminal"
+    ],
+    "conflicts": [
+      "deepseek-harness-desktop"
+    ],
+    "complements": [],
+    "cost": 0.2,
+    "desc": "Claude Code 风格全屏终端 TUI（像素鲸鱼顶栏/思考流式展开/上下文进度条）",
+    "stars": 861,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    }
+  },
+  {
+    "id": "deepseek-harness-desktop",
+    "name": "Harness Desktop",
+    "slot": "output",
+    "capabilities": [
+      "桌面",
+      "gui",
+      "electron",
+      "窗口",
+      "客户端"
+    ],
+    "tags": [
+      "ui",
+      "desktop"
+    ],
+    "conflicts": [
+      "dsh-TUI"
+    ],
+    "complements": [],
+    "cost": 0.3,
+    "desc": "Electron 桌面客户端（macOS/Windows 开箱即用）",
+    "stars": 778,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    }
+  },
+  {
+    "id": "agent-vision-toolkit",
+    "name": "Vision Toolkit",
+    "slot": "perception",
+    "capabilities": [
+      "视觉",
+      "看图",
+      "图片",
+      "ocr",
+      "截图",
+      "ui还原",
+      "gui自动化",
+      "识别"
+    ],
+    "tags": [
+      "vision",
+      "ocr",
+      "multimodal"
+    ],
+    "conflicts": [],
+    "complements": [
+      "dsh-science"
+    ],
+    "cost": 0.4,
+    "desc": "纯文本模型视觉工具箱：多图理解/图片问答/长截图OCR/UI还原/GUI自动化",
+    "stars": 818,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    }
+  },
+  {
+    "id": "billion-context-dsh",
+    "name": "Billion Context",
+    "slot": "memory",
+    "capabilities": [
+      "上下文",
+      "压缩",
+      "记忆",
+      "token",
+      "省token"
+    ],
+    "tags": [
+      "context",
+      "compression"
+    ],
+    "conflicts": [
+      "dsh-context-doctor"
+    ],
+    "complements": [
+      "dsh-memory-vault"
+    ],
+    "cost": 0.3,
+    "desc": "模型驱动上下文压缩（ACP）：模型决定何时压缩什么",
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    }
+  },
+  {
+    "id": "dsh-context-doctor",
+    "name": "Context Doctor",
+    "slot": "memory",
+    "capabilities": [
+      "上下文",
+      "审计",
+      "token",
+      "检查",
+      "分析"
+    ],
+    "tags": [
+      "context",
+      "audit"
+    ],
+    "conflicts": [
+      "billion-context-dsh"
+    ],
+    "complements": [],
+    "cost": 0.2,
+    "desc": "上下文审计：每请求携带的token成本/重复冲突检测/剪枝建议",
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    }
+  },
+  {
+    "id": "dsh-file-mount",
+    "name": "File Mount",
+    "slot": "memory",
+    "capabilities": [
+      "文件",
+      "挂载",
+      "读取",
+      "增量",
+      "token"
+    ],
+    "tags": [
+      "files",
+      "context"
+    ],
+    "conflicts": [],
+    "complements": [
+      "dsh-memory-vault"
+    ],
+    "cost": 0.2,
+    "desc": "增量文件挂载+读去重：已挂载行范围不重发模型，磁盘变更失效重挂",
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    }
+  },
+  {
+    "id": "dsh-memory-vault",
+    "name": "Memory Vault",
+    "slot": "memory",
+    "capabilities": [
+      "记忆",
+      "会话",
+      "跨会话",
+      "remember",
+      "recall",
+      "遗忘"
+    ],
+    "tags": [
+      "memory"
+    ],
+    "conflicts": [],
+    "complements": [
+      "billion-context-dsh",
+      "dsh-file-mount"
+    ],
+    "cost": 0.3,
+    "desc": "跨会话记忆库：memory_remember/recall/forget 工具+设置页",
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    }
+  },
+  {
+    "id": "dsh-cot-summary",
+    "name": "CoT Summary",
+    "slot": "memory",
+    "capabilities": [
+      "摘要",
+      "思维链",
+      "总结",
+      "精简"
+    ],
+    "tags": [
+      "context",
+      "summary"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.2,
+    "desc": "思维链摘要（Summary-CoT）",
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    }
+  },
+  {
+    "id": "dsh-learn-everything",
+    "name": "Learn Everything",
+    "slot": "decision",
+    "capabilities": [
+      "学习",
+      "教学",
+      "费曼",
+      "解释",
+      "教育"
+    ],
+    "tags": [
+      "learning",
+      "education"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.3,
+    "desc": "费曼学习模式：教→复述→评判→重解释循环，HTML 课程卡片",
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    }
+  },
+  {
+    "id": "dsh-science",
+    "name": "Science Workbench",
+    "slot": "decision",
+    "capabilities": [
+      "科研",
+      "研究",
+      "实验",
+      "基因组",
+      "生信",
+      "论文"
+    ],
+    "tags": [
+      "research",
+      "science"
+    ],
+    "conflicts": [],
+    "complements": [
+      "agent-vision-toolkit"
+    ],
+    "cost": 0.5,
+    "desc": "科研工作台：ReAct 研究循环+版本化工件+10个科学技能（基因组/病原体/生信）",
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    }
+  },
+  {
+    "id": "dsh-reverse-skill",
+    "name": "Reverse Skill Pack",
+    "slot": "action",
+    "capabilities": [
+      "逆向",
+      "安全",
+      "渗透",
+      "审计",
+      "漏洞"
+    ],
+    "tags": [
+      "security",
+      "reverse"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.4,
+    "desc": "85 个逆向工程/授权渗透/安全研究 SKILL.md 路由",
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    }
+  },
+  {
+    "id": "open-design",
+    "name": "Open Design",
+    "slot": "output",
+    "capabilities": [
+      "设计",
+      "原型",
+      "落地页",
+      "仪表盘",
+      "幻灯片",
+      "图片",
+      "视频",
+      "导出"
+    ],
+    "tags": [
+      "design",
+      "ui",
+      "creative"
+    ],
+    "conflicts": [],
+    "complements": [
+      "agent-vision-toolkit"
+    ],
+    "cost": 0.5,
+    "desc": "开源 Claude Design 替代：编码 agent 变设计引擎，HTML/PDF/PPTX/MP4 导出",
+    "stars": 86200,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    }
+  },
+  {
+    "id": "archify",
+    "name": "Archify",
+    "slot": "output",
+    "capabilities": [
+      "架构图",
+      "流程图",
+      "时序图",
+      "数据流",
+      "图",
+      "svg"
+    ],
+    "tags": [
+      "diagram",
+      "design"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.2,
+    "desc": "diagram-as-code：架构/时序/数据流图，自包含 HTML+动效",
+    "stars": 12400,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    }
+  },
+  {
+    "id": "OpenBiliClaw",
+    "name": "OpenBiliClaw",
+    "slot": "perception",
+    "capabilities": [
+      "内容发现",
+      "b站",
+      "小红书",
+      "视频",
+      "推荐",
+      "爬取"
+    ],
+    "tags": [
+      "content",
+      "discovery"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.5,
+    "desc": "本地私有跨平台 AI 内容发现 Agent（B站/小红书/抖音/YouTube 等）",
+    "stars": 2300,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    }
+  },
+  {
+    "id": "dsh-meme-hub",
+    "name": "Meme Hub",
+    "slot": "output",
+    "capabilities": [
+      "表情包",
+      "皮肤",
+      "宠物",
+      "游戏",
+      "导航"
+    ],
+    "tags": [
+      "fun",
+      "lifestyle"
+    ],
+    "conflicts": [],
+    "complements": [],
+    "cost": 0.1,
+    "desc": "社区 meme 插件导航（皮肤/桌面宠物/小游戏）",
+    "stars": null,
+    "requirements": {
+      "os": [
+        "win32"
+      ]
+    }
+  }
+]

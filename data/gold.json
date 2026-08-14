@@ -1,0 +1,125 @@
+[
+  {
+    "id": "L1",
+    "task": "帮我做一份关于细胞基因编辑的深度研究报告，需要看实验图片并整理成文档",
+    "must": ["biociao/dsh-science", "Anionex/agent-vision-toolkit"],
+    "mustAny": [],
+    "mustNot": [],
+    "mustNotTogether": [],
+    "slots": ["decision", "perception"],
+    "recall": ["biociao/dsh-science", "Anionex/agent-vision-toolkit"],
+    "note": "科研+视觉协同链"
+  },
+  {
+    "id": "L2",
+    "task": "写代码时要处理大量 JSON 和 CSV 文件，同时希望看到上下文占用情况",
+    "must": ["dsh-external/dsh-toolkit", "Zhenyu98/dsh-context-doctor"],
+    "mustAny": [],
+    "mustNot": [],
+    "mustNotTogether": [],
+    "slots": ["action", "memory"],
+    "recall": ["dsh-external/dsh-toolkit", "Zhenyu98/dsh-context-doctor"],
+    "note": "编码工具+上下文审计"
+  },
+  {
+    "id": "L3",
+    "task": "在终端里做渗透测试，需要 OCR 识别截图里的验证码",
+    "must": ["Anionex/agent-vision-toolkit", "dhicoc/dsh-reverse-skill"],
+    "mustAny": ["ccch1mneyyy/dsh-TUI", "tt-a1i/archify"],
+    "mustNot": [],
+    "mustNotTogether": [],
+    "slots": ["perception", "action"],
+    "recall": ["Anionex/agent-vision-toolkit", "dhicoc/dsh-reverse-skill", "ccch1mneyyy/dsh-TUI"],
+    "note": "视觉OCR+安全+终端"
+  },
+  {
+    "id": "L4",
+    "task": "用深度研究编排器做多步研究，输出一份深度研究报告",
+    "must": ["dsh-external/dsh-deep-research"],
+    "mustAny": [],
+    "mustNot": ["dsh-external/dsh-deepresearch"],
+    "mustNotTogether": [
+      ["dsh-external/dsh-deepresearch", "dsh-external/dsh-deep-research"]
+    ],
+    "slots": ["decision"],
+    "recall": ["dsh-external/dsh-deep-research"],
+    "note": "互斥研究：只留 Orchestrator"
+  },
+  {
+    "id": "M1",
+    "task": "深度研究编排器+多步研究+深度研究报告",
+    "must": ["dsh-external/dsh-deep-research"],
+    "mustAny": [],
+    "mustNot": ["dsh-external/dsh-deepresearch"],
+    "mustNotTogether": [
+      ["dsh-external/dsh-deepresearch", "dsh-external/dsh-deep-research"]
+    ],
+    "slots": ["decision"],
+    "recall": ["dsh-external/dsh-deep-research", "dsh-external/dsh-deepresearch"],
+    "note": "核心命题：冲突对只选一个"
+  },
+  {
+    "id": "MEM",
+    "task": "跨会话记忆库管理，需要记住和回忆用户偏好，并压缩上下文省token",
+    "must": [],
+    "mustAny": ["flymysql/dsh-memory", "Tyan66666/billion-context-dsh", "Zhenyu98/dsh-context-doctor"],
+    "mustNot": [],
+    "mustNotTogether": [
+      ["Tyan66666/billion-context-dsh", "Zhenyu98/dsh-context-doctor"]
+    ],
+    "slots": ["memory"],
+    "recall": ["flymysql/dsh-memory", "Tyan66666/billion-context-dsh"],
+    "note": "纯 memory 任务"
+  },
+  {
+    "id": "SEM",
+    "task": "需要把 PDF 论文拆成结构化笔记并做文献综述工作台",
+    "must": [],
+    "mustAny": ["biociao/dsh-science", "WindLX/paper_plane_x", "WindLX/paper_plane_x_dsh"],
+    "mustNot": [],
+    "mustNotTogether": [],
+    "slots": [],
+    "recall": ["WindLX/paper_plane_x", "biociao/dsh-science"],
+    "note": "弱关键词，测 TF-IDF 语义召回"
+  },
+  {
+    "id": "BUD",
+    "task": "深度研究+看图OCR+写代码处理JSON+上下文压缩+终端TUI界面+设计导出幻灯片+科研实验",
+    "must": [],
+    "mustAny": [],
+    "mustNot": [],
+    "mustNotTogether": [
+      ["dsh-external/dsh-deepresearch", "dsh-external/dsh-deep-research"],
+      ["ccch1mneyyy/dsh-TUI", "Easyhoov/deepseek-harness-desktop"],
+      ["Tyan66666/billion-context-dsh", "Zhenyu98/dsh-context-doctor"]
+    ],
+    "slots": ["decision", "perception", "action", "memory", "output"],
+    "recall": [],
+    "maxPlugins": 5,
+    "note": "超预算堆砌：克制+冲突不共存"
+  },
+  {
+    "id": "VIS",
+    "task": "看图片做 OCR 识别和 UI 还原",
+    "must": ["Anionex/agent-vision-toolkit"],
+    "mustAny": [],
+    "mustNot": [],
+    "mustNotTogether": [],
+    "slots": ["perception"],
+    "recall": ["Anionex/agent-vision-toolkit"],
+    "note": "纯视觉"
+  },
+  {
+    "id": "UI",
+    "task": "需要全屏终端 TUI 界面交互",
+    "must": ["ccch1mneyyy/dsh-TUI"],
+    "mustAny": [],
+    "mustNot": ["Easyhoov/deepseek-harness-desktop"],
+    "mustNotTogether": [
+      ["ccch1mneyyy/dsh-TUI", "Easyhoov/deepseek-harness-desktop"]
+    ],
+    "slots": ["output"],
+    "recall": ["ccch1mneyyy/dsh-TUI"],
+    "note": "TUI 与 Desktop 互斥"
+  }
+]

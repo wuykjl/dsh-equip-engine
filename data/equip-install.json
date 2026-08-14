@@ -1,0 +1,30 @@
+{
+  "task": "写代码+JSON/CSV+上下文占用",
+  "taskType": "coding",
+  "score": "1.50",
+  "totalCost": "0.30",
+  "overBudget": false,
+  "ids": [
+    "dsh-external/dsh-toolkit",
+    "Zhenyu98/dsh-context-doctor"
+  ],
+  "install": [
+    {
+      "id": "dsh-external/dsh-toolkit",
+      "git": "https://github.com/dsh-external/dsh-toolkit",
+      "cmd": "dsh plugin add dsh-external/dsh-toolkit",
+      "slot": "action",
+      "name": "Toolkit",
+      "cost": 0.1
+    },
+    {
+      "id": "Zhenyu98/dsh-context-doctor",
+      "git": "https://github.com/Zhenyu98/dsh-context-doctor",
+      "cmd": "dsh plugin add Zhenyu98/dsh-context-doctor",
+      "slot": "memory",
+      "name": "Context Doctor",
+      "cost": 0.2
+    }
+  ],
+  "note": "清单仅供复制执行；equip-export 不会调用 dsh 或修改本地配置"
+}
