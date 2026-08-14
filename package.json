@@ -20,6 +20,7 @@
     "src/",
     "data/plugins-all.json",
     "data/plugins.json",
+    "data/gold.json",
     "scripts/",
     "cordis.patch.yml",
     "LICENSE",

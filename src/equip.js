@@ -269,8 +269,8 @@ function comboScore(picks, task, taskTypeOrTypes, fbCache) {
   for (const { p, m } of picks) {
     const w = weights[p.slot] || 1;
     breakdown.match += m * w;
-    for (const c of p.complements || []) if (ids.has(c)) breakdown.synergy += SYNERGY_BONUS;
-    for (const c of p.conflicts || []) if (ids.has(c)) breakdown.conflict += CONFLICT_PENALTY;
+    for (const c of p.complements || []) if (ids.has(c) && p.id < c) breakdown.synergy += SYNERGY_BONUS;
+    for (const c of p.conflicts || []) if (ids.has(c) && p.id < c) breakdown.conflict += CONFLICT_PENALTY;
     breakdown.cost += COST_WEIGHT * (p.cost || 0);
     totalCost += p.cost || 0;
     breakdown.trust += TRUST_WEIGHT * trustScore(p);
@@ -302,8 +302,8 @@ function explain(chosen, task, breakdown, weights, plugins) {
     const m = matchScore(p, task, plugins);
     const hitCaps = (p.capabilities || []).filter(c => task.includes(c));
     let why = hitCaps.length ? `命中:${hitCaps.join('/')}` : '兜底';
-    const syn = (p.complements || []).filter(c => ids.has(c));
-    const con = (p.conflicts || []).filter(c => ids.has(c));
+    const syn = (p.complements || []).filter(c => ids.has(c) && p.id < c);
+    const con = (p.conflicts || []).filter(c => ids.has(c) && p.id < c);
     const fs_ = fb[p.id];
     if (syn.length) why += ` 协同+${(SYNERGY_BONUS * syn.length).toFixed(1)}`;
     if (con.length) why += ` 冲突-${(CONFLICT_PENALTY * con.length).toFixed(1)}`;

@@ -43,7 +43,7 @@ node src/equip-html.js "任务"
 - **双检索**：规则精编库精确匹配 + LLM 语义理解（两阶段预筛：2000+ → 30 候选 → LLM 精排，快且省 token）
 - **金标评测**：10 任务 100% 通过，召回 94%
 - **数据保鲜**：每周自动同步生态（cron），新增插件自动收录
-- **2000+ 插件 manifest**：`owner/repo` 全限定 id，无撞名歧义
+- **2000+ 插件 manifest**（2052 条：19 手工精编 + 2033 LLM 生成）：`owner/repo` 全限定 id，无撞名歧义
 
 ## 与其他生态工具的区别
 
@@ -63,9 +63,9 @@ node src/equip-html.js "任务"
 
 ## 评测
 
-- 金标集：10 个任务（`data/gold.json`），规则 must 通过率 **100%**
+- 金标集：10 个任务（`data/gold.json`，随包分发），规则 must 通过率 **100%**
 - 召回@30：关键词 94% / TF-IDF 94%（数据驱动判定：不上 embedding）
-- 运行 `node src/eval-suite.js` 复现
+- 运行 `node src/eval-suite.js` 复现（gold.json 已包含在发布的包内）
 
 ## 生态链接
 
