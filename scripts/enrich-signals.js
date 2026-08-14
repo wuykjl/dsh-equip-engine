@@ -1,4 +1,4 @@
-// 信号对齐：cost←stars、合并 test-status/verified、补空 desc、洗泛词 caps
+// 信号对齐：generated cost 中性化、合并 test-status/verified、补空 desc、洗泛词 caps
 'use strict';
 const fs = require('fs');
 const path = require('path');
@@ -11,12 +11,9 @@ const STATUS = path.join(ROOT, 'test-status.json');
 
 const GENERIC = new Set(['界面', '工具', '插件', '管理', '集成', '研究', '安全', '记忆', '视觉', '设计', '系统', '通知', '搜索', '监控']);
 
-function costFromStars(stars, status) {
-  // 分段映射：0星=0.55（无社区背书成本高）→ 1M星=0.15；未知=0.35 中性
-  let c;
-  if (stars == null) c = 0.35;
-  else c = 0.55 - 0.4 * (Math.log10(stars + 1) / Math.log10(1000000 + 1));
-  // 测试状态调整：failed 装不上 → 更贵；verified 已实测 → 更便宜
+/** 生成库 cost：中性常数 0.35，热度只由 trustScore(stars) 表达；failed 仍加真实装不上惩罚 */
+function costNeutral(status) {
+  let c = 0.35;
   if (status === 'failed') c += 0.2;
   else if (status === 'needs-build') c += 0.05;
   else if (status === 'verified') c -= 0.05;
@@ -53,9 +50,9 @@ function main() {
       p.desc = s.desc;
       descN++;
     }
-    // generated cost 从 stars 派生（manual 保留手工 cost）
+    // generated cost 中性化（与 stars 解耦；manual 保留手工 cost）
     if (p.source === 'generated') {
-      const next = costFromStars(p.stars, p.testStatus);
+      const next = costNeutral(p.testStatus);
       if (p.cost !== next) { p.cost = next; costN++; }
     }
     // testStatus
@@ -76,12 +73,13 @@ function main() {
         capN++;
       }
     }
-    // 空 caps：从 name / id 拆词兜底
+    // 空 caps：从 name / id 拆词兜底（标记为 name-guess，供 capQuality 封顶）
     if (!(p.capabilities || []).length) {
       const base = (p.name || p.id.split('/').pop() || '').replace(/^dsh[-_]?/i, '');
       const parts = base.split(/[-_]/).filter(w => w.length >= 2).slice(0, 4);
       if (parts.length) {
         p.capabilities = parts;
+        p.capsSource = 'name-guess';
         capN++;
       }
     }

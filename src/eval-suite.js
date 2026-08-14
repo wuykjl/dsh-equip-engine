@@ -7,7 +7,7 @@
 const fs = require('fs');
 const path = require('path');
 const {
-  equip, equipMix, loadPlugins, preselect, preselectKw, SLOTS,
+  equip, equipMix, loadPlugins, preselect, preselectKw, SLOTS, capQualityDist,
 } = require('./equip.js');
 
 const GOLD = path.join(__dirname, '..', 'data', 'gold.json');
@@ -156,6 +156,7 @@ async function main() {
     ruleRate: mustTotal ? mustPass / mustTotal : 0,
     recallKwAvg: recallN ? recallKwSum / recallN : null,
     recallTfidfAvg: recallN ? recallMixSum / recallN : null,
+    capQuality: capQualityDist(plugins),
     mixEnabled: doMix,
     rounds: doMix ? rounds : 0,
   };
@@ -165,7 +166,7 @@ async function main() {
   console.log('\n=== 汇总 ===');
   console.log(`规则 must: ${mustPass}/${mustTotal} (${(summary.ruleRate * 100).toFixed(0)}%)`);
   if (recallN) {
-    console.log(`召回@30 平均: kw=${(summary.recallKwAvg * 100).toFixed(0)}% tfidf=${(summary.recallTfidfAvg * 100).toFixed(0)}%`);
+    console.log(`召回@池 平均: kw=${(summary.recallKwAvg * 100).toFixed(0)}% tfidf=${(summary.recallTfidfAvg * 100).toFixed(0)}%`);
     if (summary.recallTfidfAvg + 0.05 < summary.recallKwAvg) {
       console.log('⚠ TF-IDF 未优于关键词——暂不接 embedding，先查 caps/任务表述');
     } else if (summary.recallTfidfAvg < 0.7) {
@@ -174,6 +175,8 @@ async function main() {
       console.log('✓ TF-IDF 召回足够，不上 embedding');
     }
   }
+  const cq = summary.capQuality;
+  console.log(`capQuality: generated=${cq.n} low(<0.4)=${cq.low} buckets=${JSON.stringify(cq.buckets)}`);
   console.log(`报告 → ${OUT}`);
   if (mustPass < mustTotal) process.exitCode = 1;
 }

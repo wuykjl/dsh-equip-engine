@@ -16,8 +16,11 @@ const SLOTS = ['perception', 'decision', 'action', 'memory', 'output'];
 const COST_WEIGHT = 0.3, SYNERGY_BONUS = 0.5, CONFLICT_PENALTY = 1.5, TRUST_WEIGHT = 0.15;
 const MAX_COST = 1.5;
 const BUDGET_PENALTY = 0.8; // 超预算软惩罚 λ
-const CAP_STOP_THRESHOLD = 30; // 出现次数 >N 的 generated cap 当停用词
+const CAP_STOP_THRESHOLD = 30; // 出现次数 >N 的 generated cap 当停用词（仍用于 capQuality）
 const STOPWORD_HIT = 0.1;
+const PRESELECT_POOL_CAP = 48; // 总池上限，控制 LLM token
+
+let _capQualityCache = null; // Map(id → quality)
 
 const SLOT_TRIGGERS = {
   perception: ['图片', '图像', '视觉', 'ocr', '截图', '识别', '爬取', '抓取', '视频', '内容发现', '验证码', 'ui还原', 'gui', '看图', '看图片', '实验图片'],
@@ -58,7 +61,7 @@ function loadPlugins(force = false) {
   if (!force && _plugins && mt === _pluginsMtime) return _plugins;
   _plugins = JSON.parse(fs.readFileSync(DATA, 'utf8'));
   _pluginsMtime = mt;
-  _capFreq = null; _stopCaps = null; _tfidf = null;
+  _capFreq = null; _stopCaps = null; _tfidf = null; _capQualityCache = null;
   return _plugins;
 }
 
@@ -115,6 +118,53 @@ function stopCaps(plugins) {
   return _stopCaps;
 }
 
+/**
+ * caps 质量分 [0,1]：长词占比 + 有 desc + 能在 desc 中找到依据 + 数量 − 泛词占比。
+ * name-guess / 无有效 desc 的条目封顶 0.35，避免噪声抬分。
+ */
+function capQuality(p, plugins) {
+  if (!_capQualityCache) _capQualityCache = new Map();
+  if (_capQualityCache.has(p.id)) return _capQualityCache.get(p.id);
+
+  const caps = p.capabilities || [];
+  if (!caps.length) {
+    _capQualityCache.set(p.id, 0);
+    return 0;
+  }
+  const freq = capFrequency(plugins || loadPlugins());
+  const stops = stopCaps(plugins || loadPlugins());
+  const desc = (p.desc || '').trim();
+  const hasDesc = desc && desc !== 'No description' ? 1 : 0;
+  const longRatio = caps.filter(c => String(c).length >= 3).length / caps.length;
+  const grounded = hasDesc
+    ? caps.filter(c => desc.includes(c)).length / caps.length
+    : 0;
+  const stopRatio = caps.filter(c => stops.has(c) || (freq.get(c) || 0) > CAP_STOP_THRESHOLD).length / caps.length;
+  let q = 0.4 * longRatio
+    + 0.25 * hasDesc
+    + 0.25 * grounded
+    + 0.1 * Math.min(1, caps.length / 4)
+    - 0.3 * stopRatio;
+  q = Math.max(0, Math.min(1, q));
+  if (p.capsSource === 'name-guess' || !hasDesc) q = Math.min(q, 0.35);
+  _capQualityCache.set(p.id, q);
+  return q;
+}
+
+function capQualityDist(plugins) {
+  const buckets = { '0-0.2': 0, '0.2-0.4': 0, '0.4-0.6': 0, '0.6-0.8': 0, '0.8-1': 0 };
+  let low = 0, n = 0;
+  for (const p of plugins) {
+    if (p.source !== 'generated') continue;
+    const q = capQuality(p, plugins);
+    n++;
+    if (q < 0.4) low++;
+    const k = q < 0.2 ? '0-0.2' : q < 0.4 ? '0.2-0.4' : q < 0.6 ? '0.4-0.6' : q < 0.8 ? '0.6-0.8' : '0.8-1';
+    buckets[k]++;
+  }
+  return { n, low, buckets };
+}
+
 // 多标签任务类型：返回 [{type, weight}]，权重归一
 function detectTaskTypes(task) {
   const hits = [];
@@ -127,7 +177,6 @@ function detectTaskTypes(task) {
 }
 
 function detectTaskType(task) {
-  // 兼容旧接口：返回主类型（权重最高的第一个）
   return detectTaskTypes(task)[0].type;
 }
 
@@ -157,37 +206,39 @@ function feedbackScore(p, fb) {
 
 function matchScore(p, task, plugins) {
   const t = task.toLowerCase();
-  const stops = p.source === 'generated' ? stopCaps(plugins || loadPlugins()) : null;
+  const all = plugins || loadPlugins();
   let hits = 0;
   for (const c of p.capabilities || []) {
     const cl = c.toLowerCase();
     if (!t.includes(cl)) continue;
     if (p.source === 'generated') {
-      if (stops && stops.has(c)) hits += STOPWORD_HIT;
-      else if (/^[\u4e00-\u9fa5]{1,2}$/.test(c)) hits += 0.4;
+      if (/^[\u4e00-\u9fa5]{1,2}$/.test(c)) hits += 0.4;
       else hits += 1;
     } else {
       hits += 1;
     }
   }
   for (const tag of p.tags || []) if (t.includes(tag.toLowerCase())) hits += 0.3;
-  return Math.min(1, hits * 0.4 + (p.name && t.includes(String(p.name).toLowerCase()) ? 0.3 : 0));
+  let score = hits * 0.4 + (p.name && t.includes(String(p.name).toLowerCase()) ? 0.3 : 0);
+  // 生成库：按 capQuality 系统性降权（替代 CAP_STOP_THRESHOLD 硬阈值）
+  if (p.source === 'generated' && hits > 0) {
+    score *= 0.6 + 0.4 * capQuality(p, all);
+  }
+  return Math.min(1, score);
 }
 
 // —— 轻量 TF-IDF「embedding」预筛（本地，无外部模型） ——
+// 全段滑窗 bigram：避免定长 {2,6} 切块导致查询/文档边界错位（SEM 漏召回根因）
 function tokenize(text) {
   if (!text) return [];
   const s = String(text).toLowerCase();
-  const zh = s.match(/[\u4e00-\u9fa5]{2,6}/g) || [];
-  const en = s.match(/[a-z0-9]{2,}/g) || [];
-  // 也切 2-gram 中文提升召回
-  const grams = [];
-  for (const w of zh) {
-    if (w.length >= 3) {
-      for (let i = 0; i < w.length - 1; i++) grams.push(w.slice(i, i + 2));
-    }
+  const out = [];
+  for (const run of (s.match(/[\u4e00-\u9fa5]+/g) || [])) {
+    if (run.length === 1) { out.push(run); continue; }
+    for (let i = 0; i < run.length - 1; i++) out.push(run.slice(i, i + 2));
   }
-  return [...zh, ...en, ...grams];
+  for (const w of (s.match(/[a-z0-9]{2,}/g) || [])) out.push(w);
+  return out;
 }
 
 function pluginText(p) {
@@ -392,22 +443,44 @@ if (require.main === module) {
   console.log(r.build ? r.build.join('\n') : '  ' + r.note);
 }
 
-// 两阶段预筛：关键词 + TF-IDF 语义混合，每槽 topN
+function slotQuota(slotSize, medianSize, base = 6) {
+  if (!medianSize) return base;
+  const q = Math.round(base * Math.sqrt(slotSize / medianSize));
+  return Math.max(4, Math.min(12, q));
+}
+
+// 两阶段预筛：关键词 + TF-IDF 语义混合；弱关键词任务抬高 TF-IDF；按槽规模自适应配额
 function preselect(plugins, task, perSlot = 6) {
   const black = new Set(loadBlacklist());
   const { idf, vectors } = buildTfidf(plugins);
-  const scored = plugins.filter(p => !black.has(p.id)).map(p => {
+  const eligible = plugins.filter(p => !black.has(p.id));
+  const scored = eligible.map(p => {
     const kw = matchScore(p, task, plugins);
     const emb = cosineTask(task, vectors.get(p.id) || { vec: new Map(), norm: 1 }, idf);
-    // 混合：关键词保精确，TF-IDF 补语义召回
-    return { p, m: kw * 0.55 + emb * 0.45, kw, emb };
+    return { p, kw, emb };
   });
+  // 弱关键词任务（全池 maxKw < 0.2）：让 TF-IDF 主导
+  let maxKw = 0;
+  for (const s of scored) if (s.kw > maxKw) maxKw = s.kw;
+  const kwW = maxKw < 0.2 ? 0.25 : 0.55;
+  const embW = 1 - kwW;
+  for (const s of scored) s.m = s.kw * kwW + s.emb * embW;
+
+  const sizes = SLOTS.map(slot => scored.filter(x => x.p.slot === slot).length).filter(n => n > 0);
+  const median = sizes.length
+    ? sizes.slice().sort((a, b) => a - b)[Math.floor(sizes.length / 2)]
+    : 1;
+
   const picks = [];
   for (const slot of SLOTS) {
-    const inSlot = scored.filter(x => x.p.slot === slot)
-      .sort((a, b) => b.m - a.m)
-      .slice(0, perSlot);
-    picks.push(...inSlot.map(x => x.p));
+    const inSlot = scored.filter(x => x.p.slot === slot).sort((a, b) => b.m - a.m);
+    const q = slotQuota(inSlot.length, median, perSlot);
+    picks.push(...inSlot.slice(0, q).map(x => x.p));
+  }
+  if (picks.length > PRESELECT_POOL_CAP) {
+    const byId = new Map(scored.map(s => [s.p.id, s.m]));
+    picks.sort((a, b) => (byId.get(b.id) || 0) - (byId.get(a.id) || 0));
+    return picks.slice(0, PRESELECT_POOL_CAP);
   }
   return picks;
 }
@@ -518,5 +591,6 @@ function preselectKw(plugins, task, perSlot = 6) {
 module.exports = {
   equip, equipMix, loadPlugins, matchScore, comboScore, explain, detectTaskType,
   detectTaskTypes, preselect, preselectKw, blendSlotWeights, pluginIndex, stopCaps,
+  capQuality, capQualityDist,
   MAX_COST, SLOT_WEIGHTS, SLOTS, buildTfidf, cosineTask, installSpec, topCandidates,
 };

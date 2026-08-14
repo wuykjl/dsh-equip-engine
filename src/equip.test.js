@@ -23,11 +23,11 @@ test('matchScore 大小写不敏感', () => {
   assert.ok(m > 0, 'JSON 应匹配 json capability');
 });
 
-// 测 3：preselect 预筛规模上限（两阶段检索，防全量塞 prompt）
-test('preselect 候选池 ≤ 30（5 槽 × 6）', () => {
+// 测 3：preselect 预筛规模上限（两阶段检索，防全量塞 prompt；上限 PRESELECT_POOL_CAP=48）
+test('preselect 候选池 ≤ 48（总池 cap）', () => {
   const all = loadPlugins();
   const pool = preselect(all, '帮我做一份深度研究报告，需要看实验图片');
-  assert.ok(pool.length <= 30, `候选池应 ≤30，实际 ${pool.length}`);
+  assert.ok(pool.length <= 48, `候选池应 ≤48，实际 ${pool.length}`);
   assert.ok(pool.length > 0, '候选池不应为空');
 });
 

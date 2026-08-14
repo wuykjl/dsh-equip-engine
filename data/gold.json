@@ -121,5 +121,104 @@
     "slots": ["output"],
     "recall": ["ccch1mneyyy/dsh-TUI"],
     "note": "TUI 与 Desktop 互斥"
+  },
+  {
+    "id": "WK1",
+    "task": "我想把手机备忘录里的东西同步到知识库，顺便自动备份到网上",
+    "must": [],
+    "mustAny": [],
+    "mustNot": [],
+    "mustNotTogether": [],
+    "slots": [],
+    "recall": ["yuukiLike/zeromd"],
+    "note": "口语化：不说 Obsidian/同步，测语义召回"
+  },
+  {
+    "id": "WK2",
+    "task": "从 arXiv 和 OpenAlex 把论文收进文献库方便以后找",
+    "must": [],
+    "mustAny": [],
+    "mustNot": [],
+    "mustNotTogether": [],
+    "slots": [],
+    "recall": ["Fisfzy/zotero-harvest"],
+    "note": "同义词：说文献库不说 Zotero/文献管理"
+  },
+  {
+    "id": "WK3",
+    "task": "convert markdown notes into a self-contained HTML presentation deck",
+    "must": [],
+    "mustAny": [],
+    "mustNot": [],
+    "mustNotTogether": [],
+    "slots": [],
+    "recall": ["Blaczz/dsh-deck-builder"],
+    "note": "纯英文任务：幻灯片/演示"
+  },
+  {
+    "id": "WK4",
+    "task": "用自然语言聊着改 Excel 表格单元格和公式，坏了还能修",
+    "must": [],
+    "mustAny": [],
+    "mustNot": [],
+    "mustNotTogether": [],
+    "slots": [],
+    "recall": ["hccccc01333/dsh-excel-chat"],
+    "note": "弱关键词：自然语言/表格 ↔ Excel操作/表格编辑"
+  },
+  {
+    "id": "WK5",
+    "task": "本地把 PDF 扫成可检索文字，并抽出页面范围和元数据",
+    "must": [],
+    "mustAny": [],
+    "mustNot": [],
+    "mustNotTogether": [],
+    "slots": [],
+    "recall": ["sunshine-lang/dsh-pdf", "HuanLinOTO/dsh-plugin-mineru"],
+    "note": "同义词：文字/元数据 ↔ 文本提取/文档解析"
+  },
+  {
+    "id": "WK6",
+    "task": "agent should remember preferences across sessions using a graph-based recall store",
+    "must": [],
+    "mustAny": ["mnemon-dev/mnemon", "flymysql/dsh-memory"],
+    "mustNot": [],
+    "mustNotTogether": [],
+    "slots": [],
+    "recall": ["mnemon-dev/mnemon"],
+    "note": "英文隐含记忆：graph-based recall"
+  },
+  {
+    "id": "WK7",
+    "task": "用媒体爬虫把短视频平台素材批量采集下来做调研",
+    "must": [],
+    "mustAny": [],
+    "mustNot": [],
+    "mustNotTogether": [],
+    "slots": [],
+    "recall": ["xwh-01/dsh-mediacrawler"],
+    "note": "弱关键词：媒体爬虫/采集（口语场景+能力词）"
+  },
+  {
+    "id": "WK8",
+    "task": "写学术论文时自动补全引用并减少幻觉引用",
+    "must": [],
+    "mustAny": ["TohsakaRIN521/dsh-academic-skill", "biociao/dsh-science"],
+    "mustNot": [],
+    "mustNotTogether": [],
+    "slots": [],
+    "recall": ["TohsakaRIN521/dsh-academic-skill"],
+    "note": "同义词：学术写作/论文补全/引用"
+  },
+  {
+    "id": "WK9",
+    "task": "Docker and Kubernetes packaging for DeepSeek Harness deployment",
+    "must": [],
+    "mustAny": [],
+    "mustNot": [],
+    "mustNotTogether": [],
+    "slots": [],
+    "recall": ["runzhliu/deepseek-harness-docker"],
+    "note": "英文弱关键词：Docker/Kubernetes packaging ↔ 容器化/部署"
   }
 ]
