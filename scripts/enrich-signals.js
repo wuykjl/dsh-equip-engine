@@ -11,10 +11,16 @@ const STATUS = path.join(ROOT, 'test-status.json');
 
 const GENERIC = new Set(['界面', '工具', '插件', '管理', '集成', '研究', '安全', '记忆', '视觉', '设计', '系统', '通知', '搜索', '监控']);
 
-function costFromStars(stars) {
-  if (stars == null) return 0.3;
-  const norm = Math.log10(stars + 1) / Math.log10(100000 + 1);
-  return Math.round((0.15 + 0.35 * (1 - norm)) * 100) / 100;
+function costFromStars(stars, status) {
+  // 分段映射：0星=0.55（无社区背书成本高）→ 1M星=0.15；未知=0.35 中性
+  let c;
+  if (stars == null) c = 0.35;
+  else c = 0.55 - 0.4 * (Math.log10(stars + 1) / Math.log10(1000000 + 1));
+  // 测试状态调整：failed 装不上 → 更贵；verified 已实测 → 更便宜
+  if (status === 'failed') c += 0.2;
+  else if (status === 'needs-build') c += 0.05;
+  else if (status === 'verified') c -= 0.05;
+  return Math.round(Math.min(0.8, Math.max(0.1, c)) * 100) / 100;
 }
 
 function washCaps(caps) {
@@ -49,7 +55,7 @@ function main() {
     }
     // generated cost 从 stars 派生（manual 保留手工 cost）
     if (p.source === 'generated') {
-      const next = costFromStars(p.stars);
+      const next = costFromStars(p.stars, p.testStatus);
       if (p.cost !== next) { p.cost = next; costN++; }
     }
     // testStatus
