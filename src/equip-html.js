@@ -129,9 +129,13 @@ async function main() {
   fs.mkdirSync(path.dirname(out), { recursive: true });
   fs.writeFileSync(out, render(r));
   console.log(`配装页已生成: ${out}`);
-  console.log(`浏览器打开: file:///${out.replace(/\\/g, '/')}`);
+  console.log('浏览器打开: file:///' + out.replace(/\\/g, '/'));
   console.log('安装命令:');
   for (const x of r.install) console.log(' ', x.cmd);
 }
 
-main().catch(e => { console.error('失败:', e.message); process.exit(1); });
+if (require.main === module) {
+  main().catch(e => { console.error('失败:', e.message); process.exit(1); });
+}
+
+module.exports = { render, esc, main };

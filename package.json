@@ -1,6 +1,6 @@
 {
   "name": "dsh-equip-engine",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "DSH 插件配装引擎：任务 → 双检索(规则+LLM) → 组合评分(协同/冲突/成本/信任) → 配装建议。区别于目录/搜索：按任务自动配整套插件，含冲突检测与安装命令导出。",
   "license": "MIT",
   "main": "src/plugin.js",

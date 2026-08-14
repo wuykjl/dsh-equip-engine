@@ -40,12 +40,21 @@ test('matchScore 泛词降权只针对 generated 源', () => {
   assert.ok(mm > mg, `manual 的精确词不应被降权（${mm} > ${mg}）`);
 });
 
-// 测 5：HTML 转义（Bug 4 回归）——渲染输出不含原始 <script>
+// 测 5：HTML 转义（Bug 4 回归）——自包含：动态渲染到内存字符串断言
 test('equip-html 渲染 XSS 转义', () => {
-  const out = path.join(process.env.DSH_EQUIP_DATA || path.join(require('os').homedir(), '.dsh-equip', 'data'), 'equip.html');
-  const html = fs.readFileSync(out, 'utf8');
+  const { render } = require('./equip-html.js');
+  const r = {
+    task: '<script>alert(1)</script>任务',
+    score: '1.00', breakdown: { match: 1, synergy: 0, conflict: 0, cost: 0, trust: 0, feedback: 0, budget: 0 },
+    chosen: [{ id: 'x/a', name: '<img src=x onerror=alert(2)>', slot: 'action', cost: 0.3, complements: [], conflicts: [], stars: null, install: { cmd: 'dsh plugin add x/a; <script>' } }],
+    install: [{ cmd: 'dsh plugin add x/a; <script>', slot: 'action', name: 'bad' }],
+    srcInfo: [], overBudget: false, llmReason: '<b>注入</b>',
+  };
+  const html = render(r);
   assert.ok(!html.includes('<script>alert'), '输出不应包含未转义的 script 标签');
   assert.ok(html.includes('&lt;script&gt;'), '应包含转义后的 script');
+  assert.ok(!html.includes('<img src=x onerror'), 'name 应被转义');
+  assert.ok(html.includes('&lt;b&gt;'), 'llmReason 应被转义');
 });
 
 // 测 6：兜底宁缺毋滥（Bug 5 回归）——无匹配的槽不强制 top-1

@@ -379,7 +379,12 @@ function equip(task) {
   const fb = loadFeedback();
   const active = activateSlots(curated, task, weights);
   if (active.length === 0) {
-    return { task, taskType: taskTypes[0].type, taskTypes, slots: [], best: null, note: '未激活任何槽位', weights };
+    return {
+      task, taskType: taskTypes.map(t => t.type).join('+'), taskTypes, slots: [],
+      score: '0.00', breakdown: { match: 0, synergy: 0, conflict: 0, cost: 0, trust: 0, feedback: 0, budget: 0 },
+      chosen: [], ids: [], install: [],
+      build: [], weights, overBudget: false, totalCost: '0.00', note: '未激活任何槽位',
+    };
   }
   const groups = topCandidates(active, task, 3, plugins).map(g => g.picks.map(x => ({ p: x.p, m: x.m })));
   let best = null, bestScore = null;

@@ -12,7 +12,7 @@ function getApiKey() {
   try {
     const txt = fs.readFileSync(credPath, 'utf8');
     const m = txt.match(/DEEPSEEK_API_KEY:\s*(\S+)/);
-    return m ? m[1] : null;
+    return m ? m[1].replace(/^["']|["']$/g, '') : null;
   } catch { return null; }
 }
 
