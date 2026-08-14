@@ -37,14 +37,6 @@ function checkCase(g, ids, slotList) {
   if (g.maxPlugins != null && ids.length > g.maxPlugins) {
     fail.push(`tooMany:${ids.length}>${g.maxPlugins}`);
   }
-  const activeSlots = new Set((slotList || []).map(s => String(s).split('(')[0]));
-  for (const s of g.slots || []) {
-    if (!activeSlots.has(s) && !ids.some(() => false)) {
-      // slot activation: pass if any chosen plugin occupies the slot
-      const occupied = ids.length === 0 ? false : true;
-      // better: check via chosen plugins if available — caller passes occupiedSlots
-    }
-  }
   return fail;
 }
 

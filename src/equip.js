@@ -3,11 +3,14 @@
 'use strict';
 const fs = require('fs');
 const path = require('path');
+const os = require('os');
 const { llmRetrieve } = require('./llm.js');
 
 const DATA = path.join(__dirname, '..', 'data', 'plugins-all.json');
-const FEEDBACK = path.join(__dirname, '..', 'data', 'feedback.json');
-const BLACKLIST = path.join(__dirname, '..', 'data', 'blacklist.json');
+// 用户数据目录（写入用）：包内 data/ 在 node_modules 下只读，反馈/黑名单/生成物必须写这里
+const USER_DATA = process.env.DSH_EQUIP_DATA || path.join(os.homedir(), '.dsh-equip', 'data');
+const FEEDBACK = path.join(USER_DATA, 'feedback.json');
+const BLACKLIST = path.join(USER_DATA, 'blacklist.json');
 const SLOTS = ['perception', 'decision', 'action', 'memory', 'output'];
 
 const COST_WEIGHT = 0.3, SYNERGY_BONUS = 0.5, CONFLICT_PENALTY = 1.5, TRUST_WEIGHT = 0.15;
@@ -69,6 +72,7 @@ function loadFeedback(force = false) {
 }
 
 function saveFeedback(fb) {
+  fs.mkdirSync(path.dirname(FEEDBACK), { recursive: true });
   fs.writeFileSync(FEEDBACK, JSON.stringify(fb, null, 2));
   _feedback = fb; _feedbackMtime = fileMtime(FEEDBACK);
 }
@@ -83,6 +87,7 @@ function loadBlacklist(force = false) {
 }
 
 function saveBlacklist(b) {
+  fs.mkdirSync(path.dirname(BLACKLIST), { recursive: true });
   fs.writeFileSync(BLACKLIST, JSON.stringify(b, null, 2));
   _blacklist = b; _blacklistMtime = fileMtime(BLACKLIST);
 }
@@ -250,7 +255,8 @@ function topCandidates(active, task, n = 2, plugins) {
     picks: (() => {
       const scored = a.candidates.map(p => ({ p, m: matchScore(p, task, plugins) }));
       const matched = scored.filter(x => x.m > (x.p.source === 'generated' ? 0.5 : 0));
-      const pool = matched.length ? matched : scored.slice().sort((x, y) => y.m - x.m).slice(0, 1);
+      // 宁缺毋滥：无匹配时空槽，不强制 top-1（m=0 进槽会污染配装）
+      const pool = matched;
       return pool.sort((x, y) => y.m - x.m).slice(0, n);
     })(),
   }));

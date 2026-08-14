@@ -7,6 +7,7 @@
 'use strict';
 const fs = require('fs');
 const path = require('path');
+const os = require('os');
 const { equip, equipMix, installSpec } = require('./equip.js');
 
 function formatDsh(install) {
@@ -53,7 +54,8 @@ async function main() {
       install: r.install,
       note: '清单仅供复制执行；equip-export 不会调用 dsh 或修改本地配置',
     };
-    const out = path.join(__dirname, '..', 'data', 'equip-install.json');
+    const out = path.join(process.env.DSH_EQUIP_DATA || path.join(os.homedir(), '.dsh-equip', 'data'), 'equip-install.json');
+    fs.mkdirSync(path.dirname(out), { recursive: true });
     fs.writeFileSync(out, JSON.stringify(payload, null, 2));
     console.log(JSON.stringify(payload, null, 2));
     console.log(`\n已写入 ${out}`);

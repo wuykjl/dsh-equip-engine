@@ -3,7 +3,15 @@
 'use strict';
 const fs = require('fs');
 const path = require('path');
+const os = require('os');
 const { equipMix, installSpec } = require('./equip.js');
+
+// XSS 防护：所有数据插值必须过 esc
+function esc(s) {
+  return String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+}
+// badge class 白名单（防 class 注入）
+const BADGE_OK = new Set(['rule', 'llm', 'both', '?']);
 
 const SLOT_META = {
   perception: { icon: '👁', name: '感知', en: 'Perception', tip: '视觉 / 内容获取' },
@@ -23,11 +31,11 @@ function slotHtml(slot, chosen) {
     const synMark = syn.length ? `<span class="tag syn">套装+${syn.length}</span>` : '';
     const conMark = con.length ? `<span class="tag con">冲突!</span>` : '';
     const inst = p.install || installSpec(p);
-    const cmd = inst.cmd.replace(/"/g, '&quot;');
+    const cmd = esc(inst.cmd);
     return `<div class="gear ${syn.length ? 'set' : ''} ${con.length ? 'bad' : ''}">
-      <div class="gear-name">${p.name} ${star}</div>
-      <div class="gear-meta">成本 ${p.cost} ${synMark}${conMark}</div>
-      <div class="gear-cmd"><code>${inst.cmd}</code>
+      <div class="gear-name">${esc(p.name)} ${star}</div>
+      <div class="gear-meta">成本 ${esc(p.cost)} ${synMark}${conMark}</div>
+      <div class="gear-cmd"><code>${cmd}</code>
         <button type="button" class="copy" data-cmd="${cmd}">复制</button></div>
     </div>`;
   }).join('') : `<div class="gear empty">— 未装备 —</div>`;
@@ -45,11 +53,11 @@ function render(r) {
     ['成本', -b.cost], ['信任', b.trust], ['反馈', b.feedback],
   ].map(([k, v]) => `<div class="bar"><span>${k}</span><div class="bar-track"><div class="bar-fill" style="width:${Math.min(100, Math.abs(v) * 40)}%"></div></div><span>${v >= 0 ? '+' : ''}${v.toFixed(2)}</span></div>`).join('');
   const installBlock = (r.install || []).map(x =>
-    `<li><code>${x.cmd}</code> <span class="muted">[${x.slot}] ${x.name}</span>
-     <button type="button" class="copy" data-cmd="${x.cmd.replace(/"/g, '&quot;')}">复制</button></li>`
+    `<li><code>${esc(x.cmd)}</code> <span class="muted">[${esc(x.slot)}] ${esc(x.name)}</span>
+     <button type="button" class="copy" data-cmd="${esc(x.cmd)}">复制</button></li>`
   ).join('');
   return `<!DOCTYPE html>
-<html lang="zh"><head><meta charset="utf-8"><title>装备配置 · ${r.task.slice(0, 20)}</title>
+<html lang="zh"><head><meta charset="utf-8"><title>装备配置 · ${esc(r.task.slice(0, 20))}</title>
 <style>
 body{background:#0d1117;color:#c9d1d9;font-family:'Segoe UI',sans-serif;padding:24px;max-width:1100px;margin:auto}
 h1{font-size:20px;color:#e6edf3}h2{font-size:14px;color:#8b949e;font-weight:normal}
@@ -82,14 +90,14 @@ h1{font-size:20px;color:#e6edf3}h2{font-size:14px;color:#8b949e;font-weight:norm
 .note{color:#8b949e;font-size:11px;margin-top:8px}
 </style></head><body>
 <h1>⚔️ 装备配置建议</h1>
-<h2>任务: ${r.task}</h2>
+<h2>任务: ${esc(r.task)}</h2>
 <div class="equip">${Object.keys(SLOT_META).map(s => slotHtml(s, r.chosen || [])).join('')}</div>
 <div class="verdict">
-  <span class="score">${r.score}</span> <span style="color:#8b949e">组合评分</span>
-  ${(r.srcInfo || []).map(s => `<span class="badge ${s.type}">${s.type} · ${s.id}</span>`).join('')}
+  <span class="score">${esc(r.score)}</span> <span style="color:#8b949e">组合评分</span>
+  ${(r.srcInfo || []).map(s => `<span class="badge ${BADGE_OK.has(s.type) ? s.type : '?'}">${esc(s.type)} · ${esc(s.id)}</span>`).join('')}
   ${r.overBudget ? '<span class="tag con">超预算</span>' : ''}
   <div class="bars">${bars}</div>
-  ${r.llmReason ? `<div class="llm-reason">LLM 判断: ${r.llmReason}</div>` : ''}
+  ${r.llmReason ? `<div class="llm-reason">LLM 判断: ${esc(r.llmReason)}</div>` : ''}
 </div>
 <div class="install">
   <h3>可安装清单（不自动执行）</h3>
@@ -117,7 +125,8 @@ async function main() {
     id: (r.chosen.find(p => p.id === id) || {}).name || id,
     type: (r.sources && r.sources[id]) || '?',
   }));
-  const out = path.join(__dirname, '..', 'data', 'equip.html');
+  const out = path.join(process.env.DSH_EQUIP_DATA || path.join(os.homedir(), '.dsh-equip', 'data'), 'equip.html');
+  fs.mkdirSync(path.dirname(out), { recursive: true });
   fs.writeFileSync(out, render(r));
   console.log(`配装页已生成: ${out}`);
   console.log(`浏览器打开: file:///${out.replace(/\\/g, '/')}`);
