@@ -25,7 +25,8 @@
     "scripts/",
     "cordis.patch.yml",
     "LICENSE",
-    "README.md"
+    "README.md",
+    "CHANGELOG.md"
   ],
   "keywords": [
     "deepseek-harness",

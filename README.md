@@ -1,5 +1,11 @@
 # dsh-equip-engine
 
+[![GitHub stars](https://img.shields.io/github/stars/wuykjl/dsh-equip-engine?style=flat-square&logo=github)](https://github.com/wuykjl/dsh-equip-engine/stargazers)
+[![License: MIT](https://img.shields.io/github/license/wuykjl/dsh-equip-engine?style=flat-square&color=4EAA25)](LICENSE)
+[![dshbase 收录](https://img.shields.io/badge/dshbase-收录-4b6fff?style=flat-square)](https://dshbase.com/plugins/dsh-equip-engine/)
+[![awesome 收录](https://img.shields.io/badge/awesome--deepseek--harness-已收录-ff69b4?style=flat-square)](https://github.com/0xsline/awesome-deepseek-harness)
+[![semver](https://img.shields.io/badge/semver-0.2.0-263146?style=flat-square)](CHANGELOG.md)
+
 任务驱动的 **DSH 插件配装引擎**：给任务配整套插件，而不是给你一个列表。
 
 > 装插件最痛苦的不是安装，是"这个任务到底该装哪些"。生态里 2000+ 插件、互相冲突、成本不一——配装引擎按任务自动推荐组合，并给出可直接复制的安装命令。
